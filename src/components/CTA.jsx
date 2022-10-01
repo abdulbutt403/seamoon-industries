@@ -1,6 +1,8 @@
 import styles from "../style";
 import Button from "./Button";
 import person from "../assets/4.png"
+import person2 from "../assets/5.png"
+import person3 from "../assets/9.png"
 
 const CTA = () => (
   <section
@@ -44,15 +46,15 @@ const CTA = () => (
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={person2}
             alt=""
           />
         </div>
         <div className="content">
           <div className="contentBx">
             <h3>
-              John <br />
-              <span>Web Developer</span>
+              MEHAR AMIR <br />
+              <span>Support Manager</span>
             </h3>
           </div>
           <ul className="sci">
@@ -79,15 +81,15 @@ const CTA = () => (
       <div className="card">
         <div className="imgBx">
           <img
-            src="https://images.pexels.com/photos/3379933/pexels-photo-3379933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            src={person3}
             alt=""
           />
         </div>
         <div className="content">
           <div className="contentBx">
             <h3>
-              John <br />
-              <span>Web Developer</span>
+              MEHAR AKHTER <br />
+              <span>MARKETING MANAGER</span>
             </h3>
           </div>
           <ul className="sci">
