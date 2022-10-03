@@ -1,4 +1,4 @@
-import { card } from "../assets";
+import cover from '../assets/dental-cover.jpg'
 import styles, { layout } from "../style";
 import Button from "./Button";
 
@@ -6,15 +6,14 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+        Go through our dental <br className="sm:block hidden" /> catalogue easily.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
         aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
       </p>
 
-      <Button styles={`mt-10`} />
+      <Button title={`OPEN NOW`} styles={`mt-10`} />
     </div>
 
     <div className={layout.sectionImg}>
@@ -24,7 +23,7 @@ const CardDeal = () => (
         <div class="book-wrapper">
             <div class="book">
                 <div class="book__front">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/91-j2UzZW4L.jpg" alt="cover"/>
+                    <img src={cover} alt="cover"/>
                 </div>
                 <div class="book__paper"></div>
                 <div class="book__back"></div>
@@ -35,7 +34,7 @@ const CardDeal = () => (
         <div class="movie-wrapper">
             <div class="movie">
                 <div class="movie__front">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/184729/2019-Annihilation-DVD-and-Bluray-Cover-UK-and-USA-CST1.jpg" alt="cover"/>
+                    <img src={cover} alt="cover"/>
                 </div>
                 <div class="movie__edge"></div>
                 <div class="movie__side"></div>

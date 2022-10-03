@@ -318,7 +318,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  background: #356143;
+  background: #616763;
   border-radius: 5px;
   overflow: hidden;
   transform: translateZ(calc(-1 * var(--thickness)));
