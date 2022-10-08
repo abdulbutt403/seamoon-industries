@@ -5,8 +5,10 @@ import person2 from "../assets/5.png"
 import person3 from "../assets/9.png"
 
 const CTA = () => (
+  <>
+   <h2 className={styles.heading2} style={{margin: 'auto', textAlign: 'center', marginTop: 100 }}>Meet our Team</h2>
   <section
-    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col rounded-[20px] box-shadow`}
+    className={`${styles.flexCenter} ${styles.padding} sm:flex-row flex-col rounded-[20px]`}
   >
       <div className="card">
         <div className="imgBx">
@@ -112,6 +114,7 @@ const CTA = () => (
         </div>
       </div>
   </section>
+  </>
 );
 
 export default CTA;
