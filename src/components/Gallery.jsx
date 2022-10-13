@@ -15,6 +15,9 @@ import person12 from "../assets/11.jpg"
 import person13 from "../assets/12.jpg"
 import person14 from "../assets/13.jpg"
 import person15 from "../assets/14.png"
+import person16 from "../assets/16.jpg"
+import person17 from "../assets/17.jpeg"
+
 
 
 const Gallery = () => (
@@ -116,15 +119,15 @@ const Gallery = () => (
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/20@1x.b8babe7.jpg" style={{width: 163, height: 92, marginRight: 2}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person17} style={{width: 163, height: 92, marginRight: 2}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/2@1x.ce907d6.jpg" style={{width: 109, height: 154, marginRight: 20}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person10} style={{width: 109, height: 154, marginRight: 20}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/3@1x.af48646.jpg" style={{width: 163, height: 92, marginRight: 4}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person1} style={{width: 163, height: 92, marginRight: 4}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
@@ -136,7 +139,7 @@ const Gallery = () => (
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/20@1x.b8babe7.jpg" style={{width: 163, height: 92, marginRight: 2}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person17} style={{width: 163, height: 92, marginRight: 2}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
@@ -162,7 +165,7 @@ const Gallery = () => (
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/14@1x.cfcca3c.jpg" style={{width: 163, height: 92, marginRight: 7}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person16} style={{width: 163, height: 92, marginRight: 7}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
@@ -182,7 +185,7 @@ const Gallery = () => (
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/14@1x.cfcca3c.jpg" style={{width: 163, height: 92, marginRight: 7}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person16} style={{width: 163, height: 92, marginRight: 7}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
@@ -280,15 +283,15 @@ const Gallery = () => (
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/20@1x.b8babe7.jpg" style={{width: 163, height: 92, marginRight: 2}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person17} style={{width: 163, height: 92, marginRight: 2}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/2@1x.ce907d6.jpg" style={{width: 109, height: 154, marginRight: 20}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person10} style={{width: 109, height: 154, marginRight: 20}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/3@1x.af48646.jpg" style={{width: 163, height: 92, marginRight: 4}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person1} style={{width: 163, height: 92, marginRight: 4}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
