@@ -20,7 +20,7 @@ const Contact = () => (
             <div className="app-title">
               <img src={logo}/>
             </div>
-            <div className="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+            <div className="app-contact">CONTACT INFO : +92 300 710 37 31</div>
           </div>
           <div className="screen-body-item">
             <div className="app-form">
@@ -34,7 +34,7 @@ const Contact = () => (
                 <input className="app-form-control" placeholder="CONTACT NO"/>
               </div>
               <div className="app-form-group message">
-                <input className="app-form-control" placeholder="MESSAGE"/>
+                <textarea className="app-form-control" placeholder="MESSAGE"/>
               </div>
               <div className="app-form-group buttons">
                 <button style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100, marginRight: 20}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary rounded-[10px] outline-none mt-10 text-white">CANCEL</button>
