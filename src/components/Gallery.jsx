@@ -207,7 +207,7 @@ const Gallery = () => (
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
-                <img alt="perfectcod" className="icon hoverable" src="https://website-prod.cache.wpscdn.com/img/7@1x.1457dfa.jpg" style={{width: 163, height: 92, marginRight: 0}}/> 
+                <img alt="perfectcod" className="icon hoverable" src={person14} style={{width: 163, height: 92, marginRight: 0}}/> 
                 <div  className="shelter"></div>
              </div>
              <div  className="wall-box">
