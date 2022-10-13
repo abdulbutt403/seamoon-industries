@@ -1193,3 +1193,12 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 0;
   }
 }
+
+.gts:hover{
+  box-shadow: 0 0 20px 0 rgba(187, 187, 187, 0.75) !important;
+}
+
+.gts{
+  box-shadow: 0 0 20px 0 rgba(187, 187, 187, 0.25) !important;
+}
+
