@@ -1,6 +1,6 @@
 import  logo  from "../assets/logo.svg";
 const Contact = () => (
-    <div className="background">
+    <div className="background" id="contactform">
     <div className="container">
       <div className="screen">
         <div className="screen-header">
