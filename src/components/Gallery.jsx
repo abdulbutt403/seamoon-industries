@@ -21,10 +21,10 @@ import person17 from "../assets/17.jpeg"
 
 
 const Gallery = () => (
-    <div className="section-wrapper">
+    <div className="section-wrapper dk-none">
     <div className="shielding-layer"></div>
     <div className="container">
-       <div className="template-wall">
+       <div className="template-wall ">
           <div className="column index-0">
              <div  className="wall-box">
                 <img alt="perfectcod" className="icon hoverable" src={person12} style={st1}/> 

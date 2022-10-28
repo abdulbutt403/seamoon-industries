@@ -20,7 +20,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () =>  (
   <section id="features" className={layout.section}>
-    <div className={`${layout.sectionImg} flex-row`}>
+    <div className={`${layout.sectionImg} flex-romp`}>
       {features.map((feature, index) => (
         <FeatureCard key={feature.id} {...feature} index={index} />
       ))}

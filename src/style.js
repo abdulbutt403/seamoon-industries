@@ -6,7 +6,7 @@ const styles = {
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
-  flexEnd: "flex justify-center items-start",
+  flexEnd: "flex justify-center items-end",
 
   paddingX: "sm:px-16 px-6",
   paddingY: "sm:py-16 py-6",
@@ -24,7 +24,7 @@ export const layout = {
   sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
 
 
-  sectionInfo2: `flex-1 ${styles.End} flex-col`,
+  sectionInfo2: `flex-1 ${styles.flexEnd} flex-col`,
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
 };
 

@@ -48,11 +48,11 @@ export default function CardDeal() {
         <iframe src={testPdf} style={{position: 'absolute', left: 0, right: 0, bottom: 0, top: 0, height: '100%', width: '100%'}}/>
       </Modal>
       <div className={layout.sectionInfo2}>
-        <h2 className={styles.heading2}>
+        <h2 className={styles.heading2} style={{textAlign: 'right'}}>
           Go through our dental <br className="sm:block hidden" /> catalogue
           easily.
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{textAlign: 'right'}}>
           Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
           aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
         </p>
@@ -66,7 +66,7 @@ export default function CardDeal() {
         </button>
       </div>
 
-      <div className={layout.sectionImg}>
+      <div className={layout.sectionImg} id="product">
         <section className="app" id="app" data-current-media="book"     onClick={openModal}>
           <article className="media-container">
             <div className="book-wrapper">

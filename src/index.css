@@ -719,8 +719,17 @@ input[type=range]:focus::-ms-fill-upper {
     animation-play-state: running !important;
   }
 
+  .flex-romp{
+    flex-direction: column !important;
+  }
+
+  .dk-none{
+    display: none !important;
+  }
+
+
   .screen{
-    width: 100%;
+    width: 100% !important;
   }
 
   .shelter {
@@ -1211,3 +1220,8 @@ input[type=range]:focus::-ms-fill-upper {
   box-shadow: 0 0 20px 0 rgba(187, 187, 187, 0.25) !important;
 }
 
+
+
+.flex-romp{
+  flex-direction: row;
+}

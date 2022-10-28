@@ -10,7 +10,7 @@ const CTA = () => (
   <section
     className={`${styles.flexCenter} ${styles.padding} sm:flex-row flex-col rounded-[20px]`}
   >
-      <div className="card">
+      <div className="card" id="clients">
         <div className="imgBx">
           <img
             src={person}
