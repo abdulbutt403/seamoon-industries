@@ -32,7 +32,7 @@ export const features = [
     icon: shield,
     title: "Competitive Prices",
     content:
-      "Seamoon industries prices are very competitive and flexible with the customers. because customers satisfaction is our first priority",
+      "Seamoon industries prices are very competitive  with the customers. because customers satisfaction is our first priority",
   },
   {
     id: "feature-3",

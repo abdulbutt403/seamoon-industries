@@ -719,6 +719,10 @@ input[type=range]:focus::-ms-fill-upper {
     animation-play-state: running !important;
   }
 
+  .screen{
+    width: 100%;
+  }
+
   .shelter {
     position: absolute;
     top: 0;
@@ -983,6 +987,11 @@ input[type=range]:focus::-ms-fill-upper {
   flex: 1 1 700px;
   margin: auto;
   padding: 10px;
+}
+
+.screen {
+  width: 80%;
+  margin: auto;
 }
 
 .screen {
