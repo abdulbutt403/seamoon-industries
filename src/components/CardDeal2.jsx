@@ -1,55 +1,13 @@
 import cover from "../assets/surgical-cover.jpg";
 import styles, { layout } from "../style";
-import Button from "./Button";
-import testPdf from "../../src/surgical.pdf";
 import React from "react";
-import Modal from "react-modal";
 
 export default function CardDeal2() {
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      position: 'relative',
-      height: '90vh',
-      width: '90vw',
-      transform: "translate(-50%, -50%)",
-    },
-    overlay: {zIndex: 1000}
-  };
-
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#000";
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
   return (
     <section className={layout.section}>
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <iframe src={testPdf} style={{position: 'absolute', left: 0, right: 0, bottom: 0, top: 0, height: '100%', width: '100%'}}/>
-      </Modal>
     
       <div className={layout.sectionImg}>
-        <section className="app" id="app" data-current-media="book"     onClick={openModal}>
+        <section className="app" id="app" data-current-media="book" >
           <article className="media-container">
             <div className="book-wrapper">
               <div className="book">
@@ -89,7 +47,7 @@ export default function CardDeal2() {
 
         <button
           type="button"
-          onClick={openModal}
+          onClick={() => window.location.href="/surgical-catalogue"} 
           className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`}
         >
           OPEN NOW
