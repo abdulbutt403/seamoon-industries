@@ -3,11 +3,57 @@ import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import CardDeal from "./CardDeal";
 import { useMediaQuery } from "react-responsive";
-
+import Modal from "react-modal";
 
 function Items({ currentItems }) {
+
   const isMobile = useMediaQuery({ query: "(max-width: 786px)" });
+
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      position: 'relative',
+      maxWidth: isMobile ? '90%': '40%',
+      transform: "translate(-50%, -50%)",
+    },
+    overlay: {zIndex: 1000}
+  };
+
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [setItem, setItems] = React.useState(false);
+
+  function openModal(id) {
+    setItems(id)
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = "#000";
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
+    <>
+    <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+         <img
+            style={{ maxWidth: "100%", padding: 0, cursor: 'pointer' }}
+            src={`assets/mpd/mpd-${setItem}.jpg`}
+          />
+      </Modal>
     <div style={{ display: "flex", flexWrap: "wrap", flexDirection: isMobile ? 'column': "row" }}>
       {currentItems &&
         currentItems.map((item, index) => (
@@ -15,9 +61,11 @@ function Items({ currentItems }) {
             key={index}
             style={{ maxWidth: isMobile ? "100%": "25%", padding: 10, cursor: 'pointer' }}
             src={`assets/mpd/mpd-${item}.jpg`}
+            onClick={() => openModal(item)}
           />
         ))}
     </div>
+    </>
   );
 }
 
