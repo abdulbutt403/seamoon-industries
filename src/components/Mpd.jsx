@@ -2,15 +2,18 @@ import styles from "../style";
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import CardDeal from "./CardDeal";
+import { useMediaQuery } from "react-responsive";
+
 
 function Items({ currentItems }) {
+  const isMobile = useMediaQuery({ query: "(max-width: 786px)" });
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexWrap: "wrap", flexDirection: isMobile ? 'column': "row" }}>
       {currentItems &&
         currentItems.map((item, index) => (
           <img
             key={index}
-            style={{ maxWidth: "25%", padding: 10, cursor: 'pointer' }}
+            style={{ maxWidth: isMobile ? "100%": "25%", padding: 10, cursor: 'pointer' }}
             src={`assets/mpd/mpd-${item}.jpg`}
           />
         ))}

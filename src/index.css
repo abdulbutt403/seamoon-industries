@@ -714,6 +714,9 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 @media screen and (max-width: 992px) {
+  .pagination{
+    max-width: 90vw;
+  }
   .template-wall .column:hover {
     -webkit-animation-play-state: running !important;
     animation-play-state: running !important;
