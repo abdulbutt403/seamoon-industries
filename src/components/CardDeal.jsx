@@ -28,7 +28,7 @@ export default function CardDeal() {
       </div>
 
       <div className={layout.sectionImg} id="product">
-        <section className="app" id="app" data-current-media="book" >
+        <section className="app" id="app" data-current-media="book"  onClick={() => window.location.href="/dental-catalogue"} >
           <article className="media-container">
             <div className="book-wrapper">
               <div className="book">

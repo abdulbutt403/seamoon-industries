@@ -1288,3 +1288,32 @@ input[type=range]:focus::-ms-fill-upper {
   border: none;
   outline: none;
 }
+
+
+.spinning-loader {
+  width: 28px;
+  height: 28px;
+
+  border: 2.4px solid rgb(206, 205, 205);
+  border-left-color: blue;
+  border-radius: 50%;
+  background: transparent;
+
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+
+
+@keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
