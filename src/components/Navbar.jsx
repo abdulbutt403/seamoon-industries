@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
         ))}
         <li
-        style={{marginLeft: 10}}
+        style={{marginLeft: 28}}
           className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
         >
           <a
