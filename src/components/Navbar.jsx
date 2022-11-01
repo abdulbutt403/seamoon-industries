@@ -51,7 +51,6 @@ const Navbar = () => {
               </li>
             ))}
             <li
-              key={nav.id}
               className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
             >
               <a href={`https://sso.godaddy.com/login?app=email&realm=pass`} target="blank">Webmail</a>
