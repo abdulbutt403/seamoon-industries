@@ -23,6 +23,16 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+        <li
+          className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
+        >
+          <a
+            href={`https://sso.godaddy.com/login?app=email&realm=pass`}
+            target="blank"
+          >
+            Webmail
+          </a>
+        </li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -53,7 +63,12 @@ const Navbar = () => {
             <li
               className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
             >
-              <a href={`https://sso.godaddy.com/login?app=email&realm=pass`} target="blank">Webmail</a>
+              <a
+                href={`https://sso.godaddy.com/login?app=email&realm=pass`}
+                target="blank"
+              >
+                Webmail
+              </a>
             </li>
           </ul>
         </div>
