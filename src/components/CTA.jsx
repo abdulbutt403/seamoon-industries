@@ -3,6 +3,7 @@ import Button from "./Button";
 import person from "../assets/4.png"
 import person2 from "../assets/5.png"
 import person3 from "../assets/9.png"
+import person4 from "../assets/92.jpg"
 
 const CTA = () => (
   <>
@@ -50,6 +51,7 @@ const CTA = () => (
           <img
             src={person2}
             alt=""
+            className="custom-image-2"
           />
         </div>
         <div className="content">
@@ -79,6 +81,41 @@ const CTA = () => (
         </div>
       </div>
 
+
+      <div className="card">
+        <div className="imgBx">
+          <img
+            src={person4}
+            alt=""
+            className="custom-image-3"
+          />
+        </div>
+        <div className="content">
+          <div className="contentBx">
+            <h3>
+              MEHAR KHAWAR <br />
+              <span>PRODUCTION MANAGER</span>
+            </h3>
+          </div>
+          <ul className="sci">
+            <li >
+              <a href="#">
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <i className="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li >
+              <a href="#">
+                <i className="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div className="card">
         <div className="imgBx">
