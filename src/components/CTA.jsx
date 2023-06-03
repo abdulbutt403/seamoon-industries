@@ -94,7 +94,7 @@ const CTA = () => (
           <div className="contentBx">
             <h3>
               MEHAR KHAWAR <br />
-              <span>PRODUCTION MANAGER</span>
+              <span>EXPERT ADVISOR</span>
             </h3>
           </div>
           <ul className="sci">
