@@ -1,4 +1,5 @@
 import  logo  from "../assets/logo.svg";
+import person from "../assets/4.png"
 const Contact = () => (
     <div className="background" id="contactform">
     <div className="container">
@@ -20,7 +21,18 @@ const Contact = () => (
             <div className="app-title">
               <img src={logo}/>
             </div>
-            <div className="app-contact">CONTACT INFO : +92 300 710 37 31</div>
+            <div style={{marginTop: 40, color:'#fff'}}>
+            <h1 style={{marginBottom: 10, color:'#fff'}}>SALMAN ARSHAD <br/> (CHIEF EXECUTIVE OFFICER)</h1>
+
+            <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13}}>Sialkot, Small Industrial Estate</h5>
+            <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13, marginBottom: 5}}>Fateh Garh Agency, Cheema Street</h5>
+
+            <div className="app-contact">WHATSAPP : +92-300-7107197</div>
+            <div className="app-contact">TEL : +92-52-3302249</div>
+            <div className="app-contact">EMAIL : info@seamoonind.com</div>
+            <div className="app-contact">GMAIL : seamoonind@gmail.com</div>
+            <div className="app-contact">WEB : www.seamoonind.com</div>
+            </div>
           </div>
           <div className="screen-body-item">
             <div className="app-form">
