@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import { Business, CardDeal, Carousel, CTA, Footer, Navbar, Stats, Hero } from "./components";
 import CardDeal2 from "./components/CardDeal2";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
@@ -9,6 +9,12 @@ const Home = () => (
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
+      </div>
+    </div>
+
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Carousel />
       </div>
     </div>
 
