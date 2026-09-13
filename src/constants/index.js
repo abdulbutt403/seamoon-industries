@@ -14,10 +14,6 @@ export const navLinks = [
     title: "Catalogues",
   },
   {
-    id: "clients",
-    title: "Team",
-  },
-  {
     id: "contactform",
     title: "Contact",
   },
@@ -107,10 +103,6 @@ export const footerLinks = [
       {
         name: "Catalogue",
         link: "#product",
-      },
-      {
-        name: "Team",
-        link: "#client",
       },
       {
         name: "Contact",
