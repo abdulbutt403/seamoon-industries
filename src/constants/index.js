@@ -10,6 +10,10 @@ export const navLinks = [
     title: "Services",
   },
   {
+    id: "manufacturing-process",
+    title: "Process",
+  },
+  {
     id: "product",
     title: "Catalogues",
   },
