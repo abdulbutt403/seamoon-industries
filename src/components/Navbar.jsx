@@ -28,7 +28,7 @@ const Navbar = () => {
           className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
         >
           <a
-            href={`https://sso.godaddy.com/login?app=email&realm=pass`}
+            href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/"
             target="blank"
           >
             Webmail
@@ -65,7 +65,7 @@ const Navbar = () => {
               className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
             >
               <a
-                href={`https://sso.godaddy.com/login?app=email&realm=pass`}
+                href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/"
                 target="blank"
               >
                 Webmail
