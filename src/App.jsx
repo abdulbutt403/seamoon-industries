@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./routes";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
                 );
               })}
             </Switch>
+            <WhatsAppButton />
           </Router>
   );
 };

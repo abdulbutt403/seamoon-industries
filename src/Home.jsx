@@ -1,7 +1,6 @@
 import styles from "./style";
 import { Business, CardDeal, Carousel, Footer, Navbar, Stats, Hero } from "./components";
 import CardDeal2 from "./components/CardDeal2";
-import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 
 const Home = () => (
@@ -28,7 +27,6 @@ const Home = () => (
       <div className={`${styles.boxWidth}`}>
         <Stats />
         <Business />
-        <Gallery/>
         <CardDeal />
         <CardDeal2 />
         <Contact/>
