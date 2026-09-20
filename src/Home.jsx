@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Business, CardDeal, Carousel, Footer, ManufacturingProcess, Navbar, ProductVideos, Stats, Hero } from "./components";
+import { Business, CardDeal, Carousel, Certifications, Footer, ManufacturingProcess, Navbar, ProductVideos, Stats, Hero } from "./components";
 import CardDeal2 from "./components/CardDeal2";
 import Contact from "./components/Contact";
 
@@ -27,6 +27,7 @@ const Home = () => (
       <div className={`${styles.boxWidth}`}>
         <Stats />
         <Business />
+        <Certifications />
         <ManufacturingProcess />
         <ProductVideos />
         <CardDeal />
