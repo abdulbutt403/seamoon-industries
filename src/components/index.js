@@ -11,6 +11,7 @@ import Carousel from "./Carousel";
 import ManufacturingProcess from "./ManufacturingProcess";
 import ProductVideos from "./ProductVideos";
 import Certifications from "./Certifications";
+import OEMServices from "./OEMServices";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   ManufacturingProcess,
   ProductVideos,
   Certifications,
+  OEMServices,
 };

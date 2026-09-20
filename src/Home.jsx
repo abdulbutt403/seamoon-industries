@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Business, CardDeal, Carousel, Certifications, Footer, ManufacturingProcess, Navbar, ProductVideos, Stats, Hero } from "./components";
+import { Business, CardDeal, Carousel, Certifications, Footer, ManufacturingProcess, Navbar, OEMServices, ProductVideos, Stats, Hero } from "./components";
 import CardDeal2 from "./components/CardDeal2";
 import Contact from "./components/Contact";
 
@@ -29,6 +29,7 @@ const Home = () => (
         <Business />
         <Certifications />
         <ManufacturingProcess />
+        <OEMServices />
         <ProductVideos />
         <CardDeal />
         <CardDeal2 />

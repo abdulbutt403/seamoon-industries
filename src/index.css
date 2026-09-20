@@ -716,6 +716,328 @@
   padding: 90px 0 118px;
 }
 
+.oem-services {
+  position: relative;
+  padding: 96px 0 122px;
+}
+
+.oem-services::before {
+  position: absolute;
+  top: 8%;
+  right: -14%;
+  width: 430px;
+  height: 430px;
+  content: "";
+  background: rgba(0, 246, 255, 0.09);
+  border-radius: 50%;
+  filter: blur(130px);
+  pointer-events: none;
+}
+
+.oem-services__header {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: clamp(38px, 8vw, 112px);
+  align-items: end;
+  margin-bottom: 74px;
+}
+
+.oem-services__header span {
+  display: block;
+  margin-bottom: 12px;
+  color: #00f6ff;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+.oem-services__header h2 {
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(38px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -0.04em;
+}
+
+.oem-services__header p {
+  padding-bottom: 6px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.oem-services__journey {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 42px);
+}
+
+.oem-services__line {
+  position: absolute;
+  top: 57px;
+  right: calc(12.5% - 2px);
+  left: calc(12.5% - 2px);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 246, 255, 0.15),
+    rgba(0, 246, 255, 0.75) 18%,
+    rgba(0, 246, 255, 0.75) 82%,
+    rgba(0, 246, 255, 0.15)
+  );
+}
+
+.oem-services__line::after {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 28%;
+  height: 5px;
+  content: "";
+  background: linear-gradient(90deg, transparent, #00f6ff, transparent);
+  filter: blur(2px);
+  animation: oem-line-travel 5s ease-in-out infinite;
+}
+
+.oem-service {
+  position: relative;
+  min-width: 0;
+}
+
+.oem-service__marker {
+  position: relative;
+  display: flex;
+  height: 114px;
+  align-items: center;
+  justify-content: center;
+}
+
+.oem-service__number {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  transform: translateX(-50%);
+}
+
+.oem-service__icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  color: #00f6ff;
+  background: #080f1c;
+  border: 1px solid rgba(0, 246, 255, 0.36);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 9px #00040f,
+    0 0 0 10px rgba(0, 246, 255, 0.12),
+    0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: color 300ms ease, background 300ms ease, transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.oem-service__icon svg {
+  width: 33px;
+  height: 33px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.55;
+}
+
+.oem-service__copy {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.oem-service__copy h3 {
+  min-height: 52px;
+  margin-bottom: 13px;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.oem-service__copy p {
+  color: rgba(255, 255, 255, 0.58);
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  line-height: 1.78;
+}
+
+.oem-service:hover .oem-service__icon {
+  color: #001018;
+  background: #00f6ff;
+  box-shadow:
+    0 0 0 9px #00040f,
+    0 0 0 10px rgba(0, 246, 255, 0.2),
+    0 0 32px rgba(0, 246, 255, 0.25);
+  transform: translateY(-5px) scale(1.07);
+}
+
+@keyframes oem-line-travel {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(255%); }
+}
+
+@media screen and (max-width: 850px) {
+  .oem-services__header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 52px;
+  }
+
+  .oem-services__header p {
+    max-width: 620px;
+  }
+
+  .oem-services__journey {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-left: 8px;
+  }
+
+  .oem-services__line {
+    top: 41px;
+    bottom: 41px;
+    left: 43px;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 246, 255, 0.18),
+      rgba(0, 246, 255, 0.7) 18%,
+      rgba(0, 246, 255, 0.7) 82%,
+      rgba(0, 246, 255, 0.18)
+    );
+  }
+
+  .oem-services__line::after {
+    display: none;
+  }
+
+  .oem-service {
+    display: grid;
+    grid-template-columns: 86px 1fr;
+    gap: 22px;
+    align-items: center;
+    padding-bottom: 42px;
+  }
+
+  .oem-service:last-child {
+    padding-bottom: 0;
+  }
+
+  .oem-service__marker {
+    height: 82px;
+  }
+
+  .oem-service__number {
+    top: -4px;
+    left: 43px;
+  }
+
+  .oem-service__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .oem-service__copy {
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .oem-service__copy h3 {
+    min-height: 0;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .oem-services {
+    padding: 72px 0 92px;
+  }
+
+  .oem-services__header h2 {
+    font-size: 37px;
+  }
+
+  .oem-services__header p {
+    font-size: 14px;
+  }
+
+  .oem-services__journey {
+    padding-left: 0;
+  }
+
+  .oem-services__line {
+    left: 32px;
+  }
+
+  .oem-service {
+    grid-template-columns: 65px 1fr;
+    gap: 17px;
+    padding-bottom: 38px;
+  }
+
+  .oem-service__marker {
+    height: 70px;
+  }
+
+  .oem-service__number {
+    left: 32px;
+  }
+
+  .oem-service__icon {
+    width: 56px;
+    height: 56px;
+    box-shadow:
+      0 0 0 6px #00040f,
+      0 0 0 7px rgba(0, 246, 255, 0.12),
+      0 12px 28px rgba(0, 0, 0, 0.35);
+  }
+
+  .oem-service__icon svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .oem-service__copy h3 {
+    font-size: 15px;
+  }
+
+  .oem-service__copy p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oem-services__line::after {
+    animation: none;
+  }
+
+  .oem-service__icon {
+    transition: none;
+  }
+}
+
 .product-videos__glow {
   position: absolute;
   top: 31%;
