@@ -1,59 +1,41 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import cover from "../assets/surgical-cover.jpg";
 import styles, { layout } from "../style";
-import React from "react";
 
 export default function CardDeal2() {
   return (
     <section className={layout.section}>
-    
       <div className={layout.sectionImg}>
-        <section className="app" id="app" data-current-media="book"   onClick={() => window.location.href="/surgical-catalogue"} >
+        <Link className="app" id="surgical-catalogue-preview" data-current-media="book" to="/surgical-instruments" aria-label="Browse surgical instruments">
           <article className="media-container">
             <div className="book-wrapper">
               <div className="book">
                 <div className="book__front">
-                  <img src={cover} alt="cover" />
+                  <img src={cover} alt="Surgical instruments catalogue cover" />
                 </div>
-                <div className="book__paper"></div>
-                <div className="book__back"></div>
+                <div className="book__paper" />
+                <div className="book__back" />
               </div>
-              <div className="book-shadow"></div>
-            </div>
-
-            <div className="movie-wrapper">
-              <div className="movie">
-                <div className="movie__front">
-                  <img src={cover} alt="cover" />
-                </div>
-                <div className="movie__edge"></div>
-                <div className="movie__side"></div>
-              </div>
-              <div className="movie-shadow"></div>
+              <div className="book-shadow" />
             </div>
           </article>
-        </section>
+        </Link>
       </div>
-
 
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-          Go through our surgical <br className="sm:block hidden" /> catalogue
-          easily.
+          Explore our surgical <br className="sm:block hidden" /> instruments.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-          aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+          Discover reusable instruments for general, vascular, diagnostic,
+          orthopaedic, and specialised procedures, available for export and
+          custom OEM programmes.
         </p>
-
-        <button
-          type="button"
-          onClick={() => window.location.href="/surgical-catalogue"} 
-          className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`}
-        >
-          OPEN NOW
-        </button>
+        <Link to="/surgical-instruments" className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10">
+          BROWSE SURGICAL INSTRUMENTS
+        </Link>
       </div>
-
     </section>
   );
 }

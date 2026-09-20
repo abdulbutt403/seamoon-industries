@@ -2,23 +2,27 @@ import { people01, people02, people03, facebook, instagram, linkedin, twitter, a
 
 export const navLinks = [
   {
-    id: "home",
+    path: "/",
     title: "Home",
   },
   {
-    id: "features",
-    title: "Services",
+    path: "/dental-instruments",
+    title: "Dental",
   },
   {
-    id: "manufacturing-process",
-    title: "Process",
+    path: "/surgical-instruments",
+    title: "Surgical",
   },
   {
-    id: "product",
-    title: "Catalogues",
+    path: "/oem-private-label",
+    title: "OEM",
   },
   {
-    id: "contactform",
+    path: "/certifications",
+    title: "Certifications",
+  },
+  {
+    path: "/contact",
     title: "Contact",
   },
 ];
@@ -98,19 +102,27 @@ export const footerLinks = [
     links: [
       {
         name: "Home",
-        link: "#home",
+        link: "/",
       },
       {
-        name: "Services",
-        link: "#features",
+        name: "Dental Instruments",
+        link: "/dental-instruments",
       },
       {
-        name: "Catalogue",
-        link: "#product",
+        name: "Surgical Instruments",
+        link: "/surgical-instruments",
+      },
+      {
+        name: "OEM & Private Label",
+        link: "/oem-private-label",
+      },
+      {
+        name: "Certifications",
+        link: "/certifications",
       },
       {
         name: "Contact",
-        link: "#contactform",
+        link: "/contact",
       },
     ],
   },
@@ -119,21 +131,25 @@ export const footerLinks = [
 export const socialMedia = [
   {
     id: "social-media-1",
+    name: "Instagram",
     icon: instagram,
     link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
+    name: "Facebook",
     icon: facebook,
     link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
+    name: "Twitter",
     icon: twitter,
     link: "https://www.twitter.com/",
   },
   {
     id: "social-media-4",
+    name: "LinkedIn",
     icon: linkedin,
     link: "https://www.linkedin.com/",
   },

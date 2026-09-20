@@ -1,5 +1,4 @@
 import  logo  from "../assets/logo.svg";
-import person from "../assets/4.png"
 const Contact = () => (
     <div className="background" id="contactform">
     <div className="container">
@@ -19,10 +18,10 @@ const Contact = () => (
         <div className="screen-body">
           <div className="screen-body-item left">
             <div className="app-title">
-              <img src={logo}/>
+              <img src={logo} alt="Seamoon Industries"/>
             </div>
             <div style={{marginTop: 40, color:'#fff'}}>
-            <h1 style={{marginBottom: 10, color:'#fff'}}>SALMAN ARSHAD <br/> (CHIEF EXECUTIVE OFFICER)</h1>
+            <h2 style={{marginBottom: 10, color:'#fff'}}>SALMAN ARSHAD <br/> (CHIEF EXECUTIVE OFFICER)</h2>
 
             <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13}}>Sialkot, Small Industrial Estate</h5>
             <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13, marginBottom: 5}}>Fateh Garh Agency, Cheema Street</h5>
@@ -35,21 +34,24 @@ const Contact = () => (
             </div>
           </div>
           <div className="screen-body-item">
-            <div className="app-form">
+            <form className="app-form" onSubmit={(event) => event.preventDefault()}>
               <div className="app-form-group">
-                <input className="app-form-control" placeholder="NAME"/>
+                <label className="sr-only" htmlFor="contact-name">Name</label>
+                <input id="contact-name" name="name" className="app-form-control" placeholder="NAME"/>
               </div>
               <div className="app-form-group">
-                <input className="app-form-control" placeholder="EMAIL"/>
+                <label className="sr-only" htmlFor="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" className="app-form-control" placeholder="EMAIL"/>
               </div>
               <div className="app-form-group message">
-                <textarea className="app-form-control" placeholder="MESSAGE"/>
+                <label className="sr-only" htmlFor="contact-message">Message</label>
+                <textarea id="contact-message" name="message" className="app-form-control" placeholder="MESSAGE"/>
               </div>
               <div className="app-form-group buttons">
-                <button style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100, marginRight: 20}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary rounded-[10px] outline-none mt-10 text-white">CANCEL</button>
-                <button style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10">SEND</button>
+                <button type="reset" style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100, marginRight: 20}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary rounded-[10px] outline-none mt-10 text-white">CANCEL</button>
+                <button type="submit" style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10">SEND</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>  

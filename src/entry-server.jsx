@@ -1,12 +1,17 @@
 import React from "react";
 import { renderToString } from "react-dom/server";
-import Home from "./Home";
-import WhatsAppButton from "./components/WhatsAppButton";
+import { StaticRouter } from "react-router-dom";
+import { AppContent } from "./App";
+import { getSeoForPath, prerenderPaths } from "./seo";
 
-export const render = () =>
+export const render = (path) =>
   renderToString(
     <React.StrictMode>
-      <Home />
-      <WhatsAppButton />
+      <StaticRouter location={path} context={{}}>
+        <AppContent />
+      </StaticRouter>
     </React.StrictMode>
   );
+
+export const getPageSeo = (path) => getSeoForPath(path);
+export { prerenderPaths };
