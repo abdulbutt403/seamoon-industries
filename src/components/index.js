@@ -9,6 +9,7 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import Carousel from "./Carousel";
 import ManufacturingProcess from "./ManufacturingProcess";
+import ProductVideos from "./ProductVideos";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Hero,
   Carousel,
   ManufacturingProcess,
+  ProductVideos,
 };
