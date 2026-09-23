@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -29,18 +28,6 @@ const Navbar = () => {
             <Link to={nav.path}>{nav.title}</Link>
           </li>
         ))}
-        <li
-        style={{marginLeft: 28}}
-          className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
-        >
-          <a
-            href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Webmail
-          </a>
-        </li>
       </ul>
 
       <div className="lg:hidden flex flex-1 justify-end items-center">
@@ -68,17 +55,6 @@ const Navbar = () => {
                 <Link to={nav.path}>{nav.title}</Link>
               </li>
             ))}
-            <li
-              className={`font-poppins font-medium cursor-pointer text-[16px] ${"text-white"}`}
-            >
-              <a
-                href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Webmail
-              </a>
-            </li>
           </ul>
         </div>
       </div>

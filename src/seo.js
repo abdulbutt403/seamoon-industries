@@ -34,11 +34,7 @@ const organizationSchema = {
     email: "info@seamoonind.com",
     areaServed: "Worldwide",
   },
-  sameAs: [
-    "https://www.instagram.com/",
-    "https://www.facebook.com/",
-    "https://www.linkedin.com/",
-  ],
+  sameAs: [],
   hasCertification: certifications.map((name) => ({
     "@type": "Certification",
     name,

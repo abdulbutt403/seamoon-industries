@@ -1,3 +1,9 @@
-/dental-catalogue       /dental-instruments       301
-/surgical-catalogue     /surgical-instruments     301
-/*                      /index.html                200
+/dental-catalogue        /dental-instruments       301
+/surgical-catalogue      /surgical-instruments     301
+/                        /index.html               200
+/dental-instruments      /dental-instruments/index.html  200
+/surgical-instruments    /surgical-instruments/index.html  200
+/oem-private-label       /oem-private-label/index.html  200
+/certifications          /certifications/index.html  200
+/contact                 /contact/index.html  200
+/*                       /index.html               200

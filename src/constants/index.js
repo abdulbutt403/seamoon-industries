@@ -1,30 +1,12 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
 export const navLinks = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "/dental-instruments",
-    title: "Dental",
-  },
-  {
-    path: "/surgical-instruments",
-    title: "Surgical",
-  },
-  {
-    path: "/oem-private-label",
-    title: "OEM",
-  },
-  {
-    path: "/certifications",
-    title: "Certifications",
-  },
-  {
-    path: "/contact",
-    title: "Contact",
-  },
+  { path: "/", title: "Home" },
+  { path: "/dental-instruments", title: "Dental" },
+  { path: "/surgical-instruments", title: "Surgical" },
+  { path: "/oem-private-label", title: "OEM" },
+  { path: "/certifications", title: "Certifications" },
+  { path: "/contact", title: "Contact" },
 ];
 
 export const features = [
@@ -33,21 +15,21 @@ export const features = [
     icon: star,
     title: "Fast Delivery",
     content:
-      "we have a vast range of diffrent instruments available in our stock ready to be shipped for fast delivery for our valuable customers",
+      "We have a vast range of different instruments available in our stock, ready to be shipped for fast delivery to our valued customers.",
   },
   {
     id: "feature-2",
     icon: shield,
     title: "Competitive Prices",
     content:
-      "Seamoon industries prices are very competitive  with the customers. because customers satisfaction is our first priority",
+      "Seamoon Industries prices are very competitive. Customer satisfaction is our first priority.",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Customer Support",
     content:
-      "Our company's motto is to provide our customers with outstranding and friendly support and easy to use ordering system",
+      "Our company's motto is to provide our customers with outstanding and friendly support and an easy-to-use ordering system.",
   },
 ];
 
@@ -62,8 +44,7 @@ export const feedback = [
   },
   {
     id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+    content: "Money makes your life easier. If you're lucky to have it, you're lucky.",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -79,97 +60,30 @@ export const feedback = [
 ];
 
 export const stats = [
-  {
-    id: "stats-1",
-    title: "Customers Active",
-    value: "3800+",
-  },
-  {
-    id: "stats-2",
-    title: "Trusted by Companies",
-    value: "230+",
-  },
-  {
-    id: "stats-3",
-    title: "ANNUAL REVENUE",
-    value: "$230M+",
-  },
+  { id: "stats-1", title: "Years in Export", value: "25+" },
+  { id: "stats-2", title: "Instrument References", value: "800+" },
+  { id: "stats-3", title: "Export Markets", value: "40+" },
 ];
 
 export const footerLinks = [
   {
     title: "Useful Links",
     links: [
-      {
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "Dental Instruments",
-        link: "/dental-instruments",
-      },
-      {
-        name: "Surgical Instruments",
-        link: "/surgical-instruments",
-      },
-      {
-        name: "OEM & Private Label",
-        link: "/oem-private-label",
-      },
-      {
-        name: "Certifications",
-        link: "/certifications",
-      },
-      {
-        name: "Contact",
-        link: "/contact",
-      },
+      { name: "Home", link: "/" },
+      { name: "Dental Instruments", link: "/dental-instruments" },
+      { name: "Surgical Instruments", link: "/surgical-instruments" },
+      { name: "OEM & Private Label", link: "/oem-private-label" },
+      { name: "Certifications", link: "/certifications" },
+      { name: "Contact", link: "/contact" },
     ],
   },
 ];
 
-export const socialMedia = [
-  {
-    id: "social-media-1",
-    name: "Instagram",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-2",
-    name: "Facebook",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    name: "Twitter",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    name: "LinkedIn",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
-  },
-];
+export const socialMedia = [];
 
 export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
-  },
+  { id: "client-1", logo: airbnb },
+  { id: "client-2", logo: binance },
+  { id: "client-3", logo: coinbase },
+  { id: "client-4", logo: dropbox },
 ];
