@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 const slides = Array.from(
   { length: 5 },
-  (_, index) => `/assets/carousel/img${index + 1}.jpg`
+  (_, index) => `/assets/carousel/img${index + 1}-light.png`
 );
 
 const ArrowIcon = ({ direction }) => (
