@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const { totalQuantity } = useCart();
   const location = useLocation();
   const currentPath =
     location.pathname !== "/"
@@ -25,7 +27,21 @@ const Navbar = () => {
               currentPath === nav.path ? "navbar__link--active" : ""
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
           >
-            <Link to={nav.path}>{nav.title}</Link>
+            <Link
+              to={nav.path}
+              aria-label={
+                nav.path === "/cart"
+                  ? `Cart, ${totalQuantity} ${totalQuantity === 1 ? "item" : "items"}`
+                  : undefined
+              }
+            >
+              {nav.title}
+              {nav.path === "/cart" && (
+                <span className="navbar__cart-count" aria-hidden="true">
+                  {totalQuantity}
+                </span>
+              )}
+            </Link>
           </li>
         ))}
       </ul>
@@ -52,7 +68,21 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setToggle(false)}
               >
-                <Link to={nav.path}>{nav.title}</Link>
+                <Link
+                  to={nav.path}
+                  aria-label={
+                    nav.path === "/cart"
+                      ? `Cart, ${totalQuantity} ${totalQuantity === 1 ? "item" : "items"}`
+                      : undefined
+                  }
+                >
+                  {nav.title}
+                  {nav.path === "/cart" && (
+                    <span className="navbar__cart-count" aria-hidden="true">
+                      {totalQuantity}
+                    </span>
+                  )}
+                </Link>
               </li>
             ))}
           </ul>

@@ -5,6 +5,7 @@ import SurgicalInstruments from "./pages/SurgicalInstruments";
 import OEMPrivateLabel from "./pages/OEMPrivateLabel";
 import CertificationsPage from "./pages/CertificationsPage";
 import ContactPage from "./pages/ContactPage";
+import CartPage from "./pages/CartPage";
 
 let routes = [
   {
@@ -35,6 +36,11 @@ let routes = [
   {
     path: "/contact",
     component: ContactPage,
+    exact: true,
+  },
+  {
+    path: "/cart",
+    component: CartPage,
     exact: true,
   },
   {

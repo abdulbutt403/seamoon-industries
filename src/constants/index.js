@@ -7,6 +7,7 @@ export const navLinks = [
   { path: "/oem-private-label", title: "OEM" },
   { path: "/certifications", title: "Certifications" },
   { path: "/contact", title: "Contact" },
+  { path: "/cart", title: "Cart" },
 ];
 
 export const features = [

@@ -1,4 +1,4 @@
-import { dentalInstruments, surgicalInstruments } from "./data/catalogues";
+import { surgicalInstruments } from "./data/catalogues";
 
 export const SITE_URL = "https://www.seamoonind.com";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/carousel/img1.jpg`;
@@ -68,11 +68,6 @@ export const seoByPath = {
     title: "Dental Instruments Manufacturer & Exporter | Seamoon Industries",
     description:
       "Explore dental extraction forceps, root elevators, restorative instruments, rubber dam clamps, and custom dental instrument sets.",
-    schema: createItemListSchema(
-      "Dental Instruments",
-      "/dental-instruments",
-      dentalInstruments
-    ),
   },
   "/surgical-instruments": {
     title: "Surgical Instruments Manufacturer & Exporter | Seamoon Industries",
@@ -99,6 +94,12 @@ export const seoByPath = {
     description:
       "Contact Seamoon Industries in Sialkot for dental and surgical instrument enquiries, OEM manufacturing, private labeling, and export orders.",
   },
+  "/cart": {
+    title: "Product Inquiry Cart | Seamoon Industries",
+    description:
+      "Review selected dental instruments and send a product inquiry to Seamoon Industries.",
+    noindex: true,
+  },
   "/404": {
     title: "Page Not Found | Seamoon Industries",
     description: "The requested page could not be found.",
@@ -113,6 +114,7 @@ export const prerenderPaths = [
   "/oem-private-label",
   "/certifications",
   "/contact",
+  "/cart",
 ];
 
 export const getSeoForPath = (pathname) => {

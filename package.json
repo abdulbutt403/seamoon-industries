@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir .prerender && node scripts/prerender.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify:catalogue": "node scripts/verify-catalogue.mjs"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
