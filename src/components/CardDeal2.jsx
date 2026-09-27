@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import cover from "../assets/surgical-cover.jpg";
 import styles, { layout } from "../style";
 
+const SURGICAL_CATALOGUE_URL =
+  "https://drive.google.com/file/d/1mzvIzo2baEaWragexg72_iPXw8a3BBWA/view?usp=sharing";
+const SURGICAL_CATALOGUE_DOWNLOAD_URL =
+  "https://drive.google.com/uc?export=download&id=1mzvIzo2baEaWragexg72_iPXw8a3BBWA";
+
 export default function CardDeal2() {
   return (
     <section className={layout.section}>
@@ -32,9 +37,21 @@ export default function CardDeal2() {
           orthopaedic, and specialised procedures, available for export and
           custom OEM programmes.
         </p>
-        <Link to="/surgical-instruments" className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10">
-          BROWSE SURGICAL INSTRUMENTS
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-3 mt-10 w-full sm:w-auto">
+          <a
+            href={SURGICAL_CATALOGUE_URL}
+            className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
+          >
+            BROWSE SURGICAL INSTRUMENTS
+          </a>
+          <a
+            href={SURGICAL_CATALOGUE_DOWNLOAD_URL}
+            download
+            className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
+          >
+            DOWNLOAD CATALOGUE
+          </a>
+        </div>
       </div>
     </section>
   );

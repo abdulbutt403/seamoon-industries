@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import cover from "../assets/dental-cover.jpg";
 import styles, { layout } from "../style";
 
+const DENTAL_CATALOGUE_URL =
+  "https://drive.google.com/file/d/1mzvIzo2baEaWragexg72_iPXw8a3BBWA/view?usp=sharing";
+const DENTAL_CATALOGUE_DOWNLOAD_URL =
+  "https://drive.google.com/uc?export=download&id=1mzvIzo2baEaWragexg72_iPXw8a3BBWA";
+
 export default function CardDeal() {
   return (
     <section className={layout.section}>
@@ -15,9 +20,21 @@ export default function CardDeal() {
           diagnostics, orthodontics, and complete procedure sets manufactured
           for professional use and international supply.
         </p>
-        <Link to="/dental-instruments" className="py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10">
-          BROWSE DENTAL INSTRUMENTS
-        </Link>
+        <div className="flex flex-col sm:flex-row justify-end gap-3 mt-10 w-full sm:w-auto">
+          <a
+            href={DENTAL_CATALOGUE_URL}
+            className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
+          >
+            BROWSE DENTAL INSTRUMENTS
+          </a>
+          <a
+            href={DENTAL_CATALOGUE_DOWNLOAD_URL}
+            download
+            className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
+          >
+            DOWNLOAD CATALOGUE
+          </a>
+        </div>
       </div>
 
       <div className={layout.sectionImg} id="product">

@@ -1,9 +1,9 @@
 import styles from "../style";
-import CatalogueGrid from "../components/CatalogueGrid";
+// import CatalogueGrid from "../components/CatalogueGrid";
 import InternalPageLinks from "../components/InternalPageLinks";
 import PageHero from "../components/PageHero";
 import SEO from "../components/SEO";
-import { dentalInstruments } from "../data/catalogues";
+// import { dentalInstruments } from "../data/catalogues";
 
 const DentalInstruments = () => (
   <>
@@ -60,7 +60,17 @@ const DentalInstruments = () => (
           </div>
         </section>
 
-        <CatalogueGrid instruments={dentalInstruments} type="Dental Instruments" />
+        {/* The image catalogue is temporarily disabled while its assets are being updated. */}
+        {/* <CatalogueGrid instruments={dentalInstruments} type="Dental Instruments" /> */}
+        <section className="catalogue-list" aria-labelledby="dental-catalogue-status-title">
+          <div className="catalogue-list__heading">
+            <span>Catalogue update</span>
+            <h2 id="dental-catalogue-status-title">Page Under Construction</h2>
+            <p>
+              Our online dental instrument catalogue is being updated. Please check back soon.
+            </p>
+          </div>
+        </section>
 
         <InternalPageLinks
           title="Continue exploring"
