@@ -3,10 +3,14 @@ import InternalPageLinks from "../components/InternalPageLinks";
 import PageHero from "../components/PageHero";
 import ProductCatalogue from "../components/ProductCatalogue";
 import SEO from "../components/SEO";
+import { useLocation } from "react-router-dom";
 
-const DentalInstruments = () => (
+const DentalInstruments = () => {
+  const { pathname } = useLocation();
+
+  return (
   <>
-    <SEO path="/dental-instruments" />
+    <SEO path={pathname} />
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={styles.boxWidth}>
         <PageHero
@@ -73,6 +77,7 @@ const DentalInstruments = () => (
       </div>
     </div>
   </>
-);
+  );
+};
 
 export default DentalInstruments;

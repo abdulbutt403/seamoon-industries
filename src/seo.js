@@ -120,7 +120,20 @@ export const prerenderPaths = [
 export const getSeoForPath = (pathname) => {
   const normalizedPath =
     pathname !== "/" ? pathname.replace(/\/$/, "") : pathname;
-  const seo = seoByPath[normalizedPath] || seoByPath["/404"];
+  const isDentalCategory = normalizedPath.startsWith("/dental-instruments/");
+  const categoryName = isDentalCategory
+    ? normalizedPath
+        .replace("/dental-instruments/", "")
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ")
+    : "";
+  const seo = isDentalCategory
+    ? {
+        title: `${categoryName} | Seamoon Industries`,
+        description: `Browse ${categoryName.toLowerCase()} manufactured by Seamoon Industries for professional dental use and international supply.`,
+      }
+    : seoByPath[normalizedPath] || seoByPath["/404"];
 
   return {
     ...seo,

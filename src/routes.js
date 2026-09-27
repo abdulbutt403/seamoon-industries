@@ -19,6 +19,11 @@ let routes = [
     exact: true,
   },
   {
+    path: "/dental-instruments/:categorySlug",
+    component: DentalInstruments,
+    exact: true,
+  },
+  {
     path: "/surgical-instruments",
     component: SurgicalInstruments,
     exact: true,

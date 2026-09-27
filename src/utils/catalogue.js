@@ -1,5 +1,13 @@
 export const PRODUCTS_URL = "/assets/products.json";
 
+export const categoryToSlug = (category) =>
+  category
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
 export const normalizeProductImage = (image) => {
   if (typeof image !== "string") return "";
 
@@ -41,12 +49,17 @@ export const normalizeCatalogueProduct = (product) => {
   if (!product || typeof product !== "object") return null;
 
   const code = typeof product.code === "string" ? product.code.trim() : "";
-  const name = typeof product.name === "string" ? product.name.trim() : "";
+  const suppliedName =
+    typeof product.name === "string" ? product.name.trim() : "";
   const category =
     typeof product.category === "string" ? product.category.trim() : "";
   const image = normalizeProductImage(product.image);
 
-  if (!code || !name || !category || !image) return null;
+  if (!code || !category || !image) return null;
+
+  const figureNumber =
+    typeof product.figNumber === "string" ? product.figNumber.trim() : "";
+  const name = suppliedName || (figureNumber ? `Figure ${figureNumber}` : code);
 
   return { ...product, code, name, category, image };
 };

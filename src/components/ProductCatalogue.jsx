@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import {
+  categoryToSlug,
   groupProductsByCategory,
   normalizeCatalogueProduct,
   PRODUCTS_URL,
@@ -8,6 +10,7 @@ import {
 import ProductModal from "./ProductModal";
 
 const ProductCatalogue = () => {
+  const { categorySlug } = useParams();
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [loadState, setLoadState] = useState("loading");
@@ -54,6 +57,14 @@ const ProductCatalogue = () => {
     [products]
   );
 
+  const selectedCategory = useMemo(
+    () =>
+      Array.from(categories.entries()).find(
+        ([category]) => categoryToSlug(category) === categorySlug
+      ),
+    [categories, categorySlug]
+  );
+
   const closeModal = useCallback(() => setSelectedProduct(null), []);
 
   const addToCart = (product, quantity) => {
@@ -67,11 +78,18 @@ const ProductCatalogue = () => {
   return (
     <section className="product-catalogue" aria-labelledby="product-catalogue-title">
       <div className="catalogue-list__heading">
-        <span>Product catalogue</span>
-        <h2 id="product-catalogue-title">Browse Our Dental Instruments</h2>
+        <span>{categorySlug ? "Dental products" : "Product catalogue"}</span>
+        <h2 id="product-catalogue-title">
+          {selectedCategory
+            ? selectedCategory[0]
+            : categorySlug
+              ? "Category Not Found"
+              : "Browse by Category"}
+        </h2>
         <p>
-          Select an instrument to review it and add the required quantity to
-          your inquiry cart.
+          {categorySlug
+            ? "Select an instrument to review it and add the required quantity to your inquiry cart."
+            : "Choose a category to explore the instruments available in that range."}
         </p>
       </div>
 
@@ -96,48 +114,75 @@ const ProductCatalogue = () => {
         <div className="catalogue-status">No products are currently available.</div>
       )}
 
-      {Array.from(categories.entries()).map(([category, categoryProducts]) => {
-        const categoryId = `category-${category.replace(/[^a-z0-9]/gi, "-").toLowerCase()}`;
+      {loadState === "success" && !categorySlug && (
+        <div className="category-grid">
+          {Array.from(categories.entries()).map(([category, categoryProducts]) => (
+            <article className="category-card" key={category}>
+              <Link
+                className="category-card__link"
+                to={`/dental-instruments/${categoryToSlug(category)}`}
+              >
+                <span className="category-card__image-wrap">
+                  <img
+                    src={categoryProducts[0].image}
+                    alt=""
+                    loading="lazy"
+                  />
+                </span>
+                <span className="category-card__content">
+                  <span className="category-card__count">
+                    {categoryProducts.length} {categoryProducts.length === 1 ? "product" : "products"}
+                  </span>
+                  <h3>{category}</h3>
+                  <span className="category-card__action">Explore category <span aria-hidden="true">→</span></span>
+                </span>
+              </Link>
+            </article>
+          ))}
+        </div>
+      )}
 
-        return (
-          <section
-            className="product-category"
-            aria-labelledby={categoryId}
-            key={category}
-          >
-            <div className="product-category__heading">
-              <h3 id={categoryId}>{category}</h3>
-              <span>{categoryProducts.length} products</span>
-            </div>
+      {loadState === "success" && categorySlug && !selectedCategory && (
+        <div className="catalogue-status catalogue-status--error">
+          <p>This dental category could not be found.</p>
+          <Link className="catalogue-back-link" to="/dental-instruments">
+            View all dental categories
+          </Link>
+        </div>
+      )}
 
-            <div className="product-grid">
-              {categoryProducts.map((product) => (
-                <article className="product-card" key={product.code}>
-                  <button
-                    type="button"
-                    className="product-card__button"
-                    onClick={() => setSelectedProduct(product)}
-                    aria-label={`View ${product.code}, ${product.name}`}
-                  >
-                    <span className="product-card__image-wrap">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        loading="lazy"
-                      />
-                    </span>
-                    <span className="product-card__content">
-                      <span className="product-code">{product.code}</span>
-                      <span className="product-card__name">{product.name}</span>
-                      <span className="product-card__action">View / Add</span>
-                    </span>
-                  </button>
-                </article>
-              ))}
-            </div>
-          </section>
-        );
-      })}
+      {loadState === "success" && selectedCategory && (
+        <section className="product-category" aria-label={selectedCategory[0]}>
+          <div className="product-category__heading">
+            <Link className="catalogue-back-link" to="/dental-instruments">
+              <span aria-hidden="true">←</span> All categories
+            </Link>
+            <span>{selectedCategory[1].length} products</span>
+          </div>
+
+          <div className="product-grid">
+            {selectedCategory[1].map((product) => (
+              <article className="product-card" key={product.code}>
+                <button
+                  type="button"
+                  className="product-card__button"
+                  onClick={() => setSelectedProduct(product)}
+                  aria-label={`View ${product.code}, ${product.name}`}
+                >
+                  <span className="product-card__image-wrap">
+                    <img src={product.image} alt={product.name} loading="lazy" />
+                  </span>
+                  <span className="product-card__content">
+                    <span className="product-code">{product.code}</span>
+                    <span className="product-card__name">{product.name}</span>
+                    <span className="product-card__action">View / Add</span>
+                  </span>
+                </button>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       <ProductModal
         product={selectedProduct}

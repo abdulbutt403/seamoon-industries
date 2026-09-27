@@ -1,142 +1,3564 @@
 [
   {
     "code": "SM1-001",
-    "name": "upper laterals and canines",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-001.webp",
-    "source_page": 3
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "1",
+    "image": "/products/extracting-forceps-english-pattern/SM1-001.webp",
+    "sourcePage": 3
   },
   {
     "code": "SM1-002",
-    "name": "upper laterals and canines",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-002.webp",
-    "source_page": 3
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "2",
+    "image": "/products/extracting-forceps-english-pattern/SM1-002.webp",
+    "sourcePage": 3
   },
   {
     "code": "SM1-003",
-    "name": "upper laterals and canines",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-003.webp",
-    "source_page": 3
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "3",
+    "image": "/products/extracting-forceps-english-pattern/SM1-003.webp",
+    "sourcePage": 3
   },
   {
     "code": "SM1-004",
-    "name": "lower laterals and canines",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-004.webp",
-    "source_page": 3
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "4",
+    "image": "/products/extracting-forceps-english-pattern/SM1-004.webp",
+    "sourcePage": 3
   },
   {
     "code": "SM1-005",
-    "name": "upper premolars",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-005.webp",
-    "source_page": 3
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "7",
+    "image": "/products/extracting-forceps-english-pattern/SM1-005.webp",
+    "sourcePage": 3
   },
   {
     "code": "SM1-006",
-    "name": "lower premolars",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-006.webp",
-    "source_page": 3
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "8",
+    "image": "/products/extracting-forceps-english-pattern/SM1-006.webp",
+    "sourcePage": 3
   },
   {
     "code": "SM1-007",
-    "name": "lower premolars",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-007.webp",
-    "source_page": 3
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "13",
+    "image": "/products/extracting-forceps-english-pattern/SM1-007.webp",
+    "sourcePage": 3
   },
   {
     "code": "SM1-008",
-    "name": "lower premolars, for children",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-008.webp",
-    "source_page": 4
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "13S",
+    "image": "/products/extracting-forceps-english-pattern/SM1-008.webp",
+    "sourcePage": 4
   },
   {
     "code": "SM1-009",
-    "name": "upper molars, right",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-009.webp",
-    "source_page": 4
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "17",
+    "image": "/products/extracting-forceps-english-pattern/SM1-009.webp",
+    "sourcePage": 4
   },
   {
     "code": "SM1-010",
-    "name": "upper molars, left",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-010.webp",
-    "source_page": 4
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "18",
+    "image": "/products/extracting-forceps-english-pattern/SM1-010.webp",
+    "sourcePage": 4
   },
   {
     "code": "SM1-011",
-    "name": "upper molars",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-011.webp",
-    "source_page": 4
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "18A",
+    "image": "/products/extracting-forceps-english-pattern/SM1-011.webp",
+    "sourcePage": 4
   },
   {
     "code": "SM1-012",
-    "name": "upper molars",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-012.webp",
-    "source_page": 4
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "18B",
+    "image": "/products/extracting-forceps-english-pattern/SM1-012.webp",
+    "sourcePage": 4
   },
   {
     "code": "SM1-013",
-    "name": "upper third molars",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-013.webp",
-    "source_page": 4
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "19",
+    "image": "/products/extracting-forceps-english-pattern/SM1-013.webp",
+    "sourcePage": 4
   },
   {
     "code": "SM1-014",
-    "name": "lower third molar",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-014.webp",
-    "source_page": 5
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "20",
+    "image": "/products/extracting-forceps-english-pattern/SM1-014.webp",
+    "sourcePage": 5
   },
   {
     "code": "SM1-015",
-    "name": "lower molar",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-015.webp",
-    "source_page": 5
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "21",
+    "image": "/products/extracting-forceps-english-pattern/SM1-015.webp",
+    "sourcePage": 5
   },
   {
     "code": "SM1-016",
-    "name": "lower molar",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-016.webp",
-    "source_page": 5
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "22",
+    "image": "/products/extracting-forceps-english-pattern/SM1-016.webp",
+    "sourcePage": 5
   },
   {
     "code": "SM1-017",
-    "name": "lower molar, for children",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-017.webp",
-    "source_page": 5
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "22S",
+    "image": "/products/extracting-forceps-english-pattern/SM1-017.webp",
+    "sourcePage": 5
   },
   {
     "code": "SM1-018",
-    "name": "lower molar",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-018.webp",
-    "source_page": 5
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "22G",
+    "image": "/products/extracting-forceps-english-pattern/SM1-018.webp",
+    "sourcePage": 5
   },
   {
     "code": "SM1-019",
-    "name": "lower molar, right",
-    "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-019.webp",
-    "source_page": 5
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "23",
+    "image": "/products/extracting-forceps-english-pattern/SM1-019.webp",
+    "sourcePage": 5
   },
   {
     "code": "SM1-020",
-    "name": "lower molar, right",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "24",
+    "image": "/products/extracting-forceps-english-pattern/SM1-020.webp",
+    "sourcePage": 5
+  },
+  {
+    "code": "SM1-021",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-021.webp",
+    "sourcePage": 6
+  },
+  {
+    "code": "SM1-022",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-022.webp",
+    "sourcePage": 6
+  },
+  {
+    "code": "SM1-023",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-023.webp",
+    "sourcePage": 6
+  },
+  {
+    "code": "SM1-024",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-024.webp",
+    "sourcePage": 6
+  },
+  {
+    "code": "SM1-025",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-025.webp",
+    "sourcePage": 6
+  },
+  {
+    "code": "SM1-026",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-026.webp",
+    "sourcePage": 6
+  },
+  {
+    "code": "SM1-027",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-027.webp",
+    "sourcePage": 6
+  },
+  {
+    "code": "SM1-028",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-028.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-029",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-029.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-030",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-030.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-031",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-031.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-032",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-032.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-033",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-033.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-034",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-034.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-035",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-035.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-036",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-036.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-037",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-037.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-038",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-038.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-039",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-039.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-040",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-040.webp",
+    "sourcePage": 7
+  },
+  {
+    "code": "SM1-041",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-041.webp",
+    "sourcePage": 8
+  },
+  {
+    "code": "SM1-042",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-042.webp",
+    "sourcePage": 8
+  },
+  {
+    "code": "SM1-043",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-043.webp",
+    "sourcePage": 8
+  },
+  {
+    "code": "SM1-044",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-044.webp",
+    "sourcePage": 8
+  },
+  {
+    "code": "SM1-045",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-045.webp",
+    "sourcePage": 8
+  },
+  {
+    "code": "SM1-046",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-046.webp",
+    "sourcePage": 8
+  },
+  {
+    "code": "SM1-047",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-047.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-048",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-048.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-049",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-049.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-050",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-050.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-051",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-051.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-052",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-052.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-053",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-053.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-054",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-054.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-055",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-055.webp",
+    "sourcePage": 9
+  },
+  {
+    "code": "SM1-056",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-056.webp",
+    "sourcePage": 10
+  },
+  {
+    "code": "SM1-057",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-057.webp",
+    "sourcePage": 10
+  },
+  {
+    "code": "SM1-058",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-058.webp",
+    "sourcePage": 10
+  },
+  {
+    "code": "SM1-059",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-059.webp",
+    "sourcePage": 10
+  },
+  {
+    "code": "SM1-060",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-060.webp",
+    "sourcePage": 10
+  },
+  {
+    "code": "SM1-061",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-061.webp",
+    "sourcePage": 10
+  },
+  {
+    "code": "SM1-062",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-062.webp",
+    "sourcePage": 10
+  },
+  {
+    "code": "SM1-063",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-063.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-064",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-064.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-065",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-065.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-066",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-066.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-067",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-067.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-068",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-068.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-069",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-069.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-070",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-070.webp",
+    "sourcePage": 11
+  },
+  {
+    "code": "SM1-071",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-071.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-072",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-072.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-073",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-073.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-074",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-074.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-075",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-075.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-076",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-076.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-077",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-077.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-078",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-078.webp",
+    "sourcePage": 12
+  },
+  {
+    "code": "SM1-079",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-079.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-080",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-080.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-081",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-081.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-082",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-082.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-083",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-083.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-084",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-084.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-085",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-085.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-086",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-086.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-087",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-087.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-088",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-088.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-089",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-089.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-090",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-090.webp",
+    "sourcePage": 13
+  },
+  {
+    "code": "SM1-091",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-091.webp",
+    "sourcePage": 14
+  },
+  {
+    "code": "SM1-092",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-092.webp",
+    "sourcePage": 14
+  },
+  {
+    "code": "SM1-093",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-093.webp",
+    "sourcePage": 14
+  },
+  {
+    "code": "SM1-094",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-094.webp",
+    "sourcePage": 14
+  },
+  {
+    "code": "SM1-095",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-095.webp",
+    "sourcePage": 14
+  },
+  {
+    "code": "SM1-096",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-096.webp",
+    "sourcePage": 14
+  },
+  {
+    "code": "SM1-097",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-097.webp",
+    "sourcePage": 14
+  },
+  {
+    "code": "SM1-098",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-098.webp",
+    "sourcePage": 15
+  },
+  {
+    "code": "SM1-099",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-099.webp",
+    "sourcePage": 15
+  },
+  {
+    "code": "SM1-100",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-100.webp",
+    "sourcePage": 15
+  },
+  {
+    "code": "SM1-101",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-101.webp",
+    "sourcePage": 15
+  },
+  {
+    "code": "SM1-102",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-102.webp",
+    "sourcePage": 15
+  },
+  {
+    "code": "SM1-103",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-103.webp",
+    "sourcePage": 15
+  },
+  {
+    "code": "SM1-104",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-104.webp",
+    "sourcePage": 16
+  },
+  {
+    "code": "SM1-105",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-105.webp",
+    "sourcePage": 16
+  },
+  {
+    "code": "SM1-106",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-106.webp",
+    "sourcePage": 16
+  },
+  {
+    "code": "SM1-107",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-107.webp",
+    "sourcePage": 16
+  },
+  {
+    "code": "SM1-108",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-108.webp",
+    "sourcePage": 16
+  },
+  {
+    "code": "SM1-109",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-109.webp",
+    "sourcePage": 16
+  },
+  {
+    "code": "SM1-110",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-110.webp",
+    "sourcePage": 16
+  },
+  {
+    "code": "SM1-111",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-111.webp",
+    "sourcePage": 17
+  },
+  {
+    "code": "SM1-112",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-112.webp",
+    "sourcePage": 17
+  },
+  {
+    "code": "SM1-113",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-113.webp",
+    "sourcePage": 17
+  },
+  {
+    "code": "SM1-114",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-114.webp",
+    "sourcePage": 17
+  },
+  {
+    "code": "SM1-115",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-115.webp",
+    "sourcePage": 17
+  },
+  {
+    "code": "SM1-116",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-116.webp",
+    "sourcePage": 17
+  },
+  {
+    "code": "SM1-117",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-117.webp",
+    "sourcePage": 18
+  },
+  {
+    "code": "SM1-118",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-118.webp",
+    "sourcePage": 18
+  },
+  {
+    "code": "SM1-119",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-119.webp",
+    "sourcePage": 18
+  },
+  {
+    "code": "SM1-120",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-120.webp",
+    "sourcePage": 18
+  },
+  {
+    "code": "SM1-121",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-121.webp",
+    "sourcePage": 18
+  },
+  {
+    "code": "SM1-122",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-122.webp",
+    "sourcePage": 18
+  },
+  {
+    "code": "SM1-123",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-123.webp",
+    "sourcePage": 19
+  },
+  {
+    "code": "SM1-124",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-124.webp",
+    "sourcePage": 19
+  },
+  {
+    "code": "SM1-125",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-125.webp",
+    "sourcePage": 19
+  },
+  {
+    "code": "SM1-126",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-126.webp",
+    "sourcePage": 19
+  },
+  {
+    "code": "SM1-127",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-127.webp",
+    "sourcePage": 19
+  },
+  {
+    "code": "SM1-128",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-128.webp",
+    "sourcePage": 19
+  },
+  {
+    "code": "SM1-129",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-129.webp",
+    "sourcePage": 20
+  },
+  {
+    "code": "SM1-130",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-130.webp",
+    "sourcePage": 20
+  },
+  {
+    "code": "SM1-131",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-131.webp",
+    "sourcePage": 20
+  },
+  {
+    "code": "SM1-132",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-132.webp",
+    "sourcePage": 20
+  },
+  {
+    "code": "SM1-133",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-133.webp",
+    "sourcePage": 20
+  },
+  {
+    "code": "SM1-134",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-134.webp",
+    "sourcePage": 21
+  },
+  {
+    "code": "SM1-135",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-135.webp",
+    "sourcePage": 21
+  },
+  {
+    "code": "SM1-136",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-136.webp",
+    "sourcePage": 21
+  },
+  {
+    "code": "SM1-137",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-137.webp",
+    "sourcePage": 21
+  },
+  {
+    "code": "SM1-138",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-138.webp",
+    "sourcePage": 22
+  },
+  {
+    "code": "SM1-139",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-139.webp",
+    "sourcePage": 22
+  },
+  {
+    "code": "SM1-140",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-140.webp",
+    "sourcePage": 22
+  },
+  {
+    "code": "SM1-141",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-141.webp",
+    "sourcePage": 22
+  },
+  {
+    "code": "SM1-142",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-142.webp",
+    "sourcePage": 22
+  },
+  {
+    "code": "SM1-143",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-143.webp",
+    "sourcePage": 22
+  },
+  {
+    "code": "SM1-144",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-144.webp",
+    "sourcePage": 22
+  },
+  {
+    "code": "SM1-145",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-145.webp",
+    "sourcePage": 23
+  },
+  {
+    "code": "SM1-146",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-146.webp",
+    "sourcePage": 23
+  },
+  {
+    "code": "SM1-147",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-147.webp",
+    "sourcePage": 23
+  },
+  {
+    "code": "SM1-148",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-148.webp",
+    "sourcePage": 23
+  },
+  {
+    "code": "SM1-149",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-149.webp",
+    "sourcePage": 23
+  },
+  {
+    "code": "SM1-150",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-150.webp",
+    "sourcePage": 23
+  },
+  {
+    "code": "SM1-151",
+    "name": "",
+    "category": "Wisdom Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/wisdom-extracting-forceps/SM1-151.webp",
+    "sourcePage": 24
+  },
+  {
+    "code": "SM1-152",
+    "name": "",
+    "category": "Wisdom Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/wisdom-extracting-forceps/SM1-152.webp",
+    "sourcePage": 24
+  },
+  {
+    "code": "SM1-153",
+    "name": "",
+    "category": "Wisdom Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/wisdom-extracting-forceps/SM1-153.webp",
+    "sourcePage": 24
+  },
+  {
+    "code": "SM1-154",
+    "name": "",
+    "category": "Wisdom Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/wisdom-extracting-forceps/SM1-154.webp",
+    "sourcePage": 24
+  },
+  {
+    "code": "SM1-155",
+    "name": "",
+    "category": "Wisdom Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/wisdom-extracting-forceps/SM1-155.webp",
+    "sourcePage": 24
+  },
+  {
+    "code": "SM1-156",
+    "name": "",
+    "category": "Wisdom Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/wisdom-extracting-forceps/SM1-156.webp",
+    "sourcePage": 24
+  },
+  {
+    "code": "SM1-157",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-157.webp",
+    "sourcePage": 25
+  },
+  {
+    "code": "SM1-158",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-158.webp",
+    "sourcePage": 25
+  },
+  {
+    "code": "SM1-159",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-159.webp",
+    "sourcePage": 25
+  },
+  {
+    "code": "SM1-160",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-160.webp",
+    "sourcePage": 25
+  },
+  {
+    "code": "SM1-161",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-161.webp",
+    "sourcePage": 25
+  },
+  {
+    "code": "SM1-162",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-162.webp",
+    "sourcePage": 25
+  },
+  {
+    "code": "SM1-163",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-163.webp",
+    "sourcePage": 25
+  },
+  {
+    "code": "SM1-164",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-164.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-165",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-165.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-166",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-166.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-167",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-167.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-168",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-168.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-169",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-169.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-170",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-170.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-171",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-171.webp",
+    "sourcePage": 26
+  },
+  {
+    "code": "SM1-172",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-172.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-173",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-173.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-174",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-174.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-175",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-175.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-176",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-176.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-177",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-177.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-178",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-178.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-179",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-179.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-180",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-180.webp",
+    "sourcePage": 27
+  },
+  {
+    "code": "SM1-181",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-181.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-182",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-182.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-183",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-183.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-184",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-184.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-185",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-185.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-186",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-186.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-187",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-187.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-188",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-188.webp",
+    "sourcePage": 28
+  },
+  {
+    "code": "SM1-189",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-189.webp",
+    "sourcePage": 29
+  },
+  {
+    "code": "SM1-190",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-190.webp",
+    "sourcePage": 29
+  },
+  {
+    "code": "SM1-191",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-191.webp",
+    "sourcePage": 29
+  },
+  {
+    "code": "SM1-192",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-192.webp",
+    "sourcePage": 29
+  },
+  {
+    "code": "SM1-193",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-193.webp",
+    "sourcePage": 29
+  },
+  {
+    "code": "SM1-194",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-194.webp",
+    "sourcePage": 29
+  },
+  {
+    "code": "SM1-195",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-195.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-196",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-196.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-197",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-197.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-198",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-198.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-199",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-199.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-200",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-200.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-201",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-201.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-202",
+    "name": "",
+    "category": "Root Splinter Forceps",
+    "figNumber": "",
+    "image": "/products/root-splinter-forceps/SM1-202.webp",
+    "sourcePage": 30
+  },
+  {
+    "code": "SM1-203",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-203.webp",
+    "sourcePage": 31
+  },
+  {
+    "code": "SM1-204",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-204.webp",
+    "sourcePage": 31
+  },
+  {
+    "code": "SM1-205",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-205.webp",
+    "sourcePage": 31
+  },
+  {
+    "code": "SM1-206",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-206.webp",
+    "sourcePage": 31
+  },
+  {
+    "code": "SM1-207",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-207.webp",
+    "sourcePage": 31
+  },
+  {
+    "code": "SM1-208",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-208.webp",
+    "sourcePage": 31
+  },
+  {
+    "code": "SM1-209",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-209.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-210",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-210.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-211",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-211.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-212",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-212.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-213",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-213.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-214",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-214.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-215",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-215.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-216",
+    "name": "",
+    "category": "Extracting Forceps (For Children)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-for-children/SM1-216.webp",
+    "sourcePage": 32
+  },
+  {
+    "code": "SM1-217",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-217.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-218",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-218.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-219",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-219.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-220",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-220.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-221",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-221.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-222",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-222.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-223",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-223.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-224",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-224.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-225",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-225.webp",
+    "sourcePage": 33
+  },
+  {
+    "code": "SM1-226",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-226.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-227",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-227.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-228",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-228.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-229",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-229.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-230",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-230.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-231",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-231.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-232",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-232.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-233",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-233.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-234",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-234.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-235",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-235.webp",
+    "sourcePage": 34
+  },
+  {
+    "code": "SM1-236",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-236.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-237",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-237.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-238",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-238.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-239",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-239.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-240",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-240.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-241",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-241.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-242",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-242.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-243",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-243.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-244",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-244.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-245",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern-hole-handle/SM1-245.webp",
+    "sourcePage": 35
+  },
+  {
+    "code": "SM1-246",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-246.webp",
+    "sourcePage": 36
+  },
+  {
+    "code": "SM1-247",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-247.webp",
+    "sourcePage": 36
+  },
+  {
+    "code": "SM1-248",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-248.webp",
+    "sourcePage": 36
+  },
+  {
+    "code": "SM1-249",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "150A",
+    "image": "/products/extracting-forceps-american-pattern/SM1-249.webp",
+    "sourcePage": 36
+  },
+  {
+    "code": "SM1-250",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "151A",
+    "image": "/products/extracting-forceps-american-pattern/SM1-250.webp",
+    "sourcePage": 36
+  },
+  {
+    "code": "SM1-251",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "23",
+    "image": "/products/extracting-forceps-american-pattern/SM1-251.webp",
+    "sourcePage": 36
+  },
+  {
+    "code": "SM1-252",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-252.webp",
+    "sourcePage": 36
+  },
+  {
+    "code": "SM1-253",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-253.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-254",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-254.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-255",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-255.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-256",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-256.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-257",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-257.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-258",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-258.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-259",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-259.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-260",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-260.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-261",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-261.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-262",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-262.webp",
+    "sourcePage": 37
+  },
+  {
+    "code": "SM1-263",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-263.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-264",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-264.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-265",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-265.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-266",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-266.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-267",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-267.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-268",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-268.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-269",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-269.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-270",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-270.webp",
+    "sourcePage": 38
+  },
+  {
+    "code": "SM1-271",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-271.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-272",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-272.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-273",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-273.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-274",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-274.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-275",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-275.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-276",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-276.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-277",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-277.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-278",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-278.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-279",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-279.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-280",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-280.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-281",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-281.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-282",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-282.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-283",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-283.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-284",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-284.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-285",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-285.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-286",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-286.webp",
+    "sourcePage": 39
+  },
+  {
+    "code": "SM1-287",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-287.webp",
+    "sourcePage": 40
+  },
+  {
+    "code": "SM1-288",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-288.webp",
+    "sourcePage": 40
+  },
+  {
+    "code": "SM1-289",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-289.webp",
+    "sourcePage": 40
+  },
+  {
+    "code": "SM1-290",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-290.webp",
+    "sourcePage": 40
+  },
+  {
+    "code": "SM1-291",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-291.webp",
+    "sourcePage": 40
+  },
+  {
+    "code": "SM1-292",
+    "name": "",
+    "category": "Root Fragment Forceps",
+    "figNumber": "",
+    "image": "/products/root-fragment-forceps/SM1-292.webp",
+    "sourcePage": 40
+  },
+  {
+    "code": "SM1-293",
+    "name": "Winter upper centrals and canines",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "W1",
+    "image": "/products/extracting-forceps-american-pattern/SM1-293.webp",
+    "sourcePage": 41
+  },
+  {
+    "code": "SM1-294",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "1",
+    "image": "/products/extracting-forceps-american-pattern/SM1-294.webp",
+    "sourcePage": 41
+  },
+  {
+    "code": "SM1-295",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "2",
+    "image": "/products/extracting-forceps-american-pattern/SM1-295.webp",
+    "sourcePage": 41
+  },
+  {
+    "code": "SM1-296",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "4",
+    "image": "/products/extracting-forceps-american-pattern/SM1-296.webp",
+    "sourcePage": 41
+  },
+  {
+    "code": "SM1-297",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "5",
+    "image": "/products/extracting-forceps-american-pattern/SM1-297.webp",
+    "sourcePage": 41
+  },
+  {
+    "code": "SM1-298",
+    "name": "Separating forceps, Spaltzange",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "6",
+    "image": "/products/extracting-forceps-american-pattern/SM1-298.webp",
+    "sourcePage": 41
+  },
+  {
+    "code": "SM1-299",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-299.webp",
+    "sourcePage": 42
+  },
+  {
+    "code": "SM1-300",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-300.webp",
+    "sourcePage": 42
+  },
+  {
+    "code": "SM1-301",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-301.webp",
+    "sourcePage": 42
+  },
+  {
+    "code": "SM1-302",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-302.webp",
+    "sourcePage": 42
+  },
+  {
+    "code": "SM1-303",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-303.webp",
+    "sourcePage": 42
+  },
+  {
+    "code": "SM1-304",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-304.webp",
+    "sourcePage": 42
+  },
+  {
+    "code": "SM1-305",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-305.webp",
+    "sourcePage": 43
+  },
+  {
+    "code": "SM1-306",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-306.webp",
+    "sourcePage": 43
+  },
+  {
+    "code": "SM1-307",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-307.webp",
+    "sourcePage": 43
+  },
+  {
+    "code": "SM1-308",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-308.webp",
+    "sourcePage": 43
+  },
+  {
+    "code": "SM1-309",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-309.webp",
+    "sourcePage": 43
+  },
+  {
+    "code": "SM1-310",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-310.webp",
+    "sourcePage": 43
+  },
+  {
+    "code": "SM1-311",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-311.webp",
+    "sourcePage": 44
+  },
+  {
+    "code": "SM1-312",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-312.webp",
+    "sourcePage": 44
+  },
+  {
+    "code": "SM1-313",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-313.webp",
+    "sourcePage": 44
+  },
+  {
+    "code": "SM1-314",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-314.webp",
+    "sourcePage": 44
+  },
+  {
+    "code": "SM1-315",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-315.webp",
+    "sourcePage": 44
+  },
+  {
+    "code": "SM1-316",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-316.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-317",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-317.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-318",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-318.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-319",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-319.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-320",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-320.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-321",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-321.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-322",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-322.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-323",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-323.webp",
+    "sourcePage": 45
+  },
+  {
+    "code": "SM1-324",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-324.webp",
+    "sourcePage": 46
+  },
+  {
+    "code": "SM1-325",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-325.webp",
+    "sourcePage": 46
+  },
+  {
+    "code": "SM1-326",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-326.webp",
+    "sourcePage": 46
+  },
+  {
+    "code": "SM1-327",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-327.webp",
+    "sourcePage": 46
+  },
+  {
+    "code": "SM1-328",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-328.webp",
+    "sourcePage": 46
+  },
+  {
+    "code": "SM1-329",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-329.webp",
+    "sourcePage": 47
+  },
+  {
+    "code": "SM1-330",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-330.webp",
+    "sourcePage": 47
+  },
+  {
+    "code": "SM1-331",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-331.webp",
+    "sourcePage": 47
+  },
+  {
+    "code": "SM1-332",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-332.webp",
+    "sourcePage": 47
+  },
+  {
+    "code": "SM1-333",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-333.webp",
+    "sourcePage": 47
+  },
+  {
+    "code": "SM1-334",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-334.webp",
+    "sourcePage": 48
+  },
+  {
+    "code": "SM1-335",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-335.webp",
+    "sourcePage": 48
+  },
+  {
+    "code": "SM1-336",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-336.webp",
+    "sourcePage": 48
+  },
+  {
+    "code": "SM1-337",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-337.webp",
+    "sourcePage": 48
+  },
+  {
+    "code": "SM1-338",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-338.webp",
+    "sourcePage": 48
+  },
+  {
+    "code": "SM1-339",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-339.webp",
+    "sourcePage": 49
+  },
+  {
+    "code": "SM1-340",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-340.webp",
+    "sourcePage": 49
+  },
+  {
+    "code": "SM1-341",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-341.webp",
+    "sourcePage": 49
+  },
+  {
+    "code": "SM1-342",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-342.webp",
+    "sourcePage": 49
+  },
+  {
+    "code": "SM1-343",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-343.webp",
+    "sourcePage": 49
+  },
+  {
+    "code": "SM1-344",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-344.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-345",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-345.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-346",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-346.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-347",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-347.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-348",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-348.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-349",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-349.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-350",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-350.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-351",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-351.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-352",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-352.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-353",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern Hole Handle)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern-hole-handle/SM1-353.webp",
+    "sourcePage": 50
+  },
+  {
+    "code": "SM1-354",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-354.webp",
+    "sourcePage": 51
+  },
+  {
+    "code": "SM1-355",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-355.webp",
+    "sourcePage": 51
+  },
+  {
+    "code": "SM1-356",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-356.webp",
+    "sourcePage": 51
+  },
+  {
+    "code": "SM1-357",
+    "name": "",
+    "category": "Extracting Forceps (American Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-american-pattern/SM1-357.webp",
+    "sourcePage": 51
+  },
+  {
+    "code": "SM1-358",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-358.webp",
+    "sourcePage": 52
+  },
+  {
+    "code": "SM1-359",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-359.webp",
+    "sourcePage": 52
+  },
+  {
+    "code": "SM1-360",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-360.webp",
+    "sourcePage": 52
+  },
+  {
+    "code": "SM1-361",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-361.webp",
+    "sourcePage": 52
+  },
+  {
+    "code": "SM1-362",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-362.webp",
+    "sourcePage": 52
+  },
+  {
+    "code": "SM1-363",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-363.webp",
+    "sourcePage": 53
+  },
+  {
+    "code": "SM1-364",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-364.webp",
+    "sourcePage": 53
+  },
+  {
+    "code": "SM1-365",
+    "name": "",
+    "category": "Extracting Forceps (English Pattern)",
+    "figNumber": "",
+    "image": "/products/extracting-forceps-english-pattern/SM1-365.webp",
+    "sourcePage": 53
+  },
+  {
+    "code": "SM1-366",
+    "name": "",
     "category": "Extracting Forceps",
-    "image": "/products/extracting-forceps/SM1-020.webp",
-    "source_page": 5
+    "figNumber": "",
+    "image": "/products/extracting-forceps/SM1-366.webp",
+    "sourcePage": 54
+  },
+  {
+    "code": "SM1-367",
+    "name": "",
+    "category": "Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/extracting-forceps/SM1-367.webp",
+    "sourcePage": 54
+  },
+  {
+    "code": "SM1-368",
+    "name": "",
+    "category": "Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/extracting-forceps/SM1-368.webp",
+    "sourcePage": 54
+  },
+  {
+    "code": "SM1-369",
+    "name": "",
+    "category": "Extracting Forceps",
+    "figNumber": "",
+    "image": "/products/extracting-forceps/SM1-369.webp",
+    "sourcePage": 54
+  },
+  {
+    "code": "SM1-370",
+    "name": "Available in Polish Set of 25 Pcs",
+    "category": "Extracting Forceps",
+    "figNumber": null,
+    "figNumbers": [
+      "13",
+      "17",
+      "18",
+      "19",
+      "20",
+      "22",
+      "29",
+      "33",
+      "51",
+      "51A",
+      "67A",
+      "79",
+      "1B",
+      "3B",
+      "4B SA Apexo",
+      "5B SA Apexo"
+    ],
+    "image": "/products/extracting-forceps/SM1-370.webp",
+    "sourcePage": 54
+  },
+  {
+    "code": "SM1-371",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-371.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-372",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-372.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-373",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-373.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-374",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-374.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-375",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-375.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-376",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-376.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-377",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-377.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-378",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-378.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-379",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-379.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-380",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-380.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-381",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-381.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-382",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-382.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-383",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-383.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-384",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-384.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-385",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-385.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-386",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-386.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-387",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-387.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-388",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-388.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-389",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-389.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-390",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-390.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-391",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-391.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-392",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-392.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-393",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-393.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-394",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-394.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-395",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-395.webp",
+    "sourcePage": 55
+  },
+  {
+    "code": "SM1-396",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-396.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-397",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-397.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-398",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-398.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-399",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-399.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-400",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-400.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-401",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-401.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-402",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-402.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-403",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-403.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-404",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-404.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-405",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-405.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-406",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-406.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-407",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-407.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-408",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-408.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-409",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-409.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-410",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-410.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-411",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-411.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-412",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-412.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-413",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-413.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-414",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-414.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-415",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-415.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-416",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-416.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-417",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-417.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-418",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-418.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-419",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-419.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-420",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-420.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-421",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-421.webp",
+    "sourcePage": 56
+  },
+  {
+    "code": "SM1-422",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-422.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-423",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-423.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-424",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-424.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-425",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-425.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-426",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-426.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-427",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-427.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-428",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-428.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-429",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-429.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-430",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-430.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-431",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-431.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-432",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-432.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-433",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-433.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-434",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-434.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-435",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-435.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-436",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-436.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-437",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-437.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-438",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-438.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-439",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-439.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-440",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-440.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-441",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-441.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-442",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-442.webp",
+    "sourcePage": 57
+  },
+  {
+    "code": "SM1-443",
+    "name": "",
+    "category": "Dental Syringes",
+    "figNumber": "",
+    "image": "/products/dental-syringes/SM1-443.webp",
+    "sourcePage": 57
   }
 ]

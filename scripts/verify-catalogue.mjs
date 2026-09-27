@@ -19,10 +19,12 @@ try {
   const catalogue = await server.ssrLoadModule("/src/utils/catalogue.js");
   const cart = await server.ssrLoadModule("/src/context/CartContext.jsx");
   const inquiry = await server.ssrLoadModule("/src/utils/inquiry.js");
+  const normalizedProducts = [];
 
   for (const sourceProduct of products) {
     const product = catalogue.normalizeCatalogueProduct(sourceProduct);
     if (!product) throw new Error(`Invalid product: ${sourceProduct.code || "unknown"}`);
+    normalizedProducts.push(product);
 
     const publicPath = path.join(
       projectRoot,
@@ -41,15 +43,15 @@ try {
 
   const mergedItems = cart.sanitizeCart([
     {
-      code: products[0].code,
-      name: products[0].name,
-      image: products[0].image,
+      code: normalizedProducts[0].code,
+      name: normalizedProducts[0].name,
+      image: normalizedProducts[0].image,
       quantity: 2,
     },
     {
-      code: products[0].code,
-      name: products[0].name,
-      image: products[0].image,
+      code: normalizedProducts[0].code,
+      name: normalizedProducts[0].name,
+      image: normalizedProducts[0].image,
       quantity: 3,
     },
     { broken: true },
@@ -60,9 +62,9 @@ try {
   }
 
   const secondItem = {
-    code: products[1].code,
-    name: products[1].name,
-    image: products[1].image,
+    code: normalizedProducts[1].code,
+    name: normalizedProducts[1].name,
+    image: normalizedProducts[1].image,
     quantity: 4,
   };
   const emailProducts = inquiry.formatInquiryProducts([
