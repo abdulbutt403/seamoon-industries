@@ -1,4 +1,4 @@
-import  logo  from "../assets/logo.svg";
+import { logo } from "../assets";
 const Contact = () => (
     <div className="background" id="contactform">
     <div className="container">
@@ -18,7 +18,7 @@ const Contact = () => (
         <div className="screen-body">
           <div className="screen-body-item left">
             <div className="app-title">
-              <img src={logo} alt="Seamoon Industries"/>
+              <img src={logo} alt="SM High Quality Brand" className="brand-logo brand-logo--contact" />
             </div>
             <div style={{marginTop: 40, color:'#fff'}}>
             <h2 style={{marginBottom: 10, color:'#fff'}}>SALMAN ARSHAD <br/> (CHIEF EXECUTIVE OFFICER)</h2>

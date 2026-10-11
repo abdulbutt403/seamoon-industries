@@ -1,10 +1,13 @@
+import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+
 const certifications = [
-  { name: "ISO 13485", mark: "ISO", icon: "quality" },
-  { name: "CE Mark (EU MDR)", mark: "CE", icon: "mark" },
-  { name: "US FDA Registration", mark: "FDA", icon: "shield" },
-  { name: "SIMAP", mark: "S", icon: "star" },
-  { name: "SCCI", mark: "SCCI", icon: "building" },
-  { name: "ISO 9001:2015", mark: "ISO", icon: "quality" },
+  { name: "ISO 13485", id: "iso-13485", mark: "ISO", icon: "quality" },
+  { name: "CE Mark (EU MDR)", id: "ce-mark", mark: "CE", icon: "mark" },
+  { name: "US FDA Registration", id: "us-fda", mark: "FDA", icon: "shield" },
+  { name: "SIMAP", id: "simap", mark: "S", icon: "star" },
+  { name: "SCCI", id: "scci", mark: "SCCI", icon: "building" },
+  { name: "ISO 9001:2015", id: "iso-9001", mark: "ISO", icon: "quality" },
 ];
 
 const CertificationIcon = ({ type, mark }) => {
@@ -46,27 +49,67 @@ const CertificationIcon = ({ type, mark }) => {
   );
 };
 
-const Certifications = () => (
-  <section className="certifications" id="certifications">
-    <div className="certifications__heading">
-      <span>International compliance</span>
-      <h2>Certifications &amp; Quality Standards</h2>
-    </div>
+const Certifications = () => {
+  const sectionRef = useRef(null);
 
-    <div className="certifications__grid">
-      {certifications.map((certification) => (
-        <article className="certification-card" key={certification.name}>
-          <div className="certification-card__icon">
-            <CertificationIcon
-              type={certification.icon}
-              mark={certification.mark}
-            />
-          </div>
-          <h3>{certification.name}</h3>
-        </article>
-      ))}
-    </div>
-  </section>
-);
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return undefined;
+
+    const revealItems = section.querySelectorAll(
+      ".certifications__heading, .certification-card"
+    );
+    if (!("IntersectionObserver" in window)) {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+      return undefined;
+    }
+
+    section.classList.add("certifications--enhanced");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.16, rootMargin: "0px 0px -35px 0px" }
+    );
+    revealItems.forEach((item) => observer.observe(item));
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section className="certifications" id="certifications" ref={sectionRef}>
+      <div className="certifications__heading">
+        <span>International compliance</span>
+        <h2>Certifications &amp; Quality Standards</h2>
+      </div>
+
+      <div className="certifications__grid">
+        {certifications.map((certification) => (
+          <Link
+            className="certification-card"
+            key={certification.id}
+            to={`/certifications#${certification.id}`}
+            aria-label={`View details for ${certification.name}`}
+          >
+            <span className="certification-card__icon">
+              <CertificationIcon
+                type={certification.icon}
+                mark={certification.mark}
+              />
+            </span>
+            <h3 className="certification-card__title">{certification.name}</h3>
+            <span className="certification-card__link-hint" aria-hidden="true">
+              View details
+            </span>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Certifications;

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { logo } from "../assets";
+import { logoLight } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 import styles from "../style";
 
@@ -8,9 +8,9 @@ const Footer = () => (
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img
-          src={logo}
-          alt="Seamoon Industries"
-          className="w-[266px] h-[72.14px] object-contain"
+          src={logoLight}
+          alt="SM High Quality Brand"
+          className="brand-logo brand-logo--footer"
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           A trusted manufacturer and exporter of quality dental and surgical

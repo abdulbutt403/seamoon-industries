@@ -4,7 +4,8 @@ import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-import logo from "./logo.svg";
+import logo from "./sm-logo.png";
+import logoLight from "./sm-logo-light.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import quick from "./quick.png";
@@ -36,6 +37,7 @@ export {
   coinbase,
   dropbox,
   logo,
+  logoLight,
   quotes,
   robot,
   send,

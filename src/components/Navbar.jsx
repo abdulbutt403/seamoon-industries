@@ -14,9 +14,9 @@ const Navbar = () => {
       : location.pathname;
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className="w-full flex py-3 justify-between items-center navbar">
       <Link to="/" aria-label="Seamoon Industries home">
-        <img src={logo} alt="Seamoon Industries" className="w-[124px] h-[32px]" />
+        <img src={logo} alt="SM High Quality Brand" className="brand-logo brand-logo--nav" />
       </Link>
 
       <ul className="list-none lg:flex hidden justify-end items-center flex-1">

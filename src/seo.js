@@ -17,7 +17,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Seamoon Industries",
   url: SITE_URL,
-  logo: `${SITE_URL}/hoobank.svg`,
+  logo: `${SITE_URL}/sm-logo.png`,
   image: DEFAULT_OG_IMAGE,
   email: "info@seamoonind.com",
   telephone: "+92-52-3302249",
