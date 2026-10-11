@@ -4281,8 +4281,8 @@ footer .border-t-\[\#3F3E45\] {
 }
 
 .social-links__item svg {
-  width: 21px;
-  height: 21px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
@@ -4301,6 +4301,15 @@ footer .border-t-\[\#3F3E45\] {
 .social-links--contact {
   justify-content: flex-start;
   margin-top: 12px;
+}
+
+.social-links--contact .social-links__item {
+  color: var(--color-primary);
+}
+
+.social-links--contact .social-links__item:hover,
+.social-links--contact .social-links__item:focus-visible {
+  color: var(--color-accent);
 }
 
 @media screen and (max-width: 767px) {
