@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
@@ -18,14 +19,55 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const Business = () =>  (
-  <section id="features" className={layout.section}>
-    <div className={`${layout.sectionImg} flex-romp`}>
-      {features.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index} />
-      ))}
-    </div>
-  </section>
-);
+const Business = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (
+      !section ||
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return undefined;
+    }
+
+    const cards = section.querySelectorAll(".feature-card");
+    let observer;
+
+    try {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.16 }
+      );
+
+      section.classList.add("feature-reveal--enhanced");
+      cards.forEach((card) => observer.observe(card));
+    } catch {
+      section.classList.remove("feature-reveal--enhanced");
+      observer?.disconnect();
+      return undefined;
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section id="features" className={layout.section} ref={sectionRef}>
+      <div className={`${layout.sectionImg} flex-romp`}>
+        {features.map((feature, index) => (
+          <FeatureCard key={feature.id} {...feature} index={index} />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Business;
