@@ -1,5 +1,4 @@
 import { logo } from "../assets";
-import { socialMedia } from "../constants";
 import SocialLinks from "./SocialLinks";
 const Contact = () => (
     <div className="background" id="contactform">
