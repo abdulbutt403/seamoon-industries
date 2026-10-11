@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { logoLight } from "../assets";
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks } from "../constants";
 import SocialLinks from "./SocialLinks";
 import styles from "../style";
 

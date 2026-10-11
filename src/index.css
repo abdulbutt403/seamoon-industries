@@ -3255,6 +3255,25 @@ input[type=range]:focus::-ms-fill-upper {
   color: #fff;
 }
 
+.contact-social-links {
+  margin-top: 12px;
+}
+
+.contact-social-links .social-link {
+  margin-right: 4px;
+}
+
+.contact-social-links .social-link:focus-visible {
+  outline: 2px solid #0077cc;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-link {
+    transition: none;
+  }
+}
+
 .app-form-group {
   margin-bottom: 15px;
 }
