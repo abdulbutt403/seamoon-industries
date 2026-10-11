@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import QuantityControl from "../components/QuantityControl";
 import SEO from "../components/SEO";
+import SectionEyebrow from "../components/SectionEyebrow";
 import { useCart } from "../context/CartContext";
 import styles from "../style";
 import { formatInquiryProducts } from "../utils/inquiry";
@@ -102,7 +103,7 @@ const CartPage = () => {
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={styles.boxWidth}>
           <header className="page-hero cart-page__hero">
-            <span>Product inquiry</span>
+            <SectionEyebrow>Product inquiry</SectionEyebrow>
             <h1>Your Inquiry Cart</h1>
             <p>
               Review the instruments and quantities below, then send your

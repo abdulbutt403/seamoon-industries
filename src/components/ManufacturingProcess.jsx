@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import SectionEyebrow from "./SectionEyebrow";
 
 const processSteps = [
   {
@@ -106,7 +107,7 @@ const ManufacturingProcess = () => {
       <div className="manufacturing-process__glow manufacturing-process__glow--two" />
 
       <header className="manufacturing-process__header">
-        <span className="manufacturing-process__eyebrow">From steel to precision</span>
+        <SectionEyebrow className="manufacturing-process__eyebrow">From steel to precision</SectionEyebrow>
         <h2>Our Manufacturing Process</h2>
         <p>
           Five carefully controlled stages turn premium steel into dependable,

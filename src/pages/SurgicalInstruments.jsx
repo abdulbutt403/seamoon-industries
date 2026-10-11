@@ -3,6 +3,7 @@ import styles from "../style";
 import InternalPageLinks from "../components/InternalPageLinks";
 import PageHero from "../components/PageHero";
 import SEO from "../components/SEO";
+import SectionEyebrow from "../components/SectionEyebrow";
 // import { surgicalInstruments } from "../data/catalogues";
 
 const SurgicalInstruments = () => (
@@ -64,7 +65,7 @@ const SurgicalInstruments = () => (
         {/* <CatalogueGrid instruments={surgicalInstruments} type="Surgical Instruments" /> */}
         <section className="catalogue-list" aria-labelledby="surgical-catalogue-status-title">
           <div className="catalogue-list__heading">
-            <span>Catalogue update</span>
+            <SectionEyebrow>Catalogue update</SectionEyebrow>
             <h2 id="surgical-catalogue-status-title">Page Under Construction</h2>
             <p>
               Our online surgical instrument catalogue is being updated. Please check back soon.

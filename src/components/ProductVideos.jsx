@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import SectionEyebrow from "./SectionEyebrow";
 
 const productVideos = [
   {
@@ -61,7 +62,7 @@ const ProductVideos = () => {
       <div className="product-videos__glow" aria-hidden="true" />
 
       <header className="product-videos__header">
-        <span className="product-videos__eyebrow">See precision in action</span>
+        <SectionEyebrow className="product-videos__eyebrow">See precision in action</SectionEyebrow>
         <h2>Discover Our Products in Motion</h2>
         <p>
           Take a closer look at the quality, detail, and craftsmanship behind

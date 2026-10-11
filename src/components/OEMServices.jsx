@@ -1,3 +1,5 @@
+import SectionEyebrow from "./SectionEyebrow";
+
 const oemServices = [
   {
     title: "Private Label / White Label Manufacturing",
@@ -65,7 +67,7 @@ const OEMServices = () => (
   <section className="oem-services" id="oem-services">
     <header className="oem-services__header">
       <div>
-        <span>Built around your brand</span>
+        <SectionEyebrow>Built around your brand</SectionEyebrow>
         <h2>Our OEM Services Include</h2>
       </div>
       <p>

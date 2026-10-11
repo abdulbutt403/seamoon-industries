@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import SectionEyebrow from "./SectionEyebrow";
 import { Link } from "react-router-dom";
 
 const certifications = [
@@ -91,7 +92,7 @@ const Certifications = () => {
   return (
     <section className="certifications" id="certifications" ref={sectionRef}>
       <div className="certifications__heading">
-        <span>International compliance</span>
+        <SectionEyebrow>International compliance</SectionEyebrow>
         <h2>Certifications &amp; Quality Standards</h2>
       </div>
 

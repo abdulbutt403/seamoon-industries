@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SectionEyebrow from "./SectionEyebrow";
 
 const CatalogueGrid = ({ instruments, type }) => {
   const [lightbox, setLightbox] = useState(null);
@@ -7,7 +8,7 @@ const CatalogueGrid = ({ instruments, type }) => {
     <>
       <section className="catalogue-list" aria-labelledby="catalogue-list-title">
         <div className="catalogue-list__heading">
-          <span>Full product catalogue</span>
+          <SectionEyebrow>Full product catalogue</SectionEyebrow>
           <h2 id="catalogue-list-title">Browse Our {type} Range</h2>
           <p>
             Each product can be produced for export orders and discussed as part

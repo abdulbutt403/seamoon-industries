@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import SectionEyebrow from "./SectionEyebrow";
 import {
   categoryToSlug,
   groupProductsByCategory,
@@ -78,7 +79,7 @@ const ProductCatalogue = () => {
   return (
     <section className="product-catalogue" aria-labelledby="product-catalogue-title">
       <div className="catalogue-list__heading">
-        <span>{categorySlug ? "Dental products" : "Product catalogue"}</span>
+        <SectionEyebrow>{categorySlug ? "Dental products" : "Product catalogue"}</SectionEyebrow>
         <h2 id="product-catalogue-title">
           {selectedCategory
             ? selectedCategory[0]
@@ -194,4 +195,3 @@ const ProductCatalogue = () => {
 };
 
 export default ProductCatalogue;
-
