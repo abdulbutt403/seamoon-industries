@@ -14,7 +14,7 @@ const Testimonials = () => (
 				
 				<div class="testimonial-block">
 					<div class="inner-box bg-primary">
-						<div class="text">We have a great relation with Seamoon industries from past 10 years , there products are high in quality and the prices are highy competitive we would definately work with seamoon for long, If anyone is looking to buy good dental or surgical instruments, I can definately recommend seamoon industries to them</div>
+						<div class="text">We have a great relationship with Seamoon Industries. Their products are high in quality, and the prices are highly competitive. We would definitely work with Seamoon for a long time. If anyone is looking to buy good dental or surgical instruments, I can definitely recommend Seamoon Industries to them.</div>
 						<div class="info-box">
 							<div class="thumb"><img src="http://t.commonsupport.com/adro/images/resource/thumb-1.jpg" alt=""/></div>
 							<h4 class="name">Mahfuz Riad</h4>

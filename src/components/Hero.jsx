@@ -37,8 +37,7 @@ const Hero = () => {
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-primaryNavy">Pakistan's </span>leading Dental {" "}
-            <span className="text-primaryNavy">instruments</span> Exporters
+            Dental &amp; surgical instrument manufacturer and exporter from Sialkot, Pakistan.
           </p>
         </div>
 
@@ -61,7 +60,7 @@ const Hero = () => {
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           
 
-          we have a vast range of diffrent <span className="text-primaryNavy">DENTAL, INSTRUMENTS & EQUIPMENTS</span> available in our stock ready to be shipped for fast delivery for our valuable customer
+          We have a wide range of different <span className="text-primaryNavy">dental instruments and equipment</span> in stock, ready to ship quickly to our valued customers.
         </p>
       </div>
 

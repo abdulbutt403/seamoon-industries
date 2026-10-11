@@ -17,7 +17,7 @@ const Billing = () => (
       Our prices are very competitive and flexible.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      Seamoon industries is strongly determined to provide a dedicated service to customers that is built on foundation of quality and cost effectiveness. we are very flexible with our customers and provide maximum co-operation. our stock is always ready to be shipped to our valuable customers. we work hard to build our reputation in this evolving industry and our satisfied customers are our real strength. our company's motto is to keep customer satisfy becuase your satisfaction is our first priority
+      Seamoon Industries is committed to providing dedicated service built on a foundation of quality and cost effectiveness. We are flexible with our customers and provide maximum cooperation. Our stock is always ready to be shipped to our valued customers. We work hard to build our reputation in this evolving industry, and our satisfied customers are our real strength. Our company's motto is to keep customers satisfied because their satisfaction is our first priority.
       </p>
 
 
