@@ -49,12 +49,12 @@ const Stats = () => {
   <section ref={sectionRef} className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
     {stats.map((stat, index) => (
       <div key={stat.id} className={`stats-item flex-1 flex justify-center items-center flex-row m-3 ${hasEntered ? "stats-item--revealed" : ""}`}>
-        <h4 aria-label={stat.value} aria-live="off" className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-primaryNavy">
+        <h4 aria-label={stat.value} aria-live="off" className="w-[118px] min-w-[118px] shrink-0 text-right tabular-nums whitespace-nowrap font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-primaryNavy">
           {!hasEntered
             ? stat.value
             : `${counts[index] ?? 0}${stat.value.replace(/^\d+/, "")}`}
         </h4>
-        <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">
+        <p className="min-w-0 flex-1 min-h-[53px] flex items-center font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">
           {stat.title}
         </p>
       </div>
