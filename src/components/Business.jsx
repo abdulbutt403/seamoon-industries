@@ -61,10 +61,13 @@ const Business = () => {
 
   return (
     <section id="features" className={layout.section} ref={sectionRef}>
-      <div className={`${layout.sectionImg} flex-romp`}>
-        {features.map((feature, index) => (
-          <FeatureCard key={feature.id} {...feature} index={index} />
-        ))}
+      <div className="features-content">
+        <h2 className="features-heading">Why Choose Us?</h2>
+        <div className={`${layout.sectionImg} flex-romp`}>
+          {features.map((feature, index) => (
+            <FeatureCard key={feature.id} {...feature} index={index} />
+          ))}
+        </div>
       </div>
     </section>
   );
