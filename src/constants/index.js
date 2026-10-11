@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
+import { people01, people02, people03, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
 export const navLinks = [
   { path: "/", title: "Home" },
@@ -80,7 +80,14 @@ export const footerLinks = [
   },
 ];
 
-export const socialMedia = [];
+export const socialMedia = [
+  { id: "facebook", name: "Facebook", link: "https://www.facebook.com/Seamoonindustries" },
+  { id: "instagram", name: "Instagram", link: "https://www.instagram.com/seamoonindustries" },
+  { id: "linkedin", name: "LinkedIn", link: "https://www.linkedin.com/in/salman-arshad-298a6515b/" },
+  { id: "youtube", name: "YouTube", link: "https://www.youtube.com/@Seamoonindustry" },
+  { id: "pinterest", name: "Pinterest", link: "https://www.pinterest.com/seamoonindustries/" },
+  { id: "tiktok", name: "TikTok", link: "https://www.tiktok.com/@seamoon.industrie" },
+];
 
 export const clients = [
   { id: "client-1", logo: airbnb },

@@ -1,4 +1,6 @@
 import { logo } from "../assets";
+import { socialMedia } from "../constants";
+import SocialLinks from "./SocialLinks";
 const Contact = () => (
     <div className="background" id="contactform">
     <div className="container">
@@ -31,6 +33,7 @@ const Contact = () => (
             <div className="app-contact">EMAIL : info@seamoonind.com</div>
             <div className="app-contact">GMAIL : seamoonind@gmail.com</div>
             <div className="app-contact">WEB : www.seamoonind.com</div>
+            <SocialLinks className="contact-social-links" />
             </div>
           </div>
           <div className="screen-body-item">
