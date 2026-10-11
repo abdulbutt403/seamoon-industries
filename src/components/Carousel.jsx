@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { motion } from "../motion/config";
 
 const slides = Array.from(
   { length: 5 },
@@ -33,6 +34,7 @@ const Carousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef(null);
+  const pointerStartX = useRef(null);
 
   const showSlide = useCallback((index) => {
     setActiveSlide((index + slides.length) % slides.length);
@@ -45,7 +47,7 @@ const Carousel = () => {
   useEffect(() => {
     if (isPaused) return undefined;
 
-    const timer = window.setInterval(showNextSlide, 5000);
+    const timer = window.setInterval(showNextSlide, motion.carouselInterval * 1000);
     return () => window.clearInterval(timer);
   }, [isPaused, showNextSlide]);
 
@@ -58,7 +60,7 @@ const Carousel = () => {
     if (touchStartX.current === null) return;
 
     const distance = touchStartX.current - event.changedTouches[0].clientX;
-    if (Math.abs(distance) > 45) {
+    if (Math.abs(distance) > motion.touchSwipeThreshold) {
       showSlide(activeSlide + (distance > 0 ? 1 : -1));
     }
     touchStartX.current = null;
@@ -66,7 +68,7 @@ const Carousel = () => {
 
   return (
     <section
-      className="hero-carousel"
+      className={`hero-carousel${isPaused ? " hero-carousel--paused" : ""}`}
       aria-roledescription="carousel"
       aria-label="Seamoon Industries highlights"
       tabIndex="0"
@@ -81,6 +83,19 @@ const Carousel = () => {
         touchStartX.current = event.touches[0].clientX;
       }}
       onTouchEnd={handleTouchEnd}
+      onPointerDown={(event) => {
+        if (event.pointerType === "mouse" || event.pointerType === "pen") {
+          if (!event.target.closest("button")) pointerStartX.current = event.clientX;
+          if (pointerStartX.current !== null) event.currentTarget.setPointerCapture(event.pointerId);
+        }
+      }}
+      onPointerUp={(event) => {
+        if (pointerStartX.current === null) return;
+        const delta = event.clientX - pointerStartX.current;
+        if (Math.abs(delta) > motion.dragThreshold) showSlide(activeSlide + (delta < 0 ? 1 : -1));
+        pointerStartX.current = null;
+      }}
+      onPointerCancel={() => { pointerStartX.current = null; }}
     >
       <div className="hero-carousel__track">
         {slides.map((src, index) => (

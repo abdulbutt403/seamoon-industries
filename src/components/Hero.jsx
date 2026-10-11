@@ -1,6 +1,7 @@
 import styles from "../style";
 import { discount, quick2 } from "../assets";
 import GetStarted from "./GetStarted";
+import { SplitHeading } from "../motion/components";
 
 const Hero = () => {
   return (
@@ -19,8 +20,8 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[46px] text-[33px] text-primaryNavy ss:leading-[1.2] leading-[1.2]">
-            Dental &amp; Surgical Instruments Manufacturer in Sialkot, Pakistan
+          <h1 aria-label="Dental & Surgical Instruments Manufacturer in Sialkot, Pakistan" className="flex-1 font-poppins font-semibold ss:text-[46px] text-[33px] text-primaryNavy ss:leading-[1.2] leading-[1.2]">
+            <SplitHeading>Dental &amp; Surgical Instruments Manufacturer in Sialkot, Pakistan</SplitHeading>
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />

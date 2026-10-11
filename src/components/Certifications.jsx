@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const certifications = [
@@ -58,38 +57,8 @@ const CertificationIcon = ({ type, mark }) => {
 };
 
 const Certifications = () => {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return undefined;
-
-    const revealItems = section.querySelectorAll(
-      ".certifications__heading, .certification-card"
-    );
-    if (!("IntersectionObserver" in window)) {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-      return undefined;
-    }
-
-    section.classList.add("certifications--enhanced");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.16, rootMargin: "0px 0px -35px 0px" }
-    );
-    revealItems.forEach((item) => observer.observe(item));
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section className="certifications" id="certifications" ref={sectionRef}>
+    <section className="certifications" id="certifications">
       <div className="certifications__heading">
         <span>International compliance</span>
         <h2>Certifications &amp; Quality Standards</h2>

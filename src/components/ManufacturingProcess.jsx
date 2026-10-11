@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-
 const processSteps = [
   {
     title: "Material Selection",
@@ -71,36 +69,10 @@ const ProcessIcon = ({ type }) => {
 };
 
 const ManufacturingProcess = () => {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return undefined;
-
-    if (!("IntersectionObserver" in window)) {
-      section.classList.add("manufacturing-process--visible");
-      return undefined;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          section.classList.add("manufacturing-process--visible");
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.12 }
-    );
-
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section
       className="manufacturing-process"
       id="manufacturing-process"
-      ref={sectionRef}
     >
       <div className="manufacturing-process__glow manufacturing-process__glow--one" />
       <div className="manufacturing-process__glow manufacturing-process__glow--two" />

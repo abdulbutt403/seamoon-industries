@@ -35,7 +35,7 @@ const Navbar = () => {
           src={toggle ? close : menu}
           alt=""
           aria-hidden="true"
-          className="w-[28px] h-[28px] object-contain"
+          className={`w-[28px] h-[28px] object-contain motion-menu-toggle${toggle ? " motion-menu-toggle--open" : ""}`}
           onClick={() => setToggle(!toggle)}
         />
 
