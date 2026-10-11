@@ -1,4 +1,16 @@
 [[redirects]]
+  from = "http://seamoonind.com/*"
+  to = "https://www.seamoonind.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://seamoonind.com/*"
+  to = "https://www.seamoonind.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/"
   status = 200

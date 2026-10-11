@@ -66,20 +66,20 @@ const createItemListSchema = (name, path, items) => ({
 
 export const seoByPath = {
   "/": {
-    title: "Dental & Surgical Instrument Manufacturer | Seamoon Industries",
+    title: "Dental & Surgical Instrument Manufacturer | Seamoon",
     description:
-      "Seamoon Industries manufactures and exports precision dental and surgical instruments from Sialkot, Pakistan, with OEM and private-label services.",
+      "Seamoon Industries manufactures and exports dental and surgical instruments from Sialkot, Pakistan, with OEM and private-label services for buyers worldwide.",
     schema: organizationSchema,
   },
   "/dental-instruments": {
-    title: "Dental Instruments Manufacturer & Exporter | Seamoon Industries",
+    title: "Dental Instruments Manufacturer & Exporter | Seamoon",
     description:
-      "Explore dental extraction forceps, root elevators, restorative instruments, rubber dam clamps, and custom dental instrument sets.",
+      "Explore dental extraction forceps, root elevators, restorative and diagnostic instruments, rubber dam clamps, and sets manufactured in Sialkot for export.",
   },
   "/surgical-instruments": {
-    title: "Surgical Instruments Manufacturer & Exporter | Seamoon Industries",
+    title: "Surgical Instruments Manufacturer & Exporter | Seamoon",
     description:
-      "Explore precision surgical scissors, dressing forceps, needle holders, retractors, diagnostic instruments, and surgical accessories.",
+      "Explore precision surgical scissors, dressing forceps, needle holders, retractors, diagnostic instruments, and accessories manufactured in Sialkot for export.",
     schema: createItemListSchema(
       "Surgical Instruments",
       "/surgical-instruments",
@@ -87,19 +87,19 @@ export const seoByPath = {
     ),
   },
   "/oem-private-label": {
-    title: "OEM & Private Label Instrument Manufacturing | Seamoon Industries",
+    title: "OEM & Private Label Dental/Surgical Instruments | Seamoon",
     description:
-      "OEM and private-label dental and surgical instrument manufacturing with custom design, materials, branding, packaging, and surgical set assembly.",
+      "OEM and private-label dental and surgical instrument manufacturing in Sialkot, with custom design, material options, branding, packaging and set assembly.",
   },
   "/certifications": {
-    title: "Quality Certifications & Standards | Seamoon Industries",
+    title: "ISO 13485, CE & FDA Certifications | Seamoon Industries",
     description:
-      "Review Seamoon Industries quality standards, including ISO 13485, CE Mark EU MDR, US FDA registration, ISO 9001:2015, SIMAP, and SCCI.",
+      "Review Seamoon Industries quality standards and certifications, including ISO 13485, CE Mark (EU MDR), US FDA registration, ISO 9001:2015, SIMAP and SCCI.",
   },
   "/contact": {
-    title: "Contact Seamoon Industries | Sialkot, Pakistan",
+    title: "Contact Seamoon Industries | Export Inquiries, Sialkot",
     description:
-      "Contact Seamoon Industries in Sialkot for dental and surgical instrument enquiries, OEM manufacturing, private labeling, and export orders.",
+      "Contact Seamoon Industries in Sialkot, Pakistan for dental and surgical instrument export inquiries, OEM manufacturing, private labeling and catalogue requests.",
   },
   "/cart": {
     title: "Product Inquiry Cart | Seamoon Industries",
