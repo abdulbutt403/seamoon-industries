@@ -3989,6 +3989,10 @@ input[type=range]:focus::-ms-fill-upper {
   transform: scaleX(1);
 }
 
+.stats-item--revealed {
+  animation: hero-title-fade-up 1400ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
 .hero-title--revealed {
   animation: hero-title-fade-up 850ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -4010,7 +4014,8 @@ input[type=range]:focus::-ms-fill-upper {
     transition: none;
   }
 
-  .hero-title--revealed {
+  .hero-title--revealed,
+  .stats-item--revealed {
     animation: none;
   }
 }
