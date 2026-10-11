@@ -2,11 +2,9 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const { totalQuantity } = useCart();
   const location = useLocation();
   const currentPath =
     location.pathname !== "/"
@@ -16,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-3 justify-between items-center navbar">
       <Link to="/" aria-label="Seamoon Industries home">
-        <img src={logo} alt="SM High Quality Brand" className="brand-logo brand-logo--nav" />
+        <img src={logo} alt="Seamoon Industries" width="1085" height="554" className="brand-logo brand-logo--nav" />
       </Link>
 
       <ul className="list-none lg:flex hidden justify-end items-center flex-1">
@@ -27,21 +25,7 @@ const Navbar = () => {
               currentPath === nav.path ? "navbar__link--active" : ""
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
           >
-            <Link
-              to={nav.path}
-              aria-label={
-                nav.path === "/cart"
-                  ? `Cart, ${totalQuantity} ${totalQuantity === 1 ? "item" : "items"}`
-                  : undefined
-              }
-            >
-              {nav.title}
-              {nav.path === "/cart" && (
-                <span className="navbar__cart-count" aria-hidden="true">
-                  {totalQuantity}
-                </span>
-              )}
-            </Link>
+            <Link to={nav.path}>{nav.title}</Link>
           </li>
         ))}
       </ul>
@@ -49,7 +33,8 @@ const Navbar = () => {
       <div className="lg:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? close : menu}
-          alt="menu"
+          alt=""
+          aria-hidden="true"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
@@ -68,21 +53,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setToggle(false)}
               >
-                <Link
-                  to={nav.path}
-                  aria-label={
-                    nav.path === "/cart"
-                      ? `Cart, ${totalQuantity} ${totalQuantity === 1 ? "item" : "items"}`
-                      : undefined
-                  }
-                >
-                  {nav.title}
-                  {nav.path === "/cart" && (
-                    <span className="navbar__cart-count" aria-hidden="true">
-                      {totalQuantity}
-                    </span>
-                  )}
-                </Link>
+                <Link to={nav.path}>{nav.title}</Link>
               </li>
             ))}
           </ul>

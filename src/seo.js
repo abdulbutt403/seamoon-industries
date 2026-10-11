@@ -92,7 +92,23 @@ export const prerenderPaths = [
 
 export const getSeoForPath = (pathname) => {
   const normalizedPath = pathname !== "/" ? pathname.replace(/\/$/, "") : pathname;
-  const seo = seoByPath[normalizedPath] || seoByPath["/404"];
+  const dentalCategory = normalizedPath.startsWith("/dental-instruments/")
+    ? normalizedPath.slice("/dental-instruments/".length)
+    : "";
+  const categoryName = dentalCategory
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+  const seo = dentalCategory
+    ? {
+        title: `${categoryName} | Seamoon Industries`,
+        description: `Dental instruments in the ${categoryName.toLowerCase()} category, manufactured in Sialkot, Pakistan for export.`,
+        schema: breadcrumbSchema(
+          normalizedPath,
+          `${categoryName} Dental Instruments`
+        ),
+      }
+    : seoByPath[normalizedPath] || seoByPath["/404"];
 
   return {
     ...seo,

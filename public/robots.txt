@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.seamoonind.com/sitemap.xml
+Sitemap: https://seamoonind.com/sitemap.xml

@@ -1,7 +1,9 @@
+import { WHATSAPP_NUMBER } from "../constants";
+
 const WhatsAppButton = () => (
   <a
     className="whatsapp-button"
-    href="https://wa.me/923007103731"
+    href={`https://wa.me/${WHATSAPP_NUMBER}`}
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Chat with us on WhatsApp"

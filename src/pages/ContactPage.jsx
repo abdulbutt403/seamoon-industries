@@ -11,8 +11,8 @@ const ContactPage = () => (
       <div className={styles.boxWidth}>
         <PageHero
           eyebrow="Sales and export enquiries"
-          title="Contact Seamoon Industries"
-          description="Speak with our Sialkot team about dental and surgical instruments, export orders, OEM manufacturing, custom specifications, and private-label packaging."
+          title="Contact Our Export Team"
+          description="Contact the Seamoon Industries export team in Sialkot, Pakistan for quotes, catalogues and OEM enquiries. WhatsApp, phone and email."
         />
         <Contact />
         <InternalPageLinks

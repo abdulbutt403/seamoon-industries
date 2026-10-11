@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Redirect, Switch, Route, useLocation } from "r
 import routes from "./routes";
 import WhatsAppButton from "./components/WhatsAppButton";
 import SiteLayout from "./components/SiteLayout";
-import { CartProvider } from "./context/CartContext";
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -16,7 +15,7 @@ const ScrollToTop = () => {
 };
 
 export const AppContent = () => (
-  <CartProvider>
+  <>
     <SiteLayout>
       <Switch>
         <Redirect exact from="/dental-catalogue" to="/dental-instruments" />
@@ -32,7 +31,7 @@ export const AppContent = () => (
       </Switch>
     </SiteLayout>
     <WhatsAppButton />
-  </CartProvider>
+  </>
 );
 
 const App = () => (

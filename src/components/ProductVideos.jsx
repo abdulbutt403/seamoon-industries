@@ -82,6 +82,8 @@ const ProductVideos = () => {
               className="video-card__image"
               src={product.thumbnail}
               alt={product.title}
+              width="941"
+              height="1671"
               loading="lazy"
             />
             <span className="video-card__shade" aria-hidden="true" />

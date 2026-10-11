@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { useCart } from "../context/CartContext";
 import {
   categoryToSlug,
   groupProductsByCategory,
@@ -15,7 +14,6 @@ const ProductCatalogue = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [loadState, setLoadState] = useState("loading");
   const [announcement, setAnnouncement] = useState("");
-  const { addItem } = useCart();
 
   useEffect(() => {
     const controller = new AbortController();
@@ -67,12 +65,12 @@ const ProductCatalogue = () => {
 
   const closeModal = useCallback(() => setSelectedProduct(null), []);
 
-  const addToCart = (product, quantity) => {
-    addItem(product, quantity);
-    setAnnouncement(
-      `${quantity} ${quantity === 1 ? "item" : "items"} of ${product.code} added to your inquiry cart.`
-    );
-    setSelectedProduct(null);
+  const requestQuote = (product, quantity) => {
+    const params = new URLSearchParams({
+      product: `${product.code} ${product.name}`,
+      quantity: String(quantity),
+    });
+    window.location.assign(`/contact?${params.toString()}`);
   };
 
   return (
@@ -88,7 +86,7 @@ const ProductCatalogue = () => {
         </h2>
         <p>
           {categorySlug
-            ? "Select an instrument to review it and add the required quantity to your inquiry cart."
+            ? "Select an instrument to review it and request a quote."
             : "Choose a category to explore the instruments available in that range."}
         </p>
       </div>
@@ -126,6 +124,8 @@ const ProductCatalogue = () => {
                   <img
                     src={categoryProducts[0].image}
                     alt=""
+                    width="400"
+                    height="250"
                     loading="lazy"
                   />
                 </span>
@@ -170,7 +170,7 @@ const ProductCatalogue = () => {
                   aria-label={`View ${product.code}, ${product.name}`}
                 >
                   <span className="product-card__image-wrap">
-                    <img src={product.image} alt={product.name} loading="lazy" />
+                    <img src={product.image} alt={product.name} width="400" height="300" loading="lazy" />
                   </span>
                   <span className="product-card__content">
                     <span className="product-code">{product.code}</span>
@@ -187,7 +187,7 @@ const ProductCatalogue = () => {
       <ProductModal
         product={selectedProduct}
         onClose={closeModal}
-        onAdd={addToCart}
+        onAdd={requestQuote}
       />
     </section>
   );

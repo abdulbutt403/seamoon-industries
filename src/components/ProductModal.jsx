@@ -80,7 +80,7 @@ const ProductModal = ({ product, onClose, onAdd }) => {
         </button>
 
         <div className="product-modal__image-wrap">
-          <img src={product.image} alt={product.name} />
+          <img src={product.image} alt={product.name} width="800" height="600" loading="lazy" />
         </div>
 
         <div className="product-modal__content">
@@ -99,7 +99,7 @@ const ProductModal = ({ product, onClose, onAdd }) => {
               className="catalogue-action-button"
               onClick={() => onAdd(product, quantity)}
             >
-              Add to Cart
+              Request a Quote
             </button>
           </div>
         </div>

@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import cover from "../assets/dental-cover.jpg";
 import styles, { layout } from "../style";
 
-const DENTAL_CATALOGUE_URL =
-  "https://drive.google.com/file/d/1mzvIzo2baEaWragexg72_iPXw8a3BBWA/view?usp=sharing";
 const DENTAL_CATALOGUE_DOWNLOAD_URL =
   "https://drive.google.com/uc?export=download&id=1mzvIzo2baEaWragexg72_iPXw8a3BBWA";
 
@@ -21,18 +19,18 @@ export default function CardDeal() {
           for professional use and international supply.
         </p>
         <div className="flex flex-col sm:flex-row justify-end gap-3 mt-10 w-full sm:w-auto">
-          <a
-            href={DENTAL_CATALOGUE_URL}
+          <Link
+            to="/dental-instruments"
             className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
           >
-            BROWSE DENTAL INSTRUMENTS
-          </a>
+            Browse dental instruments
+          </Link>
           <a
             href={DENTAL_CATALOGUE_DOWNLOAD_URL}
             download
             className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
           >
-            DOWNLOAD CATALOGUE
+            Download catalogue (PDF)
           </a>
         </div>
       </div>
@@ -43,7 +41,7 @@ export default function CardDeal() {
             <div className="book-wrapper">
               <div className="book">
                 <div className="book__front">
-                  <img src={cover} alt="Dental instruments catalogue cover" />
+                  <img src={cover} alt="Dental instruments catalogue cover" width="1702" height="2202" loading="lazy" />
                 </div>
                 <div className="book__paper" />
                 <div className="book__back" />

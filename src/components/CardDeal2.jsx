@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import cover from "../assets/surgical-cover.jpg";
 import styles, { layout } from "../style";
 
-const SURGICAL_CATALOGUE_URL =
-  "https://drive.google.com/file/d/1mzvIzo2baEaWragexg72_iPXw8a3BBWA/view?usp=sharing";
 const SURGICAL_CATALOGUE_DOWNLOAD_URL =
   "https://drive.google.com/uc?export=download&id=1mzvIzo2baEaWragexg72_iPXw8a3BBWA";
 
@@ -17,7 +15,7 @@ export default function CardDeal2() {
             <div className="book-wrapper">
               <div className="book">
                 <div className="book__front">
-                  <img src={cover} alt="Surgical instruments catalogue cover" />
+                  <img src={cover} alt="Surgical instruments catalogue cover" width="1340" height="1732" loading="lazy" />
                 </div>
                 <div className="book__paper" />
                 <div className="book__back" />
@@ -38,18 +36,18 @@ export default function CardDeal2() {
           custom OEM programmes.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 mt-10 w-full sm:w-auto">
-          <a
-            href={SURGICAL_CATALOGUE_URL}
+          <Link
+            to="/surgical-instruments"
             className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
           >
-            BROWSE SURGICAL INSTRUMENTS
-          </a>
+            Browse surgical instruments
+          </Link>
           <a
             href={SURGICAL_CATALOGUE_DOWNLOAD_URL}
             download
             className="w-full sm:w-auto py-4 px-4 sm:px-6 font-poppins font-medium text-[16px] sm:text-[18px] text-center text-primary bg-blue-gradient rounded-[10px] outline-none"
           >
-            DOWNLOAD CATALOGUE
+            Download catalogue (PDF)
           </a>
         </div>
       </div>

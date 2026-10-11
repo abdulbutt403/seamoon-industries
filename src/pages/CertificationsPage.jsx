@@ -1,217 +1,115 @@
-import { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
 import styles from "../style";
 import Certifications from "../components/Certifications";
 import InternalPageLinks from "../components/InternalPageLinks";
 import PageHero from "../components/PageHero";
 import SEO from "../components/SEO";
 
-const certificationDetails = [
-  {
-    name: "ISO 13485:2016",
-    id: "iso-13485",
-    body: "International Organization for Standardization (ISO)",
-    scope:
-      "Quality management system for the design, manufacture, and supply of medical devices and related services.",
-    relevance:
-      "Covers our full production process for dental and surgical instruments — from raw material intake through finished-goods inspection and post-market surveillance. Audited annually by an accredited third-party certification body.",
-  },
-  {
-    name: "CE Mark — EU MDR (2017/745)",
-    id: "ce-mark",
-    body: "Notified Body under EU Medical Device Regulation",
-    scope:
-      "European conformity marking for applicable Class I and Class IIa reusable surgical and dental instruments.",
-    relevance:
-      "Instruments exported to the European Economic Area carry CE marking supported by a technical file, declaration of conformity, and IFU documentation prepared to EU MDR requirements.",
-  },
-  {
-    name: "US FDA Establishment Registration",
-    id: "us-fda",
-    body: "U.S. Food and Drug Administration",
-    scope:
-      "Establishment registration and device listing for surgical and dental instruments exported to the United States market.",
-    relevance:
-      "Enables direct export of registered instrument categories to US-based distributors and hospital procurement programmes without additional import barriers.",
-  },
-  {
-    name: "ISO 9001:2015",
-    id: "iso-9001",
-    body: "International Organization for Standardization (ISO)",
-    scope:
-      "General quality management system standard covering consistent process control and continual improvement across all operations.",
-    relevance:
-      "Underpins our manufacturing, supplier management, and customer-service processes. Provides the quality framework that supports our more specific ISO 13485 medical-device certification.",
-  },
-  {
-    name: "SIMAP",
-    id: "simap",
-    body: "Surgical Instruments Manufacturers Association of Pakistan",
-    scope:
-      "Industry association representing Pakistan's surgical instrument manufacturing sector.",
-    relevance:
-      "Membership confirms our standing as a registered manufacturer within Sialkot's established instrument industry and provides access to sector-level export and regulatory support.",
-  },
-  {
-    name: "SCCI",
-    id: "scci",
-    body: "Sialkot Chamber of Commerce and Industry",
-    scope:
-      "Regional chamber of commerce representing businesses operating in Sialkot.",
-    relevance:
-      "Affiliation supports export documentation, certificate-of-origin processing, and trade facilitation for international shipments.",
-  },
+const certificationItems = [
+  { id: "iso-13485", name: "ISO 13485", note: "Medical device quality management standard." },
+  { id: "ce-mark", name: "CE Mark (EU MDR)", note: "CE Mark for the European Union Medical Device Regulation." },
+  { id: "us-fda", name: "US FDA Registration", note: "United States Food and Drug Administration registration." },
+  { id: "iso-9001", name: "ISO 9001:2015", note: "Quality management standard." },
+  { id: "simap", name: "SIMAP", note: "Surgical Instruments Manufacturers Association of Pakistan." },
+  { id: "scci", name: "SCCI", note: "Sialkot Chamber of Commerce and Industry." },
 ];
 
-const faqs = [
-  {
-    question: "Are your instruments CE marked for the European market?",
-    answer:
-      "Yes. Applicable instrument categories carry CE marking under EU MDR 2017/745. We can supply declarations of conformity, technical file summaries, and IFU documentation to support your own regulatory requirements.",
-  },
-  {
-    question: "Are you FDA registered for exports to the United States?",
-    answer:
-      "Yes. Seamoon Industries holds US FDA establishment registration and device listings for our surgical and dental instrument categories, enabling direct export to US distributors and healthcare procurement programmes.",
-  },
-  {
-    question: "What quality-management standard covers your production?",
-    answer:
-      "Our primary quality-management standard is ISO 13485:2016, which is specific to medical device manufacturing. This is supported by ISO 9001:2015 for general process quality. Both are audited by accredited third-party certification bodies.",
-  },
-  {
-    question: "Can you provide batch traceability records?",
-    answer:
-      "Yes. Under our ISO 13485 system, full batch traceability is maintained from raw material lot through to finished goods and shipping. Records are available on request for quality audits or regulatory submissions.",
-  },
-];
+const CertificationsPage = () => (
+  <>
+    <SEO path="/certifications" />
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={styles.boxWidth}>
+        <div className="certification-page">
+          <PageHero
+            eyebrow="Quality and compliance"
+            title="Certifications & Quality Standards"
+            description="Seamoon Industries quality standards and certifications: ISO 13485, ISO 9001:2015, CE Mark (EU MDR), US FDA registration, SIMAP and SCCI."
+          />
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map(({ question, answer }) => ({
-    "@type": "Question",
-    name: question,
-    acceptedAnswer: { "@type": "Answer", text: answer },
-  })),
-};
+          <section className="oem-content" aria-labelledby="certification-content-title" style={{ marginBottom: "48px" }}>
+            <h2 id="certification-content-title" className={styles.heading2}>Quality standards and registrations</h2>
+            <div className={`${styles.paragraph} oem-content__body`}>
+              <p>
+                Seamoon Industries lists quality standards, market registrations and industry
+                affiliations that relate to its dental and surgical instrument business. The list
+                includes ISO 13485, ISO 9001:2015, CE Mark (EU MDR), US FDA Registration, SIMAP
+                and SCCI. These names are provided here so buyers can identify the credentials
+                relevant to a sourcing conversation. For certificate copies, current validity,
+                registration details or precise scope, contact the company directly and request
+                the documentation for the product and market under consideration.
+              </p>
+              <h2>Quality management in manufacturing</h2>
+              <p>
+                The manufacturing process described by Seamoon starts with material selection and
+                continues through forging and shaping, heat treatment, hand crafting, polishing
+                and inspection. Stainless steel is used, and satin, mirror and titanium-coated
+                finishes are listed. ISO 13485 and ISO 9001:2015 appear among the company’s
+                quality standards. Buyers reviewing a product can ask how the listed standards
+                apply to the relevant manufacturing activity and request supporting documents
+                before making a sourcing decision. This keeps the discussion tied to the buyer’s
+                specific instrument category and the documentation needed for its market.
+              </p>
+              <h2>Market and industry registrations</h2>
+              <p>
+                The company also lists CE Mark (EU MDR) and US FDA Registration. The exact scope
+                and supporting records can vary by instrument or market, so buyers should request
+                the applicable information for their product and destination. SIMAP and
+                SCCI are included as industry affiliations: Surgical Instruments Manufacturers
+                Association of Pakistan and Sialkot Chamber of Commerce and Industry. Buyers may
+                use the names as a guide when asking about Seamoon’s industry and export
+                documentation. The company can respond to a request for the relevant records.
+              </p>
+              <h2>Requesting certification information</h2>
+              <p>
+                When requesting documentation, identify the standard or registration, the dental
+                or surgical product category, and the intended destination market. If a specific
+                certificate copy or number is needed, include that in the enquiry. The contact
+                page provides the Seamoon Industries email address, telephone and WhatsApp details.
+                The export team can then address the request using the information available for
+                the relevant product. This page is a concise index of the standards and
+                affiliations currently listed on the site, while product-specific documents and
+                scope should be confirmed directly with Seamoon Industries.
+              </p>
+              <h2>Standards for buyers and distributors</h2>
+              <p>
+                Buyers comparing dental and surgical instrument suppliers often need to understand
+                which quality standards, registrations and industry affiliations a manufacturer
+                lists. Seamoon brings these names together on this page and on the certifications
+                cards below. ISO 13485 and ISO 9001:2015 are presented as quality standards. CE Mark
+                (EU MDR) and US FDA Registration are listed for market-related enquiries. SIMAP and
+                SCCI identify the industry affiliations included in the company information. For a
+                procurement review, use the relevant name as a starting point and request current
+                product-specific documents from the export team. This provides buyers with a direct
+                way to gather details for their own review and destination-market requirements.
+              </p>
+            </div>
+          </section>
 
-const CertificationsPage = () => {
-  const pageRef = useRef(null);
-  const location = useLocation();
+          <Certifications />
+          <section className="certification-details" aria-labelledby="certification-details-title">
+            <h2 id="certification-details-title">Listed standards and affiliations</h2>
+            <dl>
+              {certificationItems.map(({ id, name, note }) => (
+                <div key={id} id={id} className="certification-detail-row" tabIndex="-1">
+                  <dt>{name}</dt>
+                  <dd>{note}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
 
-  useEffect(() => {
-    const existing = document.getElementById("cert-faq-structured-data");
-    if (existing) existing.remove();
-    const script = document.createElement("script");
-    script.id = "cert-faq-structured-data";
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
-    return () => document.getElementById("cert-faq-structured-data")?.remove();
-  }, []);
-
-  useEffect(() => {
-    if (!location.hash) return undefined;
-    const frame = window.requestAnimationFrame(() => {
-      const target = document.getElementById(location.hash.slice(1));
-      if (!target) return;
-      target.scrollIntoView({
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-          ? "auto"
-          : "smooth",
-        block: "center",
-      });
-      target.focus({ preventScroll: true });
-    });
-    return () => window.cancelAnimationFrame(frame);
-  }, [location.hash]);
-
-  useEffect(() => {
-    const page = pageRef.current;
-    if (!page) return undefined;
-    const revealItems = page.querySelectorAll(
-      ".page-hero, .certification-details, .oem-faq, .internal-links"
-    );
-    if (!("IntersectionObserver" in window)) {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-      return undefined;
-    }
-
-    page.classList.add("certification-page--enhanced");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -30px 0px" }
-    );
-    revealItems.forEach((item) => observer.observe(item));
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <>
-      <SEO path="/certifications" />
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={styles.boxWidth}>
-          <div className="certification-page" ref={pageRef}>
-            <PageHero
-              eyebrow="Quality and compliance"
-              title="Certifications & Quality Standards"
-              description="Our quality systems and industry registrations support reliable manufacturing, traceable processes, and international supply to regulated markets in Europe, North America, and beyond."
-            />
-
-            <Certifications />
-
-            <section className="certification-details" aria-labelledby="certification-details-title">
-              <h2 id="certification-details-title">Standards Supporting Our Manufacturing</h2>
-              <dl>
-                {certificationDetails.map(({ name, id, body, scope, relevance }) => (
-                  <div key={name} id={id} className="certification-detail-row" tabIndex="-1">
-                    <dt>{name}</dt>
-                    <dd>
-                      <strong>Issuing body:</strong> {body}<br />
-                      <strong>Scope:</strong> {scope}<br />
-                      <strong>What it means for buyers:</strong> {relevance}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-
-            <section className="oem-faq" aria-labelledby="cert-faq-title" style={{ marginBottom: "64px" }}>
-              <h2 id="cert-faq-title" className={styles.heading2} style={{ marginBottom: "2rem" }}>
-                Certification FAQs
-              </h2>
-              <dl className="faq-list">
-                {faqs.map(({ question, answer }) => (
-                  <div key={question} className="faq-item">
-                    <dt className="faq-item__question">{question}</dt>
-                    <dd className="faq-item__answer">{answer}</dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-
-            <InternalPageLinks
-              title="Explore our capabilities"
-              links={[
-                { to: "/", label: "Return to Seamoon Industries home" },
-                { to: "/dental-instruments", label: "Browse dental instrument categories" },
-                { to: "/surgical-instruments", label: "Browse surgical instrument categories" },
-                { to: "/oem-private-label", label: "Explore OEM and private-label services" },
-              ]}
-            />
-          </div>
+          <InternalPageLinks
+            title="Explore our capabilities"
+            links={[
+              { to: "/", label: "Return to Seamoon Industries home" },
+              { to: "/dental-instruments", label: "Browse dental instrument categories" },
+              { to: "/surgical-instruments", label: "Browse surgical instrument categories" },
+              { to: "/oem-private-label", label: "Explore OEM and private-label services" },
+            ]}
+          />
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 export default CertificationsPage;

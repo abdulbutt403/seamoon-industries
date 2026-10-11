@@ -1,4 +1,6 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
+import { people01, people02, people03, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
+
+export const WHATSAPP_NUMBER = "923007107197";
 
 export const navLinks = [
   { path: "/", title: "Home" },
@@ -7,7 +9,6 @@ export const navLinks = [
   { path: "/oem-private-label", title: "OEM" },
   { path: "/certifications", title: "Certifications" },
   { path: "/contact", title: "Contact" },
-  { path: "/cart", title: "Cart" },
 ];
 
 export const features = [

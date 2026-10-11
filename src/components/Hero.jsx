@@ -12,17 +12,15 @@ const Hero = () => {
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-          <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-primaryNavy">Pakistan's </span>leading Dental {" "}
-            <span className="text-primaryNavy">instruments</span> Exporters
-          </p>
+          <img src={discount} alt="" aria-hidden="true" className="w-[32px] h-[32px]" />
+            <p className={`${styles.paragraph} ml-2`}>
+              Manufacturer and exporter of dental and surgical instruments from Sialkot, Pakistan
+            </p>
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-primaryNavy ss:leading-[100.8px] leading-[75px]">
-            Seamoon <br className="sm:block hidden" />{" "}
-            <span className="text-gradient">Industries</span>{" "}
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[46px] text-[33px] text-primaryNavy ss:leading-[1.2] leading-[1.2]">
+            Dental &amp; Surgical Instruments Manufacturer in Sialkot, Pakistan
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
@@ -35,7 +33,7 @@ const Hero = () => {
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           
 
-          we have a vast range of diffrent <span className="text-primaryNavy">DENTAL, INSTRUMENTS & EQUIPMENTS</span> available in our stock ready to be shipped for fast delivery for our valuable customer
+          We manufacture and export dental and surgical instruments from Sialkot, Pakistan. Our range includes products for extraction, restorative dentistry, diagnostics, orthodontics, and surgical procedures.
         </p>
       </div>
 
@@ -46,7 +44,10 @@ const Hero = () => {
         
         <img
           src={quick2}
-          alt="billing"
+          alt="Dental instrument illustrations showing a tooth, braces, implant, mirror, toothbrush and dental chair"
+          width="1008"
+          height="712"
+          loading="lazy"
           className="w-[100%] h-[100%] relative z-[5]"
         />
 

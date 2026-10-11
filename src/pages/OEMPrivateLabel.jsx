@@ -3,145 +3,87 @@ import InternalPageLinks from "../components/InternalPageLinks";
 import OEMServices from "../components/OEMServices";
 import PageHero from "../components/PageHero";
 import SEO from "../components/SEO";
-import { useEffect } from "react";
 
-const faqs = [
-  {
-    question: "What is the minimum order quantity (MOQ) for OEM instruments?",
-    answer:
-      "MOQ varies by instrument type. For standard catalogue items the minimum is typically 100 pieces per reference. For fully custom designs — new geometry, bespoke handle profiles, or proprietary alloys — we discuss MOQ during the design phase, usually starting at 200–500 pieces depending on tooling requirements.",
-  },
-  {
-    question: "How long does an OEM or private-label order take?",
-    answer:
-      "Standard catalogue items with custom branding or packaging ship within 4–6 weeks of order confirmation. New instrument designs requiring tooling or prototyping typically take 8–14 weeks from approved drawings to first production batch. We provide a detailed production schedule at the time of order.",
-  },
-  {
-    question: "Can you match an existing instrument design or competitor reference?",
-    answer:
-      "Yes. Send us a sample, technical drawing, or reference number and our engineering team will produce a dimensional report and material specification for your approval before production begins.",
-  },
-  {
-    question: "What customisation options are available?",
-    answer:
-      "We support custom handle geometry, surface finish (satin, mirror, black oxide, titanium-nitride coating), laser-engraved or electro-etched branding, custom packaging (pouches, trays, sets), and private-label documentation including CE declarations and IFU inserts.",
-  },
-  {
-    question: "Which certifications cover OEM production?",
-    answer:
-      "All OEM production runs under our ISO 13485 quality-management system and ISO 9001:2015 framework. CE-marked instruments are produced to EU MDR requirements. US FDA-registered instruments are available for the North American market. Full traceability records are maintained per batch.",
-  },
-  {
-    question: "Do you offer surgical set assembly and custom packaging?",
-    answer:
-      "Yes. We assemble procedure-specific sets, sterilisation trays, and custom kit configurations. Packaging options include individual peel pouches, rigid trays, and branded retail-style boxes with printed inserts.",
-  },
-];
+const OEMPrivateLabel = () => (
+  <>
+    <SEO path="/oem-private-label" />
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={styles.boxWidth}>
+        <PageHero
+          eyebrow="Manufactured for your market"
+          title="OEM & Private Label Instrument Manufacturing"
+          description="Private label and OEM manufacturing of dental and surgical instruments: custom design, material options, laser-etched branding and custom packaging."
+        />
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map(({ question, answer }) => ({
-    "@type": "Question",
-    name: question,
-    acceptedAnswer: { "@type": "Answer", text: answer },
-  })),
-};
+        <section className="oem-content" aria-labelledby="oem-content-title" style={{ marginBottom: "48px" }}>
+          <h2 id="oem-content-title" className={styles.heading2}>Dental and surgical OEM manufacturing</h2>
+          <div className={`${styles.paragraph} oem-content__body`}>
+            <p>
+              Seamoon Industries offers OEM and private-label services for dental and surgical
+              instruments from its manufacturing base in Sialkot, Pakistan. Buyers can discuss a
+              product requirement around the design, material, branding and packaging options
+              already presented by the company. This page outlines those areas to help make an
+              enquiry specific. Order quantity, delivery schedule and commercial terms should be
+              raised during the enquiry and confirmed for each request.
+            </p>
+            <h2>Design and product requirements</h2>
+            <p>
+              Custom instrument design is one of the listed OEM services. Buyers can describe the
+              dental or surgical category, share the product references they are considering and
+              explain the design requirements they would like to discuss. The company’s service
+              information covers adapting instrument geometry, including dimensions, tips and
+              handles. A clear initial brief can identify the intended product, any reference
+              material available and the market for which the item is being considered. Product
+              details and feasibility can then be discussed with the Seamoon team.
+            </p>
+            <h2>Materials and manufacturing process</h2>
+            <p>
+              Stainless steel is used in the manufacturing process described on the site, with
+              German and Japanese grades mentioned. The OEM service list also identifies German
+              420/440 stainless steel, titanium-coated instruments and tungsten carbide insert
+              options. The manufacturing stages presented include material selection, forging and
+              shaping, heat treatment, hand crafting, polishing and inspection. Satin, mirror and
+              titanium-coated finishes are listed. Buyers can identify their preferred material
+              and finish in the enquiry so the team can discuss the applicable options.
+            </p>
+            <h2>Branding, packaging and next steps</h2>
+            <p>
+              Private-label support includes branding applied to instruments, with laser etching
+              specifically listed, and packaging designed for the buyer’s brand. The company also
+              lists custom packaging and surgical set assembly. An enquiry can identify whether it
+              concerns a dental or surgical instrument, a single catalogue reference or a set, and
+              which branding and packaging elements need consideration. Contact the export team in
+              Sialkot to discuss the brief and obtain information for the specific request. MOQ,
+              sample arrangements, lead times and payment terms should be confirmed with the team;
+              these details can be included in the order discussion.
+            </p>
+            <h2>Preparing an OEM enquiry</h2>
+            <p>
+              A useful brief can name the product category, describe a custom design or identify
+              the catalogue references under consideration. It can also note the requested steel
+              or coating option, finish, laser-etched branding and packaging needs. If the enquiry
+              concerns a set, list its intended instruments and presentation requirements. These
+              details connect the product request with the manufacturing stages and OEM services
+              described above. Share the brief with Seamoon Industries in Sialkot to discuss the
+              available scope and the next information required for the project. Certificate and
+              market documentation can also be raised when discussing instruments for export.
+            </p>
+          </div>
+        </section>
 
-const OEMPrivateLabel = () => {
-  useEffect(() => {
-    const existing = document.getElementById("faq-structured-data");
-    if (existing) existing.remove();
-    const script = document.createElement("script");
-    script.id = "faq-structured-data";
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
-    return () => document.getElementById("faq-structured-data")?.remove();
-  }, []);
-
-  return (
-    <>
-      <SEO path="/oem-private-label" />
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={styles.boxWidth}>
-          <PageHero
-            eyebrow="Manufactured for your market"
-            title="OEM & Private-Label Instrument Services"
-            description="Build a dental or surgical instrument range around your specifications, materials, branding, packaging, and target market with support from design through production."
-          />
-
-          <section className="oem-content" aria-labelledby="oem-content-title">
-            <h2 id="oem-content-title" className={styles.heading2} style={{ marginBottom: "1.5rem" }}>
-              Why Source OEM Instruments from Sialkot?
-            </h2>
-            <div className={`${styles.paragraph} oem-content__body`}>
-              <p>
-                Sialkot, Pakistan has been the world's leading production centre for stainless-steel
-                surgical and dental instruments for over a century. Seamoon Industries operates within
-                this ecosystem, combining traditional forging and hand-finishing expertise with modern
-                CNC machining, electro-polishing, and quality-management systems that meet international
-                regulatory requirements.
-              </p>
-              <p style={{ marginTop: "1rem" }}>
-                Our OEM programme is designed for distributors, buying groups, hospital procurement
-                teams, and instrument brands that need a reliable manufacturing partner rather than a
-                catalogue supplier. We work from your drawings, samples, or concept brief and manage
-                the full production chain — raw material sourcing, forging, machining, heat treatment,
-                surface finishing, quality inspection, sterilisation packaging, and export documentation.
-              </p>
-              <p style={{ marginTop: "1rem" }}>
-                Private-label clients receive instruments that carry their own brand identity. We
-                support laser engraving, electro-etching, custom colour coding, and full packaging
-                design from individual peel pouches through to branded procedure sets and sterilisation
-                trays. All instruments are produced under our ISO 13485 quality-management system with
-                full batch traceability.
-              </p>
-              <p style={{ marginTop: "1rem" }}>
-                Whether you need 200 pieces of a custom extraction forceps for a regional dental chain
-                or 10,000 units of a branded needle holder for a European distributor, our production
-                planning team will provide a realistic schedule, competitive unit pricing, and a
-                dedicated account contact throughout the order lifecycle.
-              </p>
-              <p style={{ marginTop: "1rem" }}>
-                We also support regulatory compliance. For CE-marked instruments destined for the EU
-                market we produce to EU MDR requirements and can supply technical files, declarations
-                of conformity, and IFU documentation. For the US market, instruments are produced
-                under our FDA registration. Our quality team can assist with the documentation your
-                own regulatory submission may require.
-              </p>
-            </div>
-          </section>
-
-          <OEMServices />
-
-          <section className="oem-faq" aria-labelledby="oem-faq-title" style={{ marginBottom: "64px" }}>
-            <h2 id="oem-faq-title" className={styles.heading2} style={{ marginBottom: "2rem" }}>
-              Frequently Asked Questions
-            </h2>
-            <dl className="faq-list">
-              {faqs.map(({ question, answer }) => (
-                <div key={question} className="faq-item">
-                  <dt className="faq-item__question">{question}</dt>
-                  <dd className="faq-item__answer">{answer}</dd>
-                </div>
-              ))}
-            </dl>
-          </section>
-
-          <InternalPageLinks
-            title="Explore products and standards"
-            links={[
-              { to: "/dental-instruments", label: "Browse dental instrument categories" },
-              { to: "/surgical-instruments", label: "Browse surgical instrument categories" },
-              { to: "/certifications", label: "Review certifications and quality standards" },
-              { to: "/contact", label: "Discuss your OEM requirements" },
-            ]}
-          />
-        </div>
+        <OEMServices />
+        <InternalPageLinks
+          title="Explore products and standards"
+          links={[
+            { to: "/dental-instruments", label: "Browse dental instrument categories" },
+            { to: "/surgical-instruments", label: "Browse surgical instrument categories" },
+            { to: "/certifications", label: "Review certifications and quality standards" },
+            { to: "/contact", label: "Discuss your OEM requirements" },
+          ]}
+        />
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 
 export default OEMPrivateLabel;

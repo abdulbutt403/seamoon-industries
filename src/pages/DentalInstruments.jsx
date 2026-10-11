@@ -7,6 +7,11 @@ import { useLocation } from "react-router-dom";
 
 const DentalInstruments = () => {
   const { pathname } = useLocation();
+  const categorySlug = pathname.split("/")[2];
+  const categoryName = categorySlug
+    ?.split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 
   return (
   <>
@@ -15,56 +20,68 @@ const DentalInstruments = () => {
       <div className={styles.boxWidth}>
         <PageHero
           eyebrow="Dental catalogue"
-          title="Precision Dental Instruments"
-          description="Explore professional instruments for extraction, restorative dentistry, diagnostics, endodontics, orthodontics, and complete dental sets — manufactured in Sialkot for international supply."
+          title={categoryName ? `${categoryName} Dental Instruments` : "Dental Instruments Manufacturer & Exporter"}
+          description="Dental instruments for extraction, restorative dentistry, diagnostics and orthodontics, plus complete procedure sets. Manufactured in Sialkot, Pakistan for export."
         />
 
         <section className="oem-content" aria-labelledby="dental-content-title" style={{ marginBottom: "48px" }}>
-          <h2 id="dental-content-title" className={styles.heading2} style={{ marginBottom: "1.5rem" }}>
-            Dental Instruments Manufactured for Professional Use
-          </h2>
+          <h2 id="dental-content-title" className={styles.heading2}>Dental instruments for multiple disciplines</h2>
           <div className={`${styles.paragraph} oem-content__body`}>
             <p>
-              Seamoon Industries manufactures a comprehensive range of dental instruments from our
-              facility in Sialkot, Pakistan — the global centre of surgical and dental instrument
-              production. Every instrument in our dental catalogue is produced from high-grade
-              stainless steel, heat-treated for the correct hardness, and finished to the surface
-              specification required for clinical use and repeated sterilisation cycles.
+              Seamoon Industries manufactures dental instruments in Sialkot, Pakistan for export.
+              The catalogue is arranged around the work of dental practices and the procedures
+              their teams perform. It includes instruments for extraction, restorative dentistry,
+              diagnostics and orthodontics, alongside complete procedure sets. This range gives
+              buyers a clear starting point for reviewing individual instruments and assembled
+              kits. Product selection can be discussed with our export team, who can help identify
+              the catalogue references relevant to an enquiry.
             </p>
-            <p style={{ marginTop: "1rem" }}>
-              Our extraction forceps range covers English-pattern and American-pattern designs for
-              upper and lower anteriors, premolars, molars, roots, and paediatric applications.
-              Carbide-tipped beak options are available for improved grip on calcified roots. Root
-              elevators and periotomes are produced in straight, left, and right configurations with
-              handle options including hollow stainless steel, solid stainless steel, and
-              autoclavable resin.
+            <h2>Extraction and restorative dentistry</h2>
+            <p>
+              Extraction instruments form one part of the dental range. Restorative dentistry is
+              another, with instruments presented for restorative work and related procedures.
+              The catalogue also includes diagnostic instruments used in examinations. Rather than
+              assuming that one standard assortment suits every practice, buyers can refer to the
+              listed product information and describe the procedures they need to support when
+              requesting details. This helps keep a product enquiry focused on the intended use,
+              selected references and whether a complete set is preferred.
             </p>
-            <p style={{ marginTop: "1rem" }}>
-              Restorative and diagnostic instrument sets include composite placement instruments,
-              carvers, burnishers, explorers, probes, mirrors, and curettes. We supply individual
-              instruments and pre-assembled sets configured for specific procedures — examination,
-              composite restoration, scaling, and endodontic access. Cement spatulas, mixing
-              spatulas, and amalgam carriers are available in single- and double-ended formats.
+            <h2>Diagnostics, orthodontics and procedure sets</h2>
+            <p>
+              Orthodontic products include the Orthodontic Instrument Kit. For isolation and
+              examination needs, the range also features a Rubber Dam Kit and a Three-Piece
+              Examination Set. These named products sit alongside individual diagnostic and
+              orthodontic instruments in the catalogue. Buyers may enquire about a named kit or
+              about arranging a group of references for a particular procedure. The available
+              product pages and catalogue provide the current item descriptions; the team can
+              respond to questions about a particular reference or request.
             </p>
-            <p style={{ marginTop: "1rem" }}>
-              Orthodontic instruments include bracket placement forceps, band pushers, ligature
-              directors, Weingart pliers, and wire-bending pliers. Rubber dam clamps cover the full
-              range of anterior, premolar, and molar isolation requirements. Scalers and curettes
-              are available in Gracey, universal, and sickle patterns with standard or extended
-              shanks.
+            <h2>Manufacturing and export enquiries</h2>
+            <p>
+              The manufacturing process described by Seamoon begins with material selection and
+              continues through shaping, heat treatment, hand crafting, polishing and inspection.
+              Stainless steel is used, and satin, mirror and titanium-coated finishes are listed.
+              Dental instruments can also be discussed for OEM and private-label programmes, where
+              custom design, branding and packaging are among the services presented by the
+              company. These options can be considered for individual instruments and procedure
+              sets. Contact the export team in Sialkot with the categories, kit names or catalogue
+              references of interest to request product information and discuss an order enquiry.
             </p>
-            <p style={{ marginTop: "1rem" }}>
-              All instruments are available for OEM and private-label programmes. We support custom
-              handle engraving, colour-coded silicone rings, custom packaging, and procedure-set
-              assembly. Instruments are produced under our ISO 13485 quality-management system and
-              are available with CE marking for the European market and under our US FDA
-              establishment registration for North American distribution.
+            <h2>Reviewing the dental catalogue</h2>
+            <p>
+              The product catalogue lets buyers browse available items by category and review
+              their listed product descriptions. The dental videos on the site feature the
+              Orthodontic Instrument Kit, Rubber Dam Kit and Three-Piece Examination Set. These
+              are useful reference points for enquiries about procedure sets, alongside
+              extraction, restorative, diagnostic and orthodontic instruments. Include the
+              relevant product name or reference when contacting Seamoon. For an OEM enquiry,
+              describe the required design, material, finish, branding and packaging options so
+              the team can discuss the request with the right context.
             </p>
           </div>
         </section>
 
         <ProductCatalogue />
-
         <InternalPageLinks
           title="Continue exploring"
           links={[

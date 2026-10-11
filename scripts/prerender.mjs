@@ -27,6 +27,24 @@ const { getPageSeo, prerenderPaths, render } = await import(
   pathToFileURL(path.join(serverBuildDirectory, serverEntry)).href
 );
 
+const productCataloguePath = path.join(distDirectory, "assets", "products.json");
+const productCatalogue = JSON.parse(await readFile(productCataloguePath, "utf8"));
+const slugifyCategory = (category) =>
+  category
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+const categoryPaths = [
+  ...new Set(
+    productCatalogue
+      .map((product) => product.category)
+      .filter((category) => typeof category === "string" && category.trim())
+      .map((category) => `/dental-instruments/${slugifyCategory(category)}`)
+  ),
+];
+
 const clientHtml = await readFile(clientHtmlPath, "utf8");
 const rootPlaceholder = '<div id="root"></div>';
 
@@ -34,7 +52,7 @@ if (!clientHtml.includes(rootPlaceholder)) {
   throw new Error("Could not find the root element in the production HTML.");
 }
 
-for (const routePath of prerenderPaths) {
+for (const routePath of [...prerenderPaths, ...categoryPaths]) {
   const seo = getPageSeo(routePath);
   const appHtml = render(routePath);
   const structuredData = seo.schema

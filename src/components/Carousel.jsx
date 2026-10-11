@@ -4,6 +4,13 @@ const slides = Array.from(
   { length: 5 },
   (_, index) => `/assets/carousel/img${index + 1}-light.png`
 );
+const slideDescriptions = [
+  "Dental scaler instruments with curved working ends",
+  "Stainless steel dental syringes with ring handles",
+  "Dental instruments with slim working tips",
+  "Dental instruments displayed in a clinical setting",
+  "Surgical instruments displayed on a sterile drape",
+];
 
 const ArrowIcon = ({ direction }) => (
   <svg
@@ -86,8 +93,10 @@ const Carousel = () => {
           >
             <img
               src={src}
-              alt={`Seamoon Industries showcase ${index + 1}`}
+              alt={slideDescriptions[index]}
               className="hero-carousel__image"
+              width="1774"
+              height="887"
               loading={index === 0 ? "eager" : "lazy"}
             />
           </div>
