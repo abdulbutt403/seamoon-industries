@@ -1,8 +1,31 @@
+import { useEffect, useRef, useState } from "react";
 import styles from "../style";
 import { discount, quick2 } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
+  const titleRef = useRef(null);
+  const [titleRevealed, setTitleRevealed] = useState(false);
+
+  useEffect(() => {
+    const title = titleRef.current;
+    if (!title) return;
+    if (!("IntersectionObserver" in window)) {
+      setTitleRevealed(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setTitleRevealed(true);
+        observer.disconnect();
+      }
+    }, { threshold: 0.2 });
+
+    observer.observe(title);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
       id="home"
@@ -20,7 +43,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-primaryNavy ss:leading-[100.8px] leading-[75px]">
+          <h1
+            ref={titleRef}
+            className={`hero-title flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-primaryNavy ss:leading-[100.8px] leading-[75px] ${titleRevealed ? "hero-title--revealed" : ""}`}
+          >
             Seamoon <br className="sm:block hidden" />{" "}
             <span className="text-gradient">Industries</span>{" "}
           </h1>
