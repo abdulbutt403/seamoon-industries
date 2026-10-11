@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const GetStarted = () => (
   <Link
     to="/contact"
-    aria-label="Request a Quote"
+    aria-label="Work With Us"
     className="get-started-button font-poppins"
   >
-    <span>Request a Quote</span>
+    <span>Work With Us</span>
     <img src={arrowUp} alt="" className="get-started-button__arrow" />
   </Link>
 );
