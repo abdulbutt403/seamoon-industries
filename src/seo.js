@@ -1,16 +1,5 @@
-import { surgicalInstruments } from "./data/catalogues";
-
-export const SITE_URL = "https://www.seamoonind.com";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/carousel/img1.jpg`;
-
-const certifications = [
-  "ISO 13485",
-  "CE Mark (EU MDR)",
-  "US FDA Registration",
-  "ISO 9001:2015",
-  "SIMAP",
-  "SCCI",
-];
+export const SITE_URL = "https://seamoonind.com";
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/carousel/img1-light.png`;
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -18,48 +7,39 @@ const organizationSchema = {
   name: "Seamoon Industries",
   url: SITE_URL,
   logo: `${SITE_URL}/sm-logo.png`,
-  image: DEFAULT_OG_IMAGE,
-  email: "info@seamoonind.com",
-  telephone: "+92-52-3302249",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Small Industrial Estate, Fateh Garh Agency, Cheema Street",
     addressLocality: "Sialkot",
     addressCountry: "PK",
   },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+92-52-3302249",
-    contactType: "sales",
-    email: "info@seamoonind.com",
-    areaServed: "Worldwide",
-  },
+  telephone: "+92-52-3302249",
+  email: "info@seamoonind.com",
   sameAs: [],
-  hasCertification: certifications.map((name) => ({
-    "@type": "Certification",
-    name,
-  })),
-  award: certifications,
 };
 
-const createItemListSchema = (name, path, items) => ({
+const breadcrumbSchema = (path, label) => ({
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  name,
-  url: `${SITE_URL}${path}`,
-  numberOfItems: items.length,
-  itemListElement: items.map((item, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    name: item.name,
-    description: item.description,
-    image: `${SITE_URL}${item.image}`,
-  })),
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: `${SITE_URL}/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: label,
+      item: `${SITE_URL}${path}`,
+    },
+  ],
 });
 
 export const seoByPath = {
   "/": {
-    title: "Dental & Surgical Instrument Manufacturer | Seamoon Industries",
+    title: "Dental Instruments Manufacturer in Sialkot, Pakistan | Seamoon",
     description:
       "Seamoon Industries manufactures and exports precision dental and surgical instruments from Sialkot, Pakistan, with OEM and private-label services.",
     schema: organizationSchema,
@@ -67,38 +47,32 @@ export const seoByPath = {
   "/dental-instruments": {
     title: "Dental Instruments Manufacturer & Exporter | Seamoon Industries",
     description:
-      "Explore dental extraction forceps, root elevators, restorative instruments, rubber dam clamps, and custom dental instrument sets.",
+      "Dental instruments for extraction, restorative dentistry, diagnostics and orthodontics, plus complete procedure sets. Manufactured in Sialkot, Pakistan for export.",
+    schema: breadcrumbSchema("/dental-instruments", "Dental Instruments"),
   },
   "/surgical-instruments": {
-    title: "Surgical Instruments Manufacturer & Exporter | Seamoon Industries",
+    title: "Surgical Instruments Manufacturer Sialkot | Seamoon Industries",
     description:
-      "Explore precision surgical scissors, dressing forceps, needle holders, retractors, diagnostic instruments, and surgical accessories.",
-    schema: createItemListSchema(
-      "Surgical Instruments",
-      "/surgical-instruments",
-      surgicalInstruments
-    ),
+      "Reusable surgical instruments for general, vascular, diagnostic and orthopaedic procedures. Manufactured in Sialkot, Pakistan for export and OEM programmes.",
+    schema: breadcrumbSchema("/surgical-instruments", "Surgical Instruments"),
   },
   "/oem-private-label": {
-    title: "OEM & Private Label Instrument Manufacturing | Seamoon Industries",
+    title: "OEM & Private Label Dental and Surgical Instruments | Seamoon",
     description:
-      "OEM and private-label dental and surgical instrument manufacturing with custom design, materials, branding, packaging, and surgical set assembly.",
+      "Private label and OEM manufacturing of dental and surgical instruments: custom design, material options, laser-etched branding and custom packaging.",
+    schema: breadcrumbSchema("/oem-private-label", "OEM & Private Label"),
   },
   "/certifications": {
-    title: "Quality Certifications & Standards | Seamoon Industries",
+    title: "Certifications: ISO 13485, CE, FDA Registration | Seamoon",
     description:
-      "Review Seamoon Industries quality standards, including ISO 13485, CE Mark EU MDR, US FDA registration, ISO 9001:2015, SIMAP, and SCCI.",
+      "Seamoon Industries quality standards and certifications: ISO 13485, ISO 9001:2015, CE Mark (EU MDR), US FDA registration, SIMAP and SCCI.",
+    schema: breadcrumbSchema("/certifications", "Certifications"),
   },
   "/contact": {
-    title: "Contact Seamoon Industries | Sialkot, Pakistan",
+    title: "Contact Seamoon Industries | Dental & Surgical Export, Sialkot",
     description:
-      "Contact Seamoon Industries in Sialkot for dental and surgical instrument enquiries, OEM manufacturing, private labeling, and export orders.",
-  },
-  "/cart": {
-    title: "Product Inquiry Cart | Seamoon Industries",
-    description:
-      "Review selected dental instruments and send a product inquiry to Seamoon Industries.",
-    noindex: true,
+      "Contact the Seamoon Industries export team in Sialkot, Pakistan for quotes, catalogues and OEM enquiries. WhatsApp, phone and email.",
+    schema: breadcrumbSchema("/contact", "Contact"),
   },
   "/404": {
     title: "Page Not Found | Seamoon Industries",
@@ -114,26 +88,11 @@ export const prerenderPaths = [
   "/oem-private-label",
   "/certifications",
   "/contact",
-  "/cart",
 ];
 
 export const getSeoForPath = (pathname) => {
-  const normalizedPath =
-    pathname !== "/" ? pathname.replace(/\/$/, "") : pathname;
-  const isDentalCategory = normalizedPath.startsWith("/dental-instruments/");
-  const categoryName = isDentalCategory
-    ? normalizedPath
-        .replace("/dental-instruments/", "")
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ")
-    : "";
-  const seo = isDentalCategory
-    ? {
-        title: `${categoryName} | Seamoon Industries`,
-        description: `Browse ${categoryName.toLowerCase()} manufactured by Seamoon Industries for professional dental use and international supply.`,
-      }
-    : seoByPath[normalizedPath] || seoByPath["/404"];
+  const normalizedPath = pathname !== "/" ? pathname.replace(/\/$/, "") : pathname;
+  const seo = seoByPath[normalizedPath] || seoByPath["/404"];
 
   return {
     ...seo,
