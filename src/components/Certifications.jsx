@@ -2,20 +2,28 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const certifications = [
-  { name: "ISO 13485", id: "iso-13485", mark: "ISO", icon: "quality" },
+  { name: "ISO 13485", id: "iso-13485", mark: "ISO", icon: "medical" },
   { name: "CE Mark (EU MDR)", id: "ce-mark", mark: "CE", icon: "mark" },
   { name: "US FDA Registration", id: "us-fda", mark: "FDA", icon: "shield" },
   { name: "SIMAP", id: "simap", mark: "S", icon: "star" },
   { name: "SCCI", id: "scci", mark: "SCCI", icon: "building" },
-  { name: "ISO 9001:2015", id: "iso-9001", mark: "ISO", icon: "quality" },
+  { name: "ISO 9001:2015", id: "iso-9001", mark: "ISO", icon: "certificate" },
 ];
 
 const CertificationIcon = ({ type, mark }) => {
   const artwork = {
-    quality: (
+    medical: (
       <>
-        <path d="M12 2.8 15 4l3.2-.1 1 3 2 2.5-1.7 2.7-.6 3.2-3.1.6-2.6 1.9-2.5-1.9-3.2-.6-.5-3.2-1.8-2.7 2.1-2.5 1-3L12 2.8Z" />
-        <path d="m8.9 10.4 2 2 4.2-4.4" />
+        <path d="M12 21s7-3.5 7-10V5l-7-2-7 2v6c0 6.5 7 10 7 10Z" />
+        <path d="M12 7v7M8.5 10.5h7" />
+      </>
+    ),
+    certificate: (
+      <>
+        <path d="M7 3.5h8l4 4V16H7a2 2 0 0 1-2-2V5.5a2 2 0 0 1 2-2Z" />
+        <path d="M15 3.5v4h4M8.5 10h7M8.5 13h4" />
+        <circle cx="16.5" cy="17" r="3" />
+        <path d="m15 19.5-.5 2 2-1 2 1-.5-2" />
       </>
     ),
     shield: (
