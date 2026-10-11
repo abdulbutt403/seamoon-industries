@@ -120,6 +120,7 @@ const MotionSystem = () => {
       ".app-form-group",
       ".screen-body-item.left h5, .screen-body-item.left .app-contact",
       "footer h2, footer li, footer > div > div > p",
+      ".social-links__item",
     ];
     let intro = false;
     try {

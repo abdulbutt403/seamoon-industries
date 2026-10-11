@@ -1,6 +1,7 @@
 import { logo } from "../assets";
 import { WHATSAPP_NUMBER } from "../constants";
 import { useLocation } from "react-router-dom";
+import SocialLinks from "./SocialLinks";
 const Contact = () => {
   const { search } = useLocation();
   const quoteParams = new URLSearchParams(search);
@@ -41,6 +42,7 @@ const Contact = () => {
             <div className="app-contact">TEL : +92-52-3302249</div>
             <div className="app-contact">EMAIL : <a href="mailto:info@seamoonind.com">info@seamoonind.com</a></div>
             <div className="app-contact">WEB : seamoonind.com</div>
+            <SocialLinks className="social-links--contact" />
             </div>
           </div>
           <div className="screen-body-item">

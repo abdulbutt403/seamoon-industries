@@ -15,7 +15,14 @@ const organizationSchema = {
   },
   telephone: "+92-52-3302249",
   email: "info@seamoonind.com",
-  sameAs: [],
+  sameAs: [
+    "https://www.facebook.com/Seamoonindustries",
+    "https://www.instagram.com/seamoonindustries",
+    "https://www.linkedin.com/in/salman-arshad-298a6515b/",
+    "https://www.youtube.com/@Seamoonindustry",
+    "https://www.pinterest.com/seamoonindustries/",
+    "https://www.tiktok.com/@seamoon.industrie",
+  ],
 };
 
 const breadcrumbSchema = (path, label) => ({

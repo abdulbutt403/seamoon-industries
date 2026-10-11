@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { logoLight } from "../assets";
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks } from "../constants";
 import styles from "../style";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => (
   <footer className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -53,22 +54,7 @@ const Footer = () => (
         Copyright {new Date().getFullYear()} Seamoon Industries. All Rights Reserved.
       </p>
 
-      <div className="flex flex-row md:mt-0 mt-6">
-        {socialMedia.map((social, index) => (
-          <a
-            key={social.id}
-            href={social.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Visit Seamoon Industries on ${social.name}`}
-            className={`block w-[21px] h-[21px] ${
-              index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-            }`}
-          >
-            <img src={social.icon} alt="" className="w-full h-full object-contain" />
-          </a>
-        ))}
-      </div>
+      <SocialLinks />
     </div>
   </footer>
 );
