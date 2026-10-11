@@ -3993,6 +3993,14 @@ input[type=range]:focus::-ms-fill-upper {
   animation: hero-title-fade-up 1400ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
+.stats-item--revealed h4 {
+  animation: stats-number-color 1400ms ease-out both;
+}
+
+.stats-item--revealed p {
+  animation: stats-label-color 1400ms ease-out both;
+}
+
 .hero-title--revealed {
   animation: hero-title-fade-up 850ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -4009,13 +4017,35 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
+@keyframes stats-number-color {
+  from {
+    color: #91a5b2;
+  }
+
+  to {
+    color: var(--color-primary);
+  }
+}
+
+@keyframes stats-label-color {
+  from {
+    filter: brightness(1.65) saturate(0.65);
+  }
+
+  to {
+    filter: brightness(1) saturate(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .navbar__link::after {
     transition: none;
   }
 
   .hero-title--revealed,
-  .stats-item--revealed {
+  .stats-item--revealed,
+  .stats-item--revealed h4,
+  .stats-item--revealed p {
     animation: none;
   }
 }
