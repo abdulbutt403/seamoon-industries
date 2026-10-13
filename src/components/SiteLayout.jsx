@@ -1,11 +1,13 @@
 import styles from "../style";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import LanguageSelector from "./LanguageSelector";
 
 const SiteLayout = ({ children }) => (
-  <div className="bg-primary min-h-screen w-full overflow-hidden">
+  <div className="site-shell bg-primary min-h-screen w-full">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={styles.boxWidth}>
+        <LanguageSelector />
         <Navbar />
       </div>
     </div>

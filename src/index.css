@@ -4111,6 +4111,61 @@ input[type=range]:focus::-ms-fill-upper {
   min-height: 82px;
 }
 
+.language-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  display: flex;
+  min-height: 42px;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: max(16px, calc((100vw - 1240px) / 2));
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 13px;
+}
+
+.site-shell { overflow-x: clip; }
+
+.language-bar select {
+  max-width: min(100%, 210px);
+  min-height: 34px;
+  padding: 4px 30px 4px 10px;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.language-bar select:focus-visible {
+  outline: 3px solid rgba(18, 184, 212, 0.45);
+  outline-offset: 2px;
+}
+
+html[dir="rtl"] body { text-align: right; }
+html[dir="rtl"] .navbar__link::after { transform-origin: right; }
+html[dir="rtl"] .cart-item__image-wrap { border-right: 0; border-left: 1px solid var(--color-border); }
+html[dir="rtl"] .language-bar { justify-content: flex-start; }
+html[data-language="ur"] body,
+html[data-language="ur"] button,
+html[data-language="ur"] input,
+html[data-language="ur"] textarea,
+html[data-language="ur"] select { font-family: "Noto Nastaliq Urdu", sans-serif; }
+html[data-language="ar"] body,
+html[data-language="ar"] button,
+html[data-language="ar"] input,
+html[data-language="ar"] textarea,
+html[data-language="ar"] select { font-family: "Noto Naskh Arabic", sans-serif; }
+html[data-language="zh"] body { font-family: "Noto Sans SC", sans-serif; }
+html[data-language="ja"] body { font-family: "Noto Sans JP", sans-serif; }
+html[data-language="ko"] body { font-family: "Noto Sans KR", sans-serif; }
+html[data-language="hi"] body { font-family: "Noto Sans Devanagari", sans-serif; }
+html[data-language="ru"] body { font-family: "Noto Sans", sans-serif; }
+
 .navbar::after {
   position: absolute;
   right: 0;

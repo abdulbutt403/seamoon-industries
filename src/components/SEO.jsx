@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { getSeoForPath, verificationTokens } from "../seo";
+import { useI18n } from "../i18n/I18nContext";
 
 const setMeta = (attribute, key, content) => {
   let tag = document.head.querySelector(`meta[${attribute}="${key}"]`);
@@ -14,11 +15,20 @@ const setMeta = (attribute, key, content) => {
 };
 
 const SEO = ({ path }) => {
+  const { language, t } = useI18n();
   useEffect(() => {
     const seo = getSeoForPath(path);
-    document.title = seo.title;
+    const suffixByPath = {
+      "/": "home", "/dental-instruments": "dental", "/surgical-instruments": "surgical",
+      "/oem-private-label": "oem", "/certifications": "certifications", "/contact": "contact", "/cart": "cart",
+    };
+    const suffix = suffixByPath[path] || "home";
+    const title = t(`seo.${suffix}.title`);
+    const description = t(`seo.${suffix}.description`);
+    document.title = title === `seo.${suffix}.title` ? seo.title : title;
 
-    setMeta("name", "description", seo.description);
+    const localizedDescription = description === `seo.${suffix}.description` ? seo.description : description;
+    setMeta("name", "description", localizedDescription);
     setMeta("name", "robots", seo.noindex ? "noindex, nofollow" : "index, follow");
     [
       ["google-site-verification", verificationTokens.google],
@@ -33,13 +43,13 @@ const SEO = ({ path }) => {
     });
     setMeta("property", "og:type", "website");
     setMeta("property", "og:site_name", "Seamoon Industries");
-    setMeta("property", "og:title", seo.title);
-    setMeta("property", "og:description", seo.description);
+    setMeta("property", "og:title", document.title);
+    setMeta("property", "og:description", localizedDescription);
     setMeta("property", "og:image", seo.image);
     setMeta("property", "og:url", seo.canonical);
     setMeta("name", "twitter:card", "summary_large_image");
-    setMeta("name", "twitter:title", seo.title);
-    setMeta("name", "twitter:description", seo.description);
+    setMeta("name", "twitter:title", document.title);
+    setMeta("name", "twitter:description", localizedDescription);
     setMeta("name", "twitter:image", seo.image);
 
     let canonical = document.head.querySelector('link[rel="canonical"]');
@@ -60,7 +70,7 @@ const SEO = ({ path }) => {
       schema.textContent = JSON.stringify(seo.schema);
       document.head.appendChild(schema);
     }
-  }, [path]);
+  }, [path, language, t]);
 
   return null;
 };

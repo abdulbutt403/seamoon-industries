@@ -3,11 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { useCart } from "../context/CartContext";
+import { useI18n } from "../i18n/I18nContext";
+
+const navKeys = ["nav.home", "nav.dental", "nav.surgical", "nav.oem", "nav.certifications", "nav.contact", "nav.cart"];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const { totalQuantity } = useCart();
   const location = useLocation();
+  const { t } = useI18n();
   const currentPath =
     location.pathname !== "/"
       ? location.pathname.replace(/\/$/, "")
@@ -35,7 +39,7 @@ const Navbar = () => {
                   : undefined
               }
             >
-              {nav.title}
+              {t(navKeys[index])}
               {nav.path === "/cart" && (
                 <span className="navbar__cart-count" aria-hidden="true">
                   {totalQuantity}
@@ -76,7 +80,7 @@ const Navbar = () => {
                       : undefined
                   }
                 >
-                  {nav.title}
+                  {t(navKeys[index])}
                   {nav.path === "/cart" && (
                     <span className="navbar__cart-count" aria-hidden="true">
                       {totalQuantity}

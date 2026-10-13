@@ -4,6 +4,7 @@ import routes from "./routes";
 import WhatsAppButton from "./components/WhatsAppButton";
 import SiteLayout from "./components/SiteLayout";
 import { CartProvider } from "./context/CartContext";
+import { I18nProvider } from "./i18n/I18nContext";
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -16,7 +17,8 @@ const ScrollToTop = () => {
 };
 
 export const AppContent = () => (
-  <CartProvider>
+  <I18nProvider>
+   <CartProvider>
     <SiteLayout>
       <Switch>
         <Redirect exact from="/dental-catalogue" to="/dental-instruments" />
@@ -32,7 +34,8 @@ export const AppContent = () => (
       </Switch>
     </SiteLayout>
     <WhatsAppButton />
-  </CartProvider>
+   </CartProvider>
+  </I18nProvider>
 );
 
 const App = () => (
