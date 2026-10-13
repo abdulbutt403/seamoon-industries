@@ -107,6 +107,7 @@ const sourceByRoute = (routePath) => {
     "/oem-private-label": "src/pages/OEMPrivateLabel.jsx",
     "/certifications": "src/pages/CertificationsPage.jsx",
     "/contact": "src/pages/ContactPage.jsx",
+    "/about": "src/pages/AboutPage.jsx",
     "/guides": "src/pages/GuidesPage.jsx",
   })[routePath];
 };

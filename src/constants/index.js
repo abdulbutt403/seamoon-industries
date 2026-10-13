@@ -76,6 +76,7 @@ export const footerLinks = [
       { name: "OEM & Private Label", link: "/oem-private-label" },
       { name: "Certifications", link: "/certifications" },
       { name: "Contact", link: "/contact" },
+      { name: "About", link: "/about" },
       { name: "Guides", link: "/guides" },
     ],
   },
@@ -89,6 +90,26 @@ export const socialMedia = [
   { id: "pinterest", name: "Pinterest", link: "https://www.pinterest.com/seamoonindustries/" },
   { id: "tiktok", name: "TikTok", link: "https://www.tiktok.com/@seamoon.industrie" },
 ];
+
+// Canonical identity and contact details used in site copy, contact pages, and structured data.
+export const SITE_BRAND = {
+  name: "Seamoon Industries",
+  description:
+    "Seamoon Industries manufactures and exports dental and surgical instruments from Sialkot, Pakistan, and offers OEM and private-label services.",
+  website: "https://www.seamoonind.com",
+  telephone: "+92-52-3302249",
+  whatsapp: "+92-300-7107197",
+  email: "info@seamoonind.com",
+  alternateEmail: "seamoonind@gmail.com",
+  address: {
+    streetAddress: "Small Industrial Estate, Fateh Garh Agency, Cheema Street",
+    addressLocality: "Sialkot",
+    addressCountry: "PK",
+    countryName: "Pakistan",
+    fullAddress: "Small Industrial Estate, Fateh Garh Agency, Cheema Street, Sialkot, Pakistan",
+  },
+  socialLinks: socialMedia,
+};
 
 export const clients = [
   { id: "client-1", logo: airbnb },

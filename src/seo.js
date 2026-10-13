@@ -1,9 +1,8 @@
-import { socialMedia } from "./constants";
-import { SITE_CONTACT } from "./constants/contact";
+import { SITE_BRAND } from "./constants";
 import { certificationFaqs, oemFaqs, toFaqPageSchema } from "./data/faqs";
 import { guides, guideBySlug } from "./data/guides";
 
-export const SITE_URL = "https://www.seamoonind.com";
+export const SITE_URL = SITE_BRAND.website;
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/carousel/img1.jpg`;
 export const verificationTokens = {
   google: import.meta.env.VITE_GSC_TOKEN || "",
@@ -13,23 +12,25 @@ export const verificationTokens = {
 const organizationSchema = {
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
-  name: "Seamoon Industries",
+  name: SITE_BRAND.name,
   url: `${SITE_URL}/`,
   logo: `${SITE_URL}/sm-logo.png`,
-  email: SITE_CONTACT.email,
-  telephone: SITE_CONTACT.telephone,
+  email: SITE_BRAND.email,
+  telephone: SITE_BRAND.telephone,
   address: {
     "@type": "PostalAddress",
-    ...SITE_CONTACT.address,
+    streetAddress: SITE_BRAND.address.streetAddress,
+    addressLocality: SITE_BRAND.address.addressLocality,
+    addressCountry: SITE_BRAND.address.addressCountry,
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: SITE_CONTACT.telephone,
-    email: SITE_CONTACT.email,
+    telephone: SITE_BRAND.telephone,
+    email: SITE_BRAND.email,
     contactType: "Export inquiries",
     availableLanguage: ["English", "Urdu"],
   },
-  sameAs: socialMedia.map(({ link }) => link),
+  sameAs: SITE_BRAND.socialLinks.map(({ link }) => link),
 };
 
 const websiteSchema = {
@@ -46,6 +47,7 @@ const pageNames = {
   "/oem-private-label": "OEM & Private Label",
   "/certifications": "Certifications",
   "/contact": "Contact",
+  "/about": "About",
   "/cart": "Cart",
   "/guides": "Guides",
   "/404": "Page Not Found",
@@ -108,6 +110,10 @@ const seoByPath = {
     description:
       "Contact Seamoon Industries in Sialkot, Pakistan for dental and surgical instrument export inquiries, OEM manufacturing, private labeling and catalogue requests.",
   },
+  "/about": {
+    title: "About Seamoon Industries | Dental & Surgical Instrument Manufacturer",
+    description: "Learn about Seamoon Industries, a dental and surgical instrument manufacturer and exporter based in Sialkot, Pakistan, offering OEM and private-label services.",
+  },
   "/cart": {
     title: "Product Inquiry Cart | Seamoon Industries",
     description: "Review selected dental instruments and send a product inquiry to Seamoon Industries.",
@@ -132,6 +138,7 @@ export const prerenderPaths = [
   "/oem-private-label",
   "/certifications",
   "/contact",
+  "/about",
   "/cart",
   "/guides",
   ...guides.map(({ slug }) => `/guides/${slug}`),

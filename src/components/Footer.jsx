@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { logoLight } from "../assets";
-import { footerLinks } from "../constants";
+import { footerLinks, SITE_BRAND } from "../constants";
 import SocialLinks from "./SocialLinks";
 import styles from "../style";
 import { useI18n } from "../i18n/I18nContext";
 
 const Footer = () => {
   const { t } = useI18n();
-  const footerLinkKeys = { "/": "nav.home", "/dental-instruments": "footer.dentalInstruments", "/surgical-instruments": "footer.surgicalInstruments", "/oem-private-label": "footer.oemPrivateLabel", "/certifications": "nav.certifications", "/contact": "nav.contact", "/guides": "guides.nav" };
+  const footerLinkKeys = { "/": "nav.home", "/dental-instruments": "footer.dentalInstruments", "/surgical-instruments": "footer.surgicalInstruments", "/oem-private-label": "footer.oemPrivateLabel", "/certifications": "nav.certifications", "/contact": "nav.contact", "/about": "about.nav", "/guides": "guides.nav" };
   return (
   <footer className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -18,7 +18,7 @@ const Footer = () => {
           className="brand-logo brand-logo--footer"
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
-          {t("footer.tagline")}
+          {SITE_BRAND.description}
         </p>
       </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-        {t("footer.copyright").replace("{year}", String(new Date().getFullYear()))} Seamoon Industries. {t("footer.rights")}
+        {t("footer.copyright").replace("{year}", String(new Date().getFullYear()))} {SITE_BRAND.name}. {t("footer.rights")}
       </p>
 
       <SocialLinks className="md:mt-0 mt-6" />

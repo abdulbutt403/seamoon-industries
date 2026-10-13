@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
 import GuidesPage from "./pages/GuidesPage";
 import GuidePage from "./pages/GuidePage";
+import AboutPage from "./pages/AboutPage";
 
 let routes = [
   {
@@ -43,6 +44,11 @@ let routes = [
   {
     path: "/contact",
     component: ContactPage,
+    exact: true,
+  },
+  {
+    path: "/about",
+    component: AboutPage,
     exact: true,
   },
   {

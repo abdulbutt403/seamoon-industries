@@ -21,6 +21,7 @@ const SEO = ({ path }) => {
     const suffixByPath = {
       "/": "home", "/dental-instruments": "dental", "/surgical-instruments": "surgical",
       "/oem-private-label": "oem", "/certifications": "certifications", "/contact": "contact", "/cart": "cart",
+      "/about": "about",
     };
     const normalizedPath = path.replace(/\/$/, "") || "/";
     const isGuidePath = normalizedPath === "/guides" || normalizedPath.startsWith("/guides/");

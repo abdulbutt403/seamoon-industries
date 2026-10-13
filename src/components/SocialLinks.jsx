@@ -1,4 +1,4 @@
-import { socialMedia } from "../constants";
+import { SITE_BRAND } from "../constants";
 
 const iconPaths = {
   facebook: <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4Z" />,
@@ -11,14 +11,14 @@ const iconPaths = {
 
 const SocialLinks = ({ className = "" }) => (
   <div className={`flex flex-wrap items-center ${className}`}>
-    {socialMedia.map((social, index) => (
+    {SITE_BRAND.socialLinks.map((social, index) => (
       <a
         key={social.id}
         href={social.link}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Seamoon Industries on ${social.name}`}
-        className={`social-link flex h-11 w-11 items-center justify-center rounded-md text-white transition-transform duration-200 hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-2 ${index < socialMedia.length - 1 ? "mr-2" : "mr-0"}`}
+        className={`social-link flex h-11 w-11 items-center justify-center rounded-md text-white transition-transform duration-200 hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-secondary focus-visible:outline-offset-2 ${index < SITE_BRAND.socialLinks.length - 1 ? "mr-2" : "mr-0"}`}
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           {iconPaths[social.id]}

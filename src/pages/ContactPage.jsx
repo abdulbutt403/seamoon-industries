@@ -3,6 +3,7 @@ import Contact from "../components/Contact";
 import InternalPageLinks from "../components/InternalPageLinks";
 import PageHero from "../components/PageHero";
 import SEO from "../components/SEO";
+import { SITE_BRAND } from "../constants";
 
 const ContactPage = () => (
   <>
@@ -11,7 +12,7 @@ const ContactPage = () => (
       <div className={styles.boxWidth}>
         <PageHero
           eyebrow="Sales and export enquiries"
-          title="Contact Seamoon Industries"
+          title={`Contact ${SITE_BRAND.name}`}
           description="Speak with our Sialkot team about dental and surgical instruments, export orders, OEM manufacturing, custom specifications, and private-label packaging."
         />
         <Contact />

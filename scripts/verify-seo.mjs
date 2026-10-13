@@ -11,6 +11,7 @@ const routes = [
   "/oem-private-label",
   "/certifications",
   "/contact",
+  "/about",
   "/cart",
   "/guides",
   "/guides/private-label-dental-instruments-pakistan",
@@ -123,4 +124,4 @@ for (const result of results) {
   console.log(`  canonical: ${result.canonical}`);
   console.log(`  JSON-LD: ${result.schemaTypes.join(", ")}`);
 }
-console.log("\nSEO metadata and JSON-LD verified for all eleven prerendered routes.");
+console.log(`\nSEO metadata and JSON-LD verified for all ${results.length} prerendered routes.`);

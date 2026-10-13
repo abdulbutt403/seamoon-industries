@@ -1,7 +1,7 @@
 import { logo } from "../assets";
 import SocialLinks from "./SocialLinks";
 import { useI18n } from "../i18n/I18nContext";
-import { SITE_CONTACT } from "../constants/contact";
+import { SITE_BRAND } from "../constants";
 const Contact = () => {
   const { t } = useI18n();
   return (
@@ -26,16 +26,16 @@ const Contact = () => {
               <img src={logo} alt={t("brand.logoAlt")} className="brand-logo brand-logo--contact" />
             </div>
             <div style={{marginTop: 40, color:'#fff'}}>
-            <h2 style={{marginBottom: 10, color:'#fff'}}>SALMAN ARSHAD <br/> ({t("contact.ceo")})</h2>
+            <h2 style={{marginBottom: 10, color:'#fff'}}>{SITE_BRAND.name}</h2>
 
-            <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13}}>Sialkot, Small Industrial Estate</h5>
-            <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13, marginBottom: 5}}>Fateh Garh Agency, Cheema Street</h5>
+            <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13}}>{SITE_BRAND.address.streetAddress}</h5>
+            <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13, marginBottom: 5}}>{SITE_BRAND.address.addressLocality}, {SITE_BRAND.address.countryName}</h5>
 
-            <div className="app-contact">{t("contact.whatsapp")}: {SITE_CONTACT.whatsapp}</div>
-            <div className="app-contact">{t("contact.tel")}: {SITE_CONTACT.telephone}</div>
-            <div className="app-contact">{t("contact.email")}: {SITE_CONTACT.email}</div>
-            <div className="app-contact">{t("contact.gmail")}: {SITE_CONTACT.gmail}</div>
-            <div className="app-contact">{t("contact.web")}: {SITE_CONTACT.website}</div>
+            <div className="app-contact">{t("contact.whatsapp")}: {SITE_BRAND.whatsapp}</div>
+            <div className="app-contact">{t("contact.tel")}: {SITE_BRAND.telephone}</div>
+            <div className="app-contact">{t("contact.email")}: {SITE_BRAND.email}</div>
+            <div className="app-contact">{t("contact.gmail")}: {SITE_BRAND.alternateEmail}</div>
+            <div className="app-contact">{t("contact.web")}: {SITE_BRAND.website.replace(/^https?:\/\//, "")}</div>
             <SocialLinks className="contact-social-links" />
             </div>
           </div>
