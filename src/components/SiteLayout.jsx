@@ -7,8 +7,8 @@ const SiteLayout = ({ children }) => (
   <div className="site-shell bg-primary min-h-screen w-full">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={styles.boxWidth}>
-        <LanguageSelector />
         <Navbar />
+        <LanguageSelector />
       </div>
     </div>
 
