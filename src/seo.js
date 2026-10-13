@@ -1,4 +1,6 @@
-import { surgicalInstruments } from "./data/catalogues";
+import { socialMedia } from "./constants";
+import { SITE_CONTACT } from "./constants/contact";
+import { certificationFaqs, oemFaqs, toFaqPageSchema } from "./data/faqs";
 
 export const SITE_URL = "https://www.seamoonind.com";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/carousel/img1.jpg`;
@@ -7,73 +9,74 @@ export const verificationTokens = {
   bing: import.meta.env.VITE_BING_TOKEN || "",
 };
 
-const certifications = [
-  "ISO 13485",
-  "CE Mark (EU MDR)",
-  "US FDA Registration",
-  "ISO 9001:2015",
-  "SIMAP",
-  "SCCI",
-];
-
 const organizationSchema = {
-  "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
   name: "Seamoon Industries",
-  url: SITE_URL,
+  url: `${SITE_URL}/`,
   logo: `${SITE_URL}/sm-logo.png`,
-  image: DEFAULT_OG_IMAGE,
-  email: "info@seamoonind.com",
-  telephone: "+92-52-3302249",
+  email: SITE_CONTACT.email,
+  telephone: SITE_CONTACT.telephone,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Small Industrial Estate, Fateh Garh Agency, Cheema Street",
-    addressLocality: "Sialkot",
-    addressCountry: "PK",
+    ...SITE_CONTACT.address,
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+92-52-3302249",
-    contactType: "sales",
-    email: "info@seamoonind.com",
-    areaServed: "Worldwide",
+    telephone: SITE_CONTACT.telephone,
+    email: SITE_CONTACT.email,
+    contactType: "Export inquiries",
+    availableLanguage: ["English", "Urdu"],
   },
-  sameAs: [
-    "https://www.facebook.com/Seamoonindustries",
-    "https://www.instagram.com/seamoonindustries",
-    "https://www.linkedin.com/in/salman-arshad-298a6515b/",
-    "https://www.youtube.com/@Seamoonindustry",
-    "https://www.pinterest.com/seamoonindustries/",
-    "https://www.tiktok.com/@seamoon.industrie",
-  ],
-  hasCertification: certifications.map((name) => ({
-    "@type": "Certification",
-    name,
-  })),
-  award: certifications,
+  sameAs: socialMedia.map(({ link }) => link),
 };
 
-const createItemListSchema = (name, path, items) => ({
+const websiteSchema = {
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  name: "Seamoon Industries",
+  url: `${SITE_URL}/`,
+  publisher: { "@id": organizationSchema["@id"] },
+};
+
+const pageNames = {
+  "/dental-instruments": "Dental Instruments",
+  "/surgical-instruments": "Surgical Instruments",
+  "/oem-private-label": "OEM & Private Label",
+  "/certifications": "Certifications",
+  "/contact": "Contact",
+  "/cart": "Cart",
+  "/404": "Page Not Found",
+};
+
+const createBreadcrumbSchema = (path, label) => {
+  const items = [{ name: "Home", path: "/" }];
+  if (path.startsWith("/dental-instruments/")) {
+    items.push({ name: "Dental Instruments", path: "/dental-instruments" });
+  }
+  items.push({ name: label, path });
+
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: items.map(({ name, path: itemPath }, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name,
+      item: `${SITE_URL}${itemPath === "/" ? "/" : itemPath}`,
+    })),
+  };
+};
+
+const withStructuredData = (nodes) => ({
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  name,
-  url: `${SITE_URL}${path}`,
-  numberOfItems: items.length,
-  itemListElement: items.map((item, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    name: item.name,
-    description: item.description,
-    image: `${SITE_URL}${item.image}`,
-  })),
+  "@graph": nodes,
 });
 
-export const seoByPath = {
+const seoByPath = {
   "/": {
     title: "Dental & Surgical Instrument Manufacturer | Seamoon",
     description:
       "Seamoon Industries manufactures and exports dental and surgical instruments from Sialkot, Pakistan, with OEM and private-label services for buyers worldwide.",
-    schema: organizationSchema,
   },
   "/dental-instruments": {
     title: "Dental Instruments Manufacturer & Exporter | Seamoon",
@@ -84,11 +87,6 @@ export const seoByPath = {
     title: "Surgical Instruments Manufacturer & Exporter | Seamoon",
     description:
       "Explore precision surgical scissors, dressing forceps, needle holders, retractors, diagnostic instruments, and accessories manufactured in Sialkot for export.",
-    schema: createItemListSchema(
-      "Surgical Instruments",
-      "/surgical-instruments",
-      surgicalInstruments
-    ),
   },
   "/oem-private-label": {
     title: "OEM & Private Label Dental/Surgical Instruments | Seamoon",
@@ -107,8 +105,7 @@ export const seoByPath = {
   },
   "/cart": {
     title: "Product Inquiry Cart | Seamoon Industries",
-    description:
-      "Review selected dental instruments and send a product inquiry to Seamoon Industries.",
+    description: "Review selected dental instruments and send a product inquiry to Seamoon Industries.",
     noindex: true,
   },
   "/404": {
@@ -129,8 +126,7 @@ export const prerenderPaths = [
 ];
 
 export const getSeoForPath = (pathname) => {
-  const normalizedPath =
-    pathname !== "/" ? pathname.replace(/\/$/, "") : pathname;
+  const normalizedPath = pathname !== "/" ? pathname.replace(/\/$/, "") : pathname;
   const isDentalCategory = normalizedPath.startsWith("/dental-instruments/");
   const categoryName = isDentalCategory
     ? normalizedPath
@@ -146,8 +142,21 @@ export const getSeoForPath = (pathname) => {
       }
     : seoByPath[normalizedPath] || seoByPath["/404"];
 
+  const nodes = [organizationSchema];
+  if (normalizedPath === "/") {
+    nodes.push(websiteSchema);
+  } else {
+    nodes.push(createBreadcrumbSchema(
+      isDentalCategory ? normalizedPath : (seoByPath[normalizedPath] ? normalizedPath : "/404"),
+      isDentalCategory ? categoryName : (pageNames[normalizedPath] || "Page Not Found")
+    ));
+    if (normalizedPath === "/oem-private-label") nodes.push(toFaqPageSchema(oemFaqs));
+    if (normalizedPath === "/certifications") nodes.push(toFaqPageSchema(certificationFaqs));
+  }
+
   return {
     ...seo,
+    schema: withStructuredData(nodes),
     path: normalizedPath,
     canonical: `${SITE_URL}${normalizedPath === "/404" ? pathname : normalizedPath}`,
     image: seo.image || DEFAULT_OG_IMAGE,

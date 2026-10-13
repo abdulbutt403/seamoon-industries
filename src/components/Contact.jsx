@@ -1,6 +1,7 @@
 import { logo } from "../assets";
 import SocialLinks from "./SocialLinks";
 import { useI18n } from "../i18n/I18nContext";
+import { SITE_CONTACT } from "../constants/contact";
 const Contact = () => {
   const { t } = useI18n();
   return (
@@ -30,11 +31,11 @@ const Contact = () => {
             <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13}}>Sialkot, Small Industrial Estate</h5>
             <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13, marginBottom: 5}}>Fateh Garh Agency, Cheema Street</h5>
 
-            <div className="app-contact">{t("contact.whatsapp")}: +92-300-7107197</div>
-            <div className="app-contact">{t("contact.tel")}: +92-52-3302249</div>
-            <div className="app-contact">{t("contact.email")}: info@seamoonind.com</div>
-            <div className="app-contact">{t("contact.gmail")}: seamoonind@gmail.com</div>
-            <div className="app-contact">{t("contact.web")}: www.seamoonind.com</div>
+            <div className="app-contact">{t("contact.whatsapp")}: {SITE_CONTACT.whatsapp}</div>
+            <div className="app-contact">{t("contact.tel")}: {SITE_CONTACT.telephone}</div>
+            <div className="app-contact">{t("contact.email")}: {SITE_CONTACT.email}</div>
+            <div className="app-contact">{t("contact.gmail")}: {SITE_CONTACT.gmail}</div>
+            <div className="app-contact">{t("contact.web")}: {SITE_CONTACT.website}</div>
             <SocialLinks className="contact-social-links" />
             </div>
           </div>

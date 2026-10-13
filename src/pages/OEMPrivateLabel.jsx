@@ -3,63 +3,9 @@ import InternalPageLinks from "../components/InternalPageLinks";
 import OEMServices from "../components/OEMServices";
 import PageHero from "../components/PageHero";
 import SEO from "../components/SEO";
-import { useEffect } from "react";
-
-const faqs = [
-  {
-    question: "What is the minimum order quantity (MOQ) for OEM instruments?",
-    answer:
-      "MOQ varies by instrument type. For standard catalogue items the minimum is typically 100 pieces per reference. For fully custom designs — new geometry, bespoke handle profiles, or proprietary alloys — we discuss MOQ during the design phase, usually starting at 200–500 pieces depending on tooling requirements.",
-  },
-  {
-    question: "How long does an OEM or private-label order take?",
-    answer:
-      "Standard catalogue items with custom branding or packaging ship within 4–6 weeks of order confirmation. New instrument designs requiring tooling or prototyping typically take 8–14 weeks from approved drawings to first production batch. We provide a detailed production schedule at the time of order.",
-  },
-  {
-    question: "Can you match an existing instrument design or competitor reference?",
-    answer:
-      "Yes. Send us a sample, technical drawing, or reference number and our engineering team will produce a dimensional report and material specification for your approval before production begins.",
-  },
-  {
-    question: "What customisation options are available?",
-    answer:
-      "We support custom handle geometry, surface finish (satin, mirror, black oxide, titanium-nitride coating), laser-engraved or electro-etched branding, custom packaging (pouches, trays, sets), and private-label documentation including CE declarations and IFU inserts.",
-  },
-  {
-    question: "Which certifications cover OEM production?",
-    answer:
-      "All OEM production runs under our ISO 13485 quality-management system and ISO 9001:2015 framework. CE-marked instruments are produced to EU MDR requirements. US FDA-registered instruments are available for the North American market. Full traceability records are maintained per batch.",
-  },
-  {
-    question: "Do you offer surgical set assembly and custom packaging?",
-    answer:
-      "Yes. We assemble procedure-specific sets, sterilisation trays, and custom kit configurations. Packaging options include individual peel pouches, rigid trays, and branded retail-style boxes with printed inserts.",
-  },
-];
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map(({ question, answer }) => ({
-    "@type": "Question",
-    name: question,
-    acceptedAnswer: { "@type": "Answer", text: answer },
-  })),
-};
+import { oemFaqs as faqs } from "../data/faqs";
 
 const OEMPrivateLabel = () => {
-  useEffect(() => {
-    const existing = document.getElementById("faq-structured-data");
-    if (existing) existing.remove();
-    const script = document.createElement("script");
-    script.id = "faq-structured-data";
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
-    return () => document.getElementById("faq-structured-data")?.remove();
-  }, []);
-
   return (
     <>
       <SEO path="/oem-private-label" />

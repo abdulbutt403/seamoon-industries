@@ -5,6 +5,7 @@ import Certifications from "../components/Certifications";
 import InternalPageLinks from "../components/InternalPageLinks";
 import PageHero from "../components/PageHero";
 import SEO from "../components/SEO";
+import { certificationFaqs as faqs } from "../data/faqs";
 
 const certificationDetails = [
   {
@@ -63,53 +64,9 @@ const certificationDetails = [
   },
 ];
 
-const faqs = [
-  {
-    question: "Are your instruments CE marked for the European market?",
-    answer:
-      "Yes. Applicable instrument categories carry CE marking under EU MDR 2017/745. We can supply declarations of conformity, technical file summaries, and IFU documentation to support your own regulatory requirements.",
-  },
-  {
-    question: "Are you FDA registered for exports to the United States?",
-    answer:
-      "Yes. Seamoon Industries holds US FDA establishment registration and device listings for our surgical and dental instrument categories, enabling direct export to US distributors and healthcare procurement programmes.",
-  },
-  {
-    question: "What quality-management standard covers your production?",
-    answer:
-      "Our primary quality-management standard is ISO 13485:2016, which is specific to medical device manufacturing. This is supported by ISO 9001:2015 for general process quality. Both are audited by accredited third-party certification bodies.",
-  },
-  {
-    question: "Can you provide batch traceability records?",
-    answer:
-      "Yes. Under our ISO 13485 system, full batch traceability is maintained from raw material lot through to finished goods and shipping. Records are available on request for quality audits or regulatory submissions.",
-  },
-];
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map(({ question, answer }) => ({
-    "@type": "Question",
-    name: question,
-    acceptedAnswer: { "@type": "Answer", text: answer },
-  })),
-};
-
 const CertificationsPage = () => {
   const pageRef = useRef(null);
   const location = useLocation();
-
-  useEffect(() => {
-    const existing = document.getElementById("cert-faq-structured-data");
-    if (existing) existing.remove();
-    const script = document.createElement("script");
-    script.id = "cert-faq-structured-data";
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
-    return () => document.getElementById("cert-faq-structured-data")?.remove();
-  }, []);
 
   useEffect(() => {
     if (!location.hash) return undefined;

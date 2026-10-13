@@ -7,7 +7,8 @@
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir .prerender && node scripts/prerender.mjs",
     "i18n:check": "node scripts/check-i18n.mjs",
     "preview": "vite preview",
-    "verify:catalogue": "node scripts/verify-catalogue.mjs"
+    "verify:catalogue": "node scripts/verify-catalogue.mjs",
+    "verify:seo": "node scripts/verify-seo.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
