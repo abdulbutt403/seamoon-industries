@@ -2,6 +2,10 @@ import { surgicalInstruments } from "./data/catalogues";
 
 export const SITE_URL = "https://www.seamoonind.com";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/carousel/img1.jpg`;
+export const verificationTokens = {
+  google: import.meta.env.VITE_GSC_TOKEN || "",
+  bing: import.meta.env.VITE_BING_TOKEN || "",
+};
 
 const certifications = [
   "ISO 13485",

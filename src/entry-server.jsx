@@ -2,7 +2,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
 import { AppContent } from "./App";
-import { getSeoForPath, prerenderPaths } from "./seo";
+import { getSeoForPath, prerenderPaths, verificationTokens } from "./seo";
 
 export const render = (path) =>
   renderToString(
@@ -15,3 +15,4 @@ export const render = (path) =>
 
 export const getPageSeo = (path) => getSeoForPath(path);
 export { prerenderPaths };
+export { verificationTokens };

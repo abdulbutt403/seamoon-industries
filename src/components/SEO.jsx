@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { getSeoForPath } from "../seo";
+import { getSeoForPath, verificationTokens } from "../seo";
 
 const setMeta = (attribute, key, content) => {
   let tag = document.head.querySelector(`meta[${attribute}="${key}"]`);
@@ -20,6 +20,17 @@ const SEO = ({ path }) => {
 
     setMeta("name", "description", seo.description);
     setMeta("name", "robots", seo.noindex ? "noindex, nofollow" : "index, follow");
+    [
+      ["google-site-verification", verificationTokens.google],
+      ["msvalidate.01", verificationTokens.bing],
+    ].forEach(([name, content]) => {
+      const existing = document.head.querySelector(`meta[name="${name}"]`);
+      if (!content) {
+        existing?.remove();
+      } else {
+        setMeta("name", name, content);
+      }
+    });
     setMeta("property", "og:type", "website");
     setMeta("property", "og:site_name", "Seamoon Industries");
     setMeta("property", "og:title", seo.title);
