@@ -1,11 +1,15 @@
-const WhatsAppButton = () => (
+import { useI18n } from "../i18n/I18nContext";
+
+const WhatsAppButton = () => {
+  const { t } = useI18n();
+  return (
   <a
     className="whatsapp-button"
     href="https://wa.me/923007107197"
     target="_blank"
     rel="noopener noreferrer"
-    aria-label="Chat with us on WhatsApp"
-    title="Chat with us on WhatsApp"
+    aria-label={t("contact.whatsappChat")}
+    title={t("contact.whatsappChat")}
   >
     <svg
       aria-hidden="true"
@@ -18,6 +22,7 @@ const WhatsAppButton = () => (
       />
     </svg>
   </a>
-);
+  );
+};
 
 export default WhatsAppButton;

@@ -22,7 +22,9 @@ const SEO = ({ path }) => {
       "/": "home", "/dental-instruments": "dental", "/surgical-instruments": "surgical",
       "/oem-private-label": "oem", "/certifications": "certifications", "/contact": "contact", "/cart": "cart",
     };
-    const suffix = suffixByPath[path] || "home";
+    const normalizedPath = path.replace(/\/$/, "") || "/";
+    const suffix = suffixByPath[normalizedPath]
+      || (normalizedPath.startsWith("/dental-instruments/") ? "dental" : "home");
     const title = t(`seo.${suffix}.title`);
     const description = t(`seo.${suffix}.description`);
     document.title = title === `seo.${suffix}.title` ? seo.title : title;

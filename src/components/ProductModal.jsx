@@ -1,7 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import QuantityControl from "./QuantityControl";
+import { useI18n } from "../i18n/I18nContext";
 
 const ProductModal = ({ product, onClose, onAdd }) => {
+  const { t } = useI18n();
+  const categoryKey = (value) => `category.${value.toLowerCase().replace(/\(([^)]*)\)/g, " $1").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+  const productName = product ? (t(`product.${product.code}.name`) !== `product.${product.code}.name`
+    ? t(`product.${product.code}.name`)
+    : (/^Figure (.+)$/.exec(product.name) ? `${t("catalogue.figure")} ${/^Figure (.+)$/.exec(product.name)[1]}` : product.name)) : "";
   const [quantity, setQuantity] = useState(1);
   const closeButtonRef = useRef(null);
   const dialogRef = useRef(null);
@@ -72,7 +78,7 @@ const ProductModal = ({ product, onClose, onAdd }) => {
           type="button"
           className="product-modal__close"
           onClick={onClose}
-          aria-label="Close product details"
+          aria-label={t("catalogue.modalClose")}
         >
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M18 6 6 18M6 6l12 12" />
@@ -80,26 +86,26 @@ const ProductModal = ({ product, onClose, onAdd }) => {
         </button>
 
         <div className="product-modal__image-wrap">
-          <img src={product.image} alt={product.name} />
+          <img src={product.image} alt={productName} />
         </div>
 
         <div className="product-modal__content">
           <span className="product-code">{product.code}</span>
-          <h2 id={titleId}>{product.name}</h2>
-          <p>{product.category}</p>
+          <h2 id={titleId}>{productName}</h2>
+          <p>{t(categoryKey(product.category))}</p>
 
           <div className="product-modal__actions">
             <QuantityControl
               quantity={quantity}
               onChange={setQuantity}
-              label={`quantity for ${product.name}`}
+              label={t("common.quantityFor").replace("{name}", productName)}
             />
             <button
               type="button"
               className="catalogue-action-button"
               onClick={() => onAdd(product, quantity)}
             >
-              Add to Cart
+              {t("catalogue.addToCart")}
             </button>
           </div>
         </div>

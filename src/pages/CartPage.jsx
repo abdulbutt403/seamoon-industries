@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+﻿import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import QuantityControl from "../components/QuantityControl";
@@ -7,6 +7,7 @@ import SectionEyebrow from "../components/SectionEyebrow";
 import { useCart } from "../context/CartContext";
 import styles from "../style";
 import { formatInquiryProducts } from "../utils/inquiry";
+import { useI18n } from "../i18n/I18nContext";
 
 const EMAILJS_SERVICE_ID = "service_8ensi6d";
 const EMAILJS_TEMPLATE_ID = "template_amuimg8";
@@ -15,6 +16,14 @@ const EMAILJS_PUBLIC_KEY = "fJLRfqjjUtF0NCowJ";
 const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
 const CartPage = () => {
+  const { t, formatNumber } = useI18n();
+  const itemName = (item) => {
+    const key = `product.${item.code}.name`;
+    const translated = t(key);
+    if (translated !== key) return translated;
+    const figure = /^Figure (.+)$/.exec(item.name || "");
+    return figure ? `${t("catalogue.figure")} ${figure[1]}` : item.name || item.code;
+  };
   const {
     items,
     isReady,
@@ -24,7 +33,7 @@ const CartPage = () => {
   } = useCart();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
-  const [submission, setSubmission] = useState({ status: "idle", message: "" });
+  const [submission, setSubmission] = useState({ status: "idle", messageKey: "" });
   const submissionLock = useRef(false);
 
   const updateField = (event) => {
@@ -32,7 +41,7 @@ const CartPage = () => {
     setForm((currentForm) => ({ ...currentForm, [name]: value }));
     setErrors((currentErrors) => ({ ...currentErrors, [name]: "" }));
     if (submission.status !== "idle") {
-      setSubmission({ status: "idle", message: "" });
+      setSubmission({ status: "idle", messageKey: "" });
     }
   };
 
@@ -44,24 +53,24 @@ const CartPage = () => {
     const customerName = form.name.trim();
     const customerEmail = form.email.trim();
 
-    if (!customerName) nextErrors.name = "Please enter your name.";
+    if (!customerName) nextErrors.name = "cart.error.nameRequired";
     if (!customerEmail) {
-      nextErrors.email = "Please enter your email address.";
+      nextErrors.email = "cart.error.emailRequired";
     } else if (!isValidEmail(customerEmail)) {
-      nextErrors.email = "Please enter a valid email address.";
+      nextErrors.email = "cart.error.emailInvalid";
     }
     if (items.length === 0) {
-      nextErrors.cart = "Add at least one product before sending an inquiry.";
+      nextErrors.cart = "cart.error.emptyCart";
     }
 
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) {
-      setSubmission({ status: "error", message: "Please correct the highlighted fields." });
+      setSubmission({ status: "error", messageKey: "cart.error.correctFields" });
       return;
     }
 
     submissionLock.current = true;
-    setSubmission({ status: "loading", message: "Sending your inquiry…" });
+    setSubmission({ status: "loading", messageKey: "cart.sending" });
 
     const templateVariables = {
       customer_name: customerName,
@@ -83,12 +92,12 @@ const CartPage = () => {
       setErrors({});
       setSubmission({
         status: "success",
-        message: "Your product inquiry was sent successfully. We will contact you shortly.",
+        messageKey: "cart.success",
       });
     } catch {
       setSubmission({
         status: "error",
-        message: "We could not send your inquiry. Your cart has been kept so you can try again.",
+        messageKey: "cart.error.sendFailed",
       });
     } finally {
       submissionLock.current = false;
@@ -103,71 +112,68 @@ const CartPage = () => {
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={styles.boxWidth}>
           <header className="page-hero cart-page__hero">
-            <SectionEyebrow>Product inquiry</SectionEyebrow>
-            <h1>Your Inquiry Cart</h1>
+            <SectionEyebrow>{t("cart.eyebrow")}</SectionEyebrow>
+            <h1>{t("cart.title")}</h1>
             <p>
-              Review the instruments and quantities below, then send your
-              requirements directly to the Seamoon Industries team.
+              {t("cart.description")}
             </p>
           </header>
 
-          {submission.message && (
+          {submission.messageKey && (
             <div
               className={`inquiry-notice inquiry-notice--${submission.status}`}
               role={submission.status === "error" ? "alert" : "status"}
             >
-              {submission.message}
+              {t(submission.messageKey)}
             </div>
           )}
 
           {!isReady ? (
             <div className="cart-empty" role="status">
-              Loading your inquiry cart…
+              {t("cart.loading")}
             </div>
           ) : items.length === 0 ? (
             <section className="cart-empty" aria-labelledby="empty-cart-title">
               <h2 id="empty-cart-title">
-                {submission.status === "success"
-                  ? "Your inquiry cart is now empty"
-                  : "Your inquiry cart is empty"}
+                {t(submission.status === "success" ? "cart.emptyAfterSuccess" : "cart.empty")}
               </h2>
-              <p>Add dental instruments to begin a product inquiry.</p>
+              <p>{t("cart.addToBegin")}</p>
               <Link to="/dental-instruments" className="catalogue-action-button">
-                Browse Dental Instruments
+                {t("cart.browseDental")}
               </Link>
             </section>
           ) : (
             <div className="cart-layout">
               <section className="cart-products" aria-labelledby="cart-products-title">
                 <div className="cart-section-heading">
-                  <h2 id="cart-products-title">Selected Products</h2>
-                  <span>{items.length} product types</span>
+                  <h2 id="cart-products-title">{t("cart.selectedProducts")}</h2>
+                  <span>{formatNumber(items.length)} {t("cart.productTypes")}</span>
                 </div>
 
                 <div className="cart-items">
                   {items.map((item) => (
                     <article className="cart-item" key={item.code}>
                       <div className="cart-item__image-wrap">
-                        <img src={item.image} alt={item.name} />
+                        <img src={item.image} alt={itemName(item)} />
                       </div>
                       <div className="cart-item__content">
                         <span className="product-code">{item.code}</span>
-                        <h3>{item.name}</h3>
+                        <h3>{itemName(item)}</h3>
                         <div className="cart-item__actions">
                           <QuantityControl
                             quantity={item.quantity}
                             onChange={(quantity) =>
                               setItemQuantity(item.code, quantity)
                             }
-                            label={`quantity for ${item.name}`}
+                            label={t("common.quantityFor").replace("{name}", itemName(item))}
                           />
                           <button
                             type="button"
                             className="cart-remove-button"
                             onClick={() => removeItem(item.code)}
-                            aria-label={`Remove ${item.code}, ${item.name}`}
+                            aria-label={`${t("common.remove")} ${item.code}, ${itemName(item)}`}
                           >
-                            Remove
+                            {t("common.remove")}
                           </button>
                         </div>
                       </div>
@@ -177,17 +183,17 @@ const CartPage = () => {
               </section>
 
               <section className="inquiry-panel" aria-labelledby="inquiry-form-title">
-                <h2 id="inquiry-form-title">Send Inquiry</h2>
+                <h2 id="inquiry-form-title">{t("cart.sendInquiry")}</h2>
                 <p>
                   This form sends a product inquiry only. No payment is
                   collected.
                 </p>
 
-                {errors.cart && <p className="form-error">{errors.cart}</p>}
+                {errors.cart && <p className="form-error">{t(errors.cart)}</p>}
 
                 <form className="inquiry-form" onSubmit={submitInquiry} noValidate>
                   <div className="inquiry-field">
-                    <label htmlFor="inquiry-name">Name</label>
+                    <label htmlFor="inquiry-name">{t("form.name")}</label>
                     <input
                       id="inquiry-name"
                       name="name"
@@ -200,13 +206,13 @@ const CartPage = () => {
                     />
                     {errors.name && (
                       <span id="inquiry-name-error" className="form-error">
-                        {errors.name}
+                        {t(errors.name)}
                       </span>
                     )}
                   </div>
 
                   <div className="inquiry-field">
-                    <label htmlFor="inquiry-email">Email</label>
+                    <label htmlFor="inquiry-email">{t("form.email")}</label>
                     <input
                       id="inquiry-email"
                       name="email"
@@ -219,14 +225,14 @@ const CartPage = () => {
                     />
                     {errors.email && (
                       <span id="inquiry-email-error" className="form-error">
-                        {errors.email}
+                        {t(errors.email)}
                       </span>
                     )}
                   </div>
 
                   <div className="inquiry-field">
                     <label htmlFor="inquiry-message">
-                      Additional Requirements
+                      {t("form.additionalRequirements")}
                     </label>
                     <textarea
                       id="inquiry-message"
@@ -242,7 +248,7 @@ const CartPage = () => {
                     className="catalogue-action-button inquiry-submit"
                     disabled={isSending}
                   >
-                    {isSending ? "Sending Inquiry…" : "Send Inquiry"}
+                    {t(isSending ? "cart.sendingButton" : "cart.sendInquiry")}
                   </button>
                 </form>
               </section>

@@ -1,4 +1,6 @@
 import React from 'react'
+import { useI18n } from "../i18n/I18nContext";
+import SEO from "./SEO";
 
 const css = `
 .body {
@@ -94,18 +96,21 @@ const css = `
 `
 
 export default function Page404() {
+    const { t } = useI18n();
     return (
+        <>
+        <SEO path="/404" />
         <div className='body'>
             <style>{css}</style>
             <div id="content" className="pmd-content errorpage error-blank-page d-flex justify-content-center align-items-center">
                 <div className="text-center error-page-w">
                     <img src="http://themes.propeller.in/bootstrap4/html/e-health-care-admin-theme/assets/images/error-404.svg" alt="404" className="mb-4 img-fluid" />
-                    <h1>Oops! Page not found</h1>
-                    <p className="mb-4">The page you are looking for might have been removed had its name changed or is temporarily
-                        unavailable.</p>
-                    <a className="btn btn-primary btn-lg pmd-btn-raised pmd-ripple-effect" href="/">Back to Home</a>
+                    <h1>{t("error404.title")}</h1>
+                    <p className="mb-4">{t("error404.description")}</p>
+                    <a className="btn btn-primary btn-lg pmd-btn-raised pmd-ripple-effect" href="/">{t("error404.home")}</a>
                 </div>
             </div>
         </div>
+        </>
     )
 }

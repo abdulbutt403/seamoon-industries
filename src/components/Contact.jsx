@@ -1,6 +1,9 @@
 import { logo } from "../assets";
 import SocialLinks from "./SocialLinks";
-const Contact = () => (
+import { useI18n } from "../i18n/I18nContext";
+const Contact = () => {
+  const { t } = useI18n();
+  return (
     <div className="background" id="contactform">
     <div className="container">
       <div className="screen">
@@ -19,39 +22,39 @@ const Contact = () => (
         <div className="screen-body">
           <div className="screen-body-item left">
             <div className="app-title">
-              <img src={logo} alt="SM High Quality Brand" className="brand-logo brand-logo--contact" />
+              <img src={logo} alt={t("brand.logoAlt")} className="brand-logo brand-logo--contact" />
             </div>
             <div style={{marginTop: 40, color:'#fff'}}>
-            <h2 style={{marginBottom: 10, color:'#fff'}}>SALMAN ARSHAD <br/> (CHIEF EXECUTIVE OFFICER)</h2>
+            <h2 style={{marginBottom: 10, color:'#fff'}}>SALMAN ARSHAD <br/> ({t("contact.ceo")})</h2>
 
             <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13}}>Sialkot, Small Industrial Estate</h5>
             <h5 style={{fontStyle: 'italic', fontWeight: 400, fontSize: 13, marginBottom: 5}}>Fateh Garh Agency, Cheema Street</h5>
 
-            <div className="app-contact">WHATSAPP : +92-300-7107197</div>
-            <div className="app-contact">TEL : +92-52-3302249</div>
-            <div className="app-contact">EMAIL : info@seamoonind.com</div>
-            <div className="app-contact">GMAIL : seamoonind@gmail.com</div>
-            <div className="app-contact">WEB : www.seamoonind.com</div>
+            <div className="app-contact">{t("contact.whatsapp")}: +92-300-7107197</div>
+            <div className="app-contact">{t("contact.tel")}: +92-52-3302249</div>
+            <div className="app-contact">{t("contact.email")}: info@seamoonind.com</div>
+            <div className="app-contact">{t("contact.gmail")}: seamoonind@gmail.com</div>
+            <div className="app-contact">{t("contact.web")}: www.seamoonind.com</div>
             <SocialLinks className="contact-social-links" />
             </div>
           </div>
           <div className="screen-body-item">
             <form className="app-form" onSubmit={(event) => event.preventDefault()}>
               <div className="app-form-group">
-                <label className="sr-only" htmlFor="contact-name">Name</label>
-                <input id="contact-name" name="name" className="app-form-control" placeholder="NAME"/>
+                <label className="sr-only" htmlFor="contact-name">{t("form.name")}</label>
+                <input id="contact-name" name="name" className="app-form-control" placeholder={t("form.name").toUpperCase()}/>
               </div>
               <div className="app-form-group">
-                <label className="sr-only" htmlFor="contact-email">Email</label>
-                <input id="contact-email" name="email" type="email" className="app-form-control" placeholder="EMAIL"/>
+                <label className="sr-only" htmlFor="contact-email">{t("form.email")}</label>
+                <input id="contact-email" name="email" type="email" className="app-form-control" placeholder={t("form.email").toUpperCase()}/>
               </div>
               <div className="app-form-group message">
-                <label className="sr-only" htmlFor="contact-message">Message</label>
-                <textarea id="contact-message" name="message" className="app-form-control" placeholder="MESSAGE"/>
+                <label className="sr-only" htmlFor="contact-message">{t("form.message")}</label>
+                <textarea id="contact-message" name="message" className="app-form-control" placeholder={t("form.message").toUpperCase()}/>
               </div>
               <div className="app-form-group buttons">
-                <button type="reset" style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100, marginRight: 20}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary rounded-[10px] outline-none mt-10 text-white">CANCEL</button>
-                <button type="submit" style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10">SEND</button>
+                <button type="reset" style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100, marginRight: 20}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary rounded-[10px] outline-none mt-10 text-white">{t("form.cancel").toUpperCase()}</button>
+                <button type="submit" style={{boxShadow: '0 0 5px 0 rgba(255,255,255,0.5)', color: '#fff', width: 100}} className="py-2 px-2 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10">{t("form.send").toUpperCase()}</button>
               </div>
             </form>
           </div>
@@ -62,6 +65,7 @@ const Contact = () => (
   
 
 
-);
+  );
+};
 
 export default Contact;

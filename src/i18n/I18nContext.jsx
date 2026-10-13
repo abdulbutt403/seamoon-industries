@@ -3,6 +3,7 @@ import { messages, rtlLanguages } from "./locales";
 
 const Context = createContext(null);
 const STORAGE_KEY = "seamoon-language";
+const warnedMissingKeys = new Set();
 
 export const I18nProvider = ({ children }) => {
   // English is intentional on a first visit; browser language is never consulted.
@@ -43,11 +44,30 @@ export const I18nProvider = ({ children }) => {
     try { window.localStorage.setItem(STORAGE_KEY, language); } catch { /* Storage may be disabled. */ }
   }, [language]);
 
+  const localeByLanguage = {
+    en: "en-US", ur: "ur-PK", de: "de-DE", fr: "fr-FR", es: "es-419", pt: "pt-BR",
+    it: "it-IT", ar: "ar", tr: "tr-TR", ru: "ru-RU", zh: "zh-CN", ja: "ja-JP",
+    ko: "ko-KR", hi: "hi-IN", pl: "pl-PL", nl: "nl-NL",
+  };
+  const locale = localeByLanguage[language] || "en-US";
   const value = useMemo(() => ({
     language,
     setLanguage,
-    t: (key) => messages[language]?.[key] ?? messages.en[key] ?? key,
-  }), [language]);
+    t: (key) => {
+      const translated = messages[language]?.[key];
+      if (translated != null && String(translated).length > 0) return translated;
+      if (import.meta.env.DEV && !warnedMissingKeys.has(`${language}:${key}`)) {
+        warnedMissingKeys.add(`${language}:${key}`);
+        console.warn(`[i18n] Missing "${key}" in ${language}; showing English fallback.`);
+      }
+      return messages.en[key] ?? key;
+    },
+    formatNumber: (number, options) => new Intl.NumberFormat(locale, options).format(number),
+    formatDate: (date, options) => new Intl.DateTimeFormat(locale, options).format(date),
+    formatCurrency: (amount, currency = "USD", options = {}) => new Intl.NumberFormat(locale, {
+      style: "currency", currency, ...options,
+    }).format(amount),
+  }), [language, locale]);
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 

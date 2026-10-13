@@ -11,7 +11,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const { totalQuantity } = useCart();
   const location = useLocation();
-  const { t } = useI18n();
+  const { t, formatNumber } = useI18n();
+  const cartLabel = `${t("nav.cart")}, ${formatNumber(totalQuantity)} ${t(totalQuantity === 1 ? "cart.item" : "cart.items")}`;
   const currentPath =
     location.pathname !== "/"
       ? location.pathname.replace(/\/$/, "")
@@ -19,8 +20,8 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-3 justify-between items-center navbar">
-      <Link to="/" aria-label="Seamoon Industries home">
-        <img src={logo} alt="SM High Quality Brand" className="brand-logo brand-logo--nav" />
+      <Link to="/" aria-label={t("brand.homeLabel")}>
+        <img src={logo} alt={t("brand.logoAlt")} className="brand-logo brand-logo--nav" />
       </Link>
 
       <ul className="list-none lg:flex hidden justify-end items-center flex-1">
@@ -35,7 +36,7 @@ const Navbar = () => {
               to={nav.path}
               aria-label={
                 nav.path === "/cart"
-                  ? `Cart, ${totalQuantity} ${totalQuantity === 1 ? "item" : "items"}`
+                  ? cartLabel
                   : undefined
               }
             >
@@ -53,7 +54,7 @@ const Navbar = () => {
       <div className="lg:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? close : menu}
-          alt="menu"
+          alt={t(toggle ? "menu.close" : "menu.open")}
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
@@ -76,7 +77,7 @@ const Navbar = () => {
                   to={nav.path}
                   aria-label={
                     nav.path === "/cart"
-                      ? `Cart, ${totalQuantity} ${totalQuantity === 1 ? "item" : "items"}`
+                      ? cartLabel
                       : undefined
                   }
                 >

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+﻿import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import SectionEyebrow from "./SectionEyebrow";
@@ -9,6 +9,9 @@ import {
   PRODUCTS_URL,
 } from "../utils/catalogue";
 import ProductModal from "./ProductModal";
+import { useI18n } from "../i18n/I18nContext";
+
+const categoryKey = (category) => `category.${category.toLowerCase().replace(/\(([^)]*)\)/g, " $1").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
 
 const ProductCatalogue = () => {
   const { categorySlug } = useParams();
@@ -17,6 +20,15 @@ const ProductCatalogue = () => {
   const [loadState, setLoadState] = useState("loading");
   const [announcement, setAnnouncement] = useState("");
   const { addItem } = useCart();
+  const { t, formatNumber } = useI18n();
+  const translateCategory = (category) => t(categoryKey(category));
+  const translateProductName = (product) => {
+    const key = `product.${product.code}.name`;
+    const translated = t(key);
+    if (translated !== key) return translated;
+    const figure = /^Figure (.+)$/.exec(product.name);
+    return figure ? `${t("catalogue.figure")} ${figure[1]}` : product.name;
+  };
 
   useEffect(() => {
     const controller = new AbortController();
@@ -71,7 +83,7 @@ const ProductCatalogue = () => {
   const addToCart = (product, quantity) => {
     addItem(product, quantity);
     setAnnouncement(
-      `${quantity} ${quantity === 1 ? "item" : "items"} of ${product.code} added to your inquiry cart.`
+      t("catalogue.added").replace("{count}", formatNumber(quantity)).replace("{items}", t(quantity === 1 ? "catalogue.item" : "catalogue.items")).replace("{code}", product.code)
     );
     setSelectedProduct(null);
   };
@@ -79,18 +91,18 @@ const ProductCatalogue = () => {
   return (
     <section className="product-catalogue" aria-labelledby="product-catalogue-title">
       <div className="catalogue-list__heading">
-        <SectionEyebrow>{categorySlug ? "Dental products" : "Product catalogue"}</SectionEyebrow>
+        <SectionEyebrow>{categorySlug ? t("catalogue.dentalProducts") : t("catalogue.products")}</SectionEyebrow>
         <h2 id="product-catalogue-title">
           {selectedCategory
-            ? selectedCategory[0]
+            ? translateCategory(selectedCategory[0])
             : categorySlug
-              ? "Category Not Found"
-              : "Browse by Category"}
+              ? t("catalogue.categoryNotFound")
+              : t("catalogue.browseCategories")}
         </h2>
         <p>
           {categorySlug
-            ? "Select an instrument to review it and add the required quantity to your inquiry cart."
-            : "Choose a category to explore the instruments available in that range."}
+            ? t("catalogue.selectInstrument")
+            : t("catalogue.chooseCategory")}
         </p>
       </div>
 
@@ -100,19 +112,18 @@ const ProductCatalogue = () => {
 
       {loadState === "loading" && (
         <div className="catalogue-status" role="status">
-          Loading products…
+          {t("catalogue.loading")}
         </div>
       )}
 
       {loadState === "error" && (
         <div className="catalogue-status catalogue-status--error" role="alert">
-          The product catalogue could not be loaded. Please refresh the page
-          or try again shortly.
+          {t("catalogue.failed")}
         </div>
       )}
 
       {loadState === "success" && products.length === 0 && (
-        <div className="catalogue-status">No products are currently available.</div>
+        <div className="catalogue-status">{t("catalogue.none")}</div>
       )}
 
       {loadState === "success" && !categorySlug && (
@@ -132,10 +143,10 @@ const ProductCatalogue = () => {
                 </span>
                 <span className="category-card__content">
                   <span className="category-card__count">
-                    {categoryProducts.length} {categoryProducts.length === 1 ? "product" : "products"}
+                    {formatNumber(categoryProducts.length)} {t(categoryProducts.length === 1 ? "catalogue.product" : "catalogue.productsPlural")}
                   </span>
-                  <h3>{category}</h3>
-                  <span className="category-card__action">Explore category <span aria-hidden="true">→</span></span>
+                  <h3>{translateCategory(category)}</h3>
+                  <span className="category-card__action">{t("catalogue.exploreCategory")} <span aria-hidden="true">→</span></span>
                 </span>
               </Link>
             </article>
@@ -145,20 +156,20 @@ const ProductCatalogue = () => {
 
       {loadState === "success" && categorySlug && !selectedCategory && (
         <div className="catalogue-status catalogue-status--error">
-          <p>This dental category could not be found.</p>
+          <p>{t("catalogue.missingCategory")}</p>
           <Link className="catalogue-back-link" to="/dental-instruments">
-            View all dental categories
+            {t("catalogue.allDentalCategories")}
           </Link>
         </div>
       )}
 
       {loadState === "success" && selectedCategory && (
-        <section className="product-category" aria-label={selectedCategory[0]}>
+        <section className="product-category" aria-label={translateCategory(selectedCategory[0])}>
           <div className="product-category__heading">
             <Link className="catalogue-back-link" to="/dental-instruments">
-              <span aria-hidden="true">←</span> All categories
+              <span aria-hidden="true">←</span> {t("catalogue.allCategories")}
             </Link>
-            <span>{selectedCategory[1].length} products</span>
+            <span>{formatNumber(selectedCategory[1].length)} {t("catalogue.productsPlural")}</span>
           </div>
 
           <div className="product-grid">
@@ -168,15 +179,15 @@ const ProductCatalogue = () => {
                   type="button"
                   className="product-card__button"
                   onClick={() => setSelectedProduct(product)}
-                  aria-label={`View ${product.code}, ${product.name}`}
+                  aria-label={`${t("catalogue.viewAdd")} ${product.code}, ${translateProductName(product)}`}
                 >
                   <span className="product-card__image-wrap">
-                    <img src={product.image} alt={product.name} loading="lazy" />
+                    <img src={product.image} alt={translateProductName(product)} loading="lazy" />
                   </span>
                   <span className="product-card__content">
                     <span className="product-code">{product.code}</span>
-                    <span className="product-card__name">{product.name}</span>
-                    <span className="product-card__action">View / Add</span>
+                    <span className="product-card__name">{translateProductName(product)}</span>
+                    <span className="product-card__action">{t("catalogue.viewAdd")}</span>
                   </span>
                 </button>
               </article>
@@ -189,9 +200,12 @@ const ProductCatalogue = () => {
         product={selectedProduct}
         onClose={closeModal}
         onAdd={addToCart}
+        translateCategory={translateCategory}
+        translateProductName={translateProductName}
       />
     </section>
   );
 };
 
 export default ProductCatalogue;
+
