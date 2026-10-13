@@ -76,6 +76,7 @@ export const footerLinks = [
       { name: "OEM & Private Label", link: "/oem-private-label" },
       { name: "Certifications", link: "/certifications" },
       { name: "Contact", link: "/contact" },
+      { name: "Guides", link: "/guides" },
     ],
   },
 ];

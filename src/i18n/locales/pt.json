@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "Todos os direitos reservados.",
     "nav.certifications":  "Certificações",
     "nav.cart":  "Solicitação",
@@ -8,5 +8,18 @@
     "footer.tagline":  "Fabricante e exportador de confiança de instrumentos odontológicos e cirúrgicos de qualidade.",
     "nav.surgical":  "Cirurgia",
     "footer.usefulLinks":  "Links úteis",
-    "nav.home":  "Início"
+    "nav.home":  "Início",
+    "guides.eyebrow": "Guias para compradores",
+    "guides.indexTitle": "Guias de instrumentos odontológicos e cirúrgicos",
+    "guides.indexDescription": "Orientações práticas para adquirir instrumentos, comparar materiais e analisar documentos de qualidade e regulamentação do fornecedor.",
+    "guides.breadcrumbLabel": "Navegação estrutural",
+    "guides.nav": "Guias",
+    "guides.byline": "Por Seamoon Industries",
+    "guides.lastUpdated": "Última atualização:",
+    "guides.listHeading": "Guias para compradores",
+    "guides.quoteHeading": "Está planejando um pedido de instrumentos?",
+    "guides.quoteDescription": "Compartilhe sua lista de produtos ou requisitos com nossa equipe.",
+    "guides.requestQuote": "Solicitar orçamento",
+    "guides.back": "Voltar para todos os guias",
+    "guides.faqTitle": "Perguntas frequentes"
 }

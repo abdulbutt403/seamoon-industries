@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.tagline":  "شركة موثوقة لتصنيع وتصدير أدوات طب الأسنان والجراحة عالية الجودة.",
     "nav.certifications":  "الشهادات",
     "nav.cart":  "قائمة الاستفسار",
@@ -9,5 +9,18 @@
     "language.label":  "اللغة",
     "nav.surgical":  "جراحة",
     "footer.usefulLinks":  "روابط مفيدة",
-    "nav.home":  "الرئيسية"
+    "nav.home":  "الرئيسية",
+    "guides.eyebrow": "أدلة المشترين",
+    "guides.indexTitle": "أدلة أدوات الأسنان والجراحة",
+    "guides.indexDescription": "إرشادات عملية لتوريد الأدوات ومقارنة المواد ومراجعة وثائق الجودة والامتثال لدى الموردين.",
+    "guides.breadcrumbLabel": "مسار التنقل",
+    "guides.nav": "أدلة",
+    "guides.byline": "بقلم Seamoon Industries",
+    "guides.lastUpdated": "آخر تحديث:",
+    "guides.listHeading": "أدلة المشترين",
+    "guides.quoteHeading": "هل تخطط لطلب أدوات؟",
+    "guides.quoteDescription": "شارك قائمة المنتجات أو متطلباتك مع فريقنا.",
+    "guides.requestQuote": "اطلب عرض سعر",
+    "guides.back": "العودة إلى جميع الأدلة",
+    "guides.faqTitle": "الأسئلة الشائعة"
 }

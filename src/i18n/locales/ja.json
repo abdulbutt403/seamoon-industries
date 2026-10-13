@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "無断複写・転載を禁じます。",
     "nav.certifications":  "認証",
     "nav.cart":  "お問い合わせリスト",
@@ -8,5 +8,18 @@
     "footer.tagline":  "高品質な歯科・外科器具を製造・輸出する信頼できるメーカーです。",
     "nav.surgical":  "外科",
     "footer.usefulLinks":  "便利なリンク",
-    "nav.home":  "ホーム"
+    "nav.home":  "ホーム",
+    "guides.eyebrow": "購入者向けガイド",
+    "guides.indexTitle": "歯科・外科用器具ガイド",
+    "guides.indexDescription": "器具の調達、材料の比較、サプライヤーの品質・規制関連文書の確認に役立つ実務的な情報です。",
+    "guides.breadcrumbLabel": "パンくずリスト",
+    "guides.nav": "ガイド",
+    "guides.byline": "Seamoon Industries",
+    "guides.lastUpdated": "最終更新：",
+    "guides.listHeading": "購入者向けガイド",
+    "guides.quoteHeading": "器具の注文をご検討中ですか？",
+    "guides.quoteDescription": "製品リストや要件を当社チームにお知らせください。",
+    "guides.requestQuote": "見積もりを依頼",
+    "guides.back": "ガイド一覧に戻る",
+    "guides.faqTitle": "よくある質問"
 }

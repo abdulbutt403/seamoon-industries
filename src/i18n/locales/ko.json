@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "모든 권리 보유.",
     "nav.certifications":  "인증",
     "nav.cart":  "문의 목록",
@@ -8,5 +8,18 @@
     "footer.tagline":  "고품질 치과 및 외과 기구를 제조·수출하는 신뢰할 수 있는 업체입니다.",
     "nav.surgical":  "외과",
     "footer.usefulLinks":  "유용한 링크",
-    "nav.home":  "홈"
+    "nav.home":  "홈",
+    "guides.eyebrow": "구매자 가이드",
+    "guides.indexTitle": "치과 및 수술 기구 가이드",
+    "guides.indexDescription": "기구 조달, 소재 비교, 공급업체의 품질 및 규제 문서 검토를 위한 실무 안내입니다.",
+    "guides.breadcrumbLabel": "이동 경로",
+    "guides.nav": "가이드",
+    "guides.byline": "Seamoon Industries 작성",
+    "guides.lastUpdated": "마지막 업데이트:",
+    "guides.listHeading": "구매자 가이드",
+    "guides.quoteHeading": "기구 주문을 계획하고 계신가요?",
+    "guides.quoteDescription": "제품 목록이나 요구사항을 저희 팀과 공유해 주세요.",
+    "guides.requestQuote": "견적 요청",
+    "guides.back": "모든 가이드로 돌아가기",
+    "guides.faqTitle": "자주 묻는 질문"
 }

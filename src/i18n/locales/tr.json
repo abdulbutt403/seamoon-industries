@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "Tüm hakları saklıdır.",
     "nav.certifications":  "Sertifikalar",
     "nav.cart":  "Talep Listesi",
@@ -8,5 +8,18 @@
     "footer.tagline":  "Kaliteli dental ve cerrahi aletlerin güvenilir üreticisi ve ihracatçısı.",
     "nav.surgical":  "Cerrahi",
     "footer.usefulLinks":  "Faydalı Bağlantılar",
-    "nav.home":  "Ana Sayfa"
+    "nav.home":  "Ana Sayfa",
+    "guides.eyebrow": "Alıcı kılavuzları",
+    "guides.indexTitle": "Diş ve cerrahi alet kılavuzları",
+    "guides.indexDescription": "Alet tedariki, malzeme karşılaştırması ve tedarikçinin kalite ve mevzuat belgelerini inceleme konusunda pratik bilgiler.",
+    "guides.breadcrumbLabel": "Ekmek kırıntısı gezinme",
+    "guides.nav": "Kılavuzlar",
+    "guides.byline": "Seamoon Industries tarafından",
+    "guides.lastUpdated": "Son güncelleme:",
+    "guides.listHeading": "Alıcı kılavuzları",
+    "guides.quoteHeading": "Alet siparişi mi planlıyorsunuz?",
+    "guides.quoteDescription": "Ürün listenizi veya gereksinimlerinizi ekibimizle paylaşın.",
+    "guides.requestQuote": "Teklif isteyin",
+    "guides.back": "Tüm kılavuzlara dön",
+    "guides.faqTitle": "Sık sorulan sorular"
 }

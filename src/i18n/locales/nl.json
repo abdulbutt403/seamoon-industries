@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "Alle rechten voorbehouden.",
     "nav.certifications":  "Certificeringen",
     "nav.cart":  "Aanvraag",
@@ -8,5 +8,18 @@
     "footer.tagline":  "Een betrouwbare fabrikant en exporteur van kwalitatieve tandheelkundige en chirurgische instrumenten.",
     "nav.surgical":  "Chirurgie",
     "footer.usefulLinks":  "Handige links",
-    "nav.home":  "Home"
+    "nav.home":  "Home",
+    "guides.eyebrow": "Kopersgidsen",
+    "guides.indexTitle": "Gidsen voor tandheelkundige en chirurgische instrumenten",
+    "guides.indexDescription": "Praktische informatie over inkoop, materiaalvergelijking en het controleren van kwaliteits- en regelgevingsdocumenten van leveranciers.",
+    "guides.breadcrumbLabel": "Kruimelpad",
+    "guides.nav": "Gidsen",
+    "guides.byline": "Door Seamoon Industries",
+    "guides.lastUpdated": "Laatst bijgewerkt:",
+    "guides.listHeading": "Kopersgidsen",
+    "guides.quoteHeading": "Plant u een bestelling van instrumenten?",
+    "guides.quoteDescription": "Deel uw productlijst of vereisten met ons team.",
+    "guides.requestQuote": "Offerte aanvragen",
+    "guides.back": "Terug naar alle gidsen",
+    "guides.faqTitle": "Veelgestelde vragen"
 }

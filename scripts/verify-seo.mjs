@@ -12,6 +12,10 @@ const routes = [
   "/certifications",
   "/contact",
   "/cart",
+  "/guides",
+  "/guides/private-label-dental-instruments-pakistan",
+  "/guides/420-vs-440-stainless-steel-dental-surgical-instruments",
+  "/guides/iso-13485-ce-eu-mdr-supplier-checklist",
 ];
 
 const decodeHtml = (value) =>
@@ -69,7 +73,8 @@ for (const route of routes) {
   if (route !== "/" && !schemaTypes.includes("BreadcrumbList")) {
     throw new Error(`Missing BreadcrumbList schema for ${route}`);
   }
-  const shouldHaveFaq = ["/oem-private-label", "/certifications"].includes(route);
+  const shouldHaveFaq = ["/oem-private-label", "/certifications"].includes(route)
+    || route.startsWith("/guides/");
   if (schemaTypes.includes("FAQPage") !== shouldHaveFaq) {
     throw new Error(`Unexpected FAQPage schema presence for ${route}`);
   }
@@ -118,4 +123,4 @@ for (const result of results) {
   console.log(`  canonical: ${result.canonical}`);
   console.log(`  JSON-LD: ${result.schemaTypes.join(", ")}`);
 }
-console.log("\nSEO metadata and JSON-LD verified for all seven prerendered routes.");
+console.log("\nSEO metadata and JSON-LD verified for all eleven prerendered routes.");

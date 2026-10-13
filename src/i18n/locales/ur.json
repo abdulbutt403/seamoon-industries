@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.tagline":  "معیاری ڈینٹل اور جراحی آلات کا قابلِ اعتماد کارخانہ دار اور برآمد کنندہ۔",
     "nav.certifications":  "سرٹیفیکیشنز",
     "nav.cart":  "استفسار کی فہرست",
@@ -9,5 +9,18 @@
     "language.label":  "زبان",
     "nav.surgical":  "جراحی",
     "footer.usefulLinks":  "مفید لنکس",
-    "nav.home":  "صفحۂ اول"
+    "nav.home":  "صفحۂ اول",
+    "guides.eyebrow": "خریداروں کے لیے رہنما",
+    "guides.indexTitle": "دندان سازی اور سرجری کے آلات کے رہنما",
+    "guides.indexDescription": "آلات کی خریداری، مواد کے موازنے اور سپلائر کے معیار و ضابطہ جاتی دستاویزات کا جائزہ لینے کے لیے عملی رہنمائی۔",
+    "guides.breadcrumbLabel": "بریڈ کرمب نیویگیشن",
+    "guides.nav": "رہنما",
+    "guides.byline": "Seamoon Industries کی جانب سے",
+    "guides.lastUpdated": "آخری تازہ کاری:",
+    "guides.listHeading": "خریداروں کے رہنما",
+    "guides.quoteHeading": "کیا آپ آلات کا آرڈر دینے کا ارادہ رکھتے ہیں؟",
+    "guides.quoteDescription": "اپنی مصنوعات کی فہرست یا ضروریات ہماری ٹیم کے ساتھ شیئر کریں۔",
+    "guides.requestQuote": "قیمت کی درخواست کریں",
+    "guides.back": "تمام رہنماؤں پر واپس جائیں",
+    "guides.faqTitle": "اکثر پوچھے جانے والے سوالات"
 }

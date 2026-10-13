@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "版权所有。",
     "nav.certifications":  "认证",
     "nav.cart":  "询价清单",
@@ -8,5 +8,18 @@
     "footer.tagline":  "值得信赖的优质牙科和外科器械制造商与出口商。",
     "nav.surgical":  "外科",
     "footer.usefulLinks":  "常用链接",
-    "nav.home":  "首页"
+    "nav.home":  "首页",
+    "guides.eyebrow": "采购指南",
+    "guides.indexTitle": "牙科与外科器械指南",
+    "guides.indexDescription": "为器械采购、材料比较以及审核供应商质量和法规文件提供实用指导。",
+    "guides.breadcrumbLabel": "面包屑导航",
+    "guides.nav": "指南",
+    "guides.byline": "Seamoon Industries 编写",
+    "guides.lastUpdated": "最后更新：",
+    "guides.listHeading": "采购指南",
+    "guides.quoteHeading": "您正在计划器械订单吗？",
+    "guides.quoteDescription": "请与我们的团队分享产品清单或需求。",
+    "guides.requestQuote": "申请报价",
+    "guides.back": "返回所有指南",
+    "guides.faqTitle": "常见问题"
 }

@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "Tutti i diritti riservati.",
     "nav.certifications":  "Certificazioni",
     "nav.cart":  "Richiesta",
@@ -8,5 +8,18 @@
     "footer.tagline":  "Produttore ed esportatore affidabile di strumenti dentali e chirurgici di qualità.",
     "nav.surgical":  "Chirurgico",
     "footer.usefulLinks":  "Link utili",
-    "nav.home":  "Home"
+    "nav.home":  "Home",
+    "guides.eyebrow": "Guide per gli acquirenti",
+    "guides.indexTitle": "Guide agli strumenti dentali e chirurgici",
+    "guides.indexDescription": "Indicazioni pratiche per l’approvvigionamento, il confronto dei materiali e la verifica dei documenti di qualità e normativi del fornitore.",
+    "guides.breadcrumbLabel": "Percorso di navigazione",
+    "guides.nav": "Guide",
+    "guides.byline": "A cura di Seamoon Industries",
+    "guides.lastUpdated": "Ultimo aggiornamento:",
+    "guides.listHeading": "Guide per gli acquirenti",
+    "guides.quoteHeading": "Stai pianificando un ordine di strumenti?",
+    "guides.quoteDescription": "Condividi l’elenco dei prodotti o i requisiti con il nostro team.",
+    "guides.requestQuote": "Richiedi un preventivo",
+    "guides.back": "Torna a tutte le guide",
+    "guides.faqTitle": "Domande frequenti"
 }

@@ -1,6 +1,7 @@
 import { socialMedia } from "./constants";
 import { SITE_CONTACT } from "./constants/contact";
 import { certificationFaqs, oemFaqs, toFaqPageSchema } from "./data/faqs";
+import { guides, guideBySlug } from "./data/guides";
 
 export const SITE_URL = "https://www.seamoonind.com";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/carousel/img1.jpg`;
@@ -46,6 +47,7 @@ const pageNames = {
   "/certifications": "Certifications",
   "/contact": "Contact",
   "/cart": "Cart",
+  "/guides": "Guides",
   "/404": "Page Not Found",
 };
 
@@ -53,6 +55,9 @@ const createBreadcrumbSchema = (path, label) => {
   const items = [{ name: "Home", path: "/" }];
   if (path.startsWith("/dental-instruments/")) {
     items.push({ name: "Dental Instruments", path: "/dental-instruments" });
+  }
+  if (path.startsWith("/guides/")) {
+    items.push({ name: "Guides", path: "/guides" });
   }
   items.push({ name: label, path });
 
@@ -108,6 +113,11 @@ const seoByPath = {
     description: "Review selected dental instruments and send a product inquiry to Seamoon Industries.",
     noindex: true,
   },
+  "/guides": {
+    title: "Dental & Surgical Instrument Buyer Guides | Seamoon Industries",
+    description:
+      "Practical buyer guides to private-label dental instruments, stainless steel selection, and supplier quality and regulatory documents.",
+  },
   "/404": {
     title: "Page Not Found | Seamoon Industries",
     description: "The requested page could not be found.",
@@ -123,11 +133,16 @@ export const prerenderPaths = [
   "/certifications",
   "/contact",
   "/cart",
+  "/guides",
+  ...guides.map(({ slug }) => `/guides/${slug}`),
 ];
 
 export const getSeoForPath = (pathname) => {
   const normalizedPath = pathname !== "/" ? pathname.replace(/\/$/, "") : pathname;
   const isDentalCategory = normalizedPath.startsWith("/dental-instruments/");
+  const guide = normalizedPath.startsWith("/guides/")
+    ? guideBySlug[normalizedPath.slice("/guides/".length)]
+    : null;
   const categoryName = isDentalCategory
     ? normalizedPath
         .replace("/dental-instruments/", "")
@@ -135,7 +150,9 @@ export const getSeoForPath = (pathname) => {
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(" ")
     : "";
-  const seo = isDentalCategory
+  const seo = guide
+    ? { title: `${guide.title} | Seamoon Industries`, description: guide.description }
+    : isDentalCategory
     ? {
         title: `${categoryName} | Seamoon Industries`,
         description: `Browse ${categoryName.toLowerCase()} manufactured by Seamoon Industries for professional dental use and international supply.`,
@@ -147,9 +164,10 @@ export const getSeoForPath = (pathname) => {
     nodes.push(websiteSchema);
   } else {
     nodes.push(createBreadcrumbSchema(
-      isDentalCategory ? normalizedPath : (seoByPath[normalizedPath] ? normalizedPath : "/404"),
-      isDentalCategory ? categoryName : (pageNames[normalizedPath] || "Page Not Found")
+      guide || isDentalCategory ? normalizedPath : (seoByPath[normalizedPath] ? normalizedPath : "/404"),
+      guide?.title || (isDentalCategory ? categoryName : (pageNames[normalizedPath] || "Page Not Found"))
     ));
+    if (guide) nodes.push(toFaqPageSchema(guide.faqs));
     if (normalizedPath === "/oem-private-label") nodes.push(toFaqPageSchema(oemFaqs));
     if (normalizedPath === "/certifications") nodes.push(toFaqPageSchema(certificationFaqs));
   }

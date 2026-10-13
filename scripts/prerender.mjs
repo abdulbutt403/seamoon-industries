@@ -99,6 +99,7 @@ const sitemapRoutes = [...new Set([...prerenderPaths, ...categoryPaths])]
   .filter((routePath) => !getPageSeo(routePath).noindex);
 const sourceByRoute = (routePath) => {
   if (routePath.startsWith("/dental-instruments/")) return "public/assets/products.json";
+  if (routePath.startsWith("/guides/")) return `src/content/guides/${routePath.slice("/guides/".length)}.md`;
   return ({
     "/": "src/Home.jsx",
     "/dental-instruments": "public/assets/products.json",
@@ -106,6 +107,7 @@ const sourceByRoute = (routePath) => {
     "/oem-private-label": "src/pages/OEMPrivateLabel.jsx",
     "/certifications": "src/pages/CertificationsPage.jsx",
     "/contact": "src/pages/ContactPage.jsx",
+    "/guides": "src/pages/GuidesPage.jsx",
   })[routePath];
 };
 const lastmodBySource = new Map();
@@ -117,7 +119,9 @@ const getLastmod = (source) => {
       encoding: "utf8",
     }).trim();
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
-      throw new Error(`Could not determine the git last-modified date for ${source}.`);
+      // New or untracked editorial files have no trustworthy Git last-modified date yet.
+      lastmodBySource.set(source, null);
+      return null;
     }
     lastmodBySource.set(source, date);
   }
@@ -126,9 +130,10 @@ const getLastmod = (source) => {
 const sitemapXml = [
   '<?xml version="1.0" encoding="UTF-8"?>',
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-  ...sitemapRoutes.map((routePath) =>
-    `  <url><loc>https://www.seamoonind.com${routePath === "/" ? "/" : routePath}</loc><lastmod>${getLastmod(sourceByRoute(routePath))}</lastmod></url>`
-  ),
+  ...sitemapRoutes.map((routePath) => {
+    const lastmod = getLastmod(sourceByRoute(routePath));
+    return `  <url><loc>https://www.seamoonind.com${routePath === "/" ? "/" : routePath}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}</url>`;
+  }),
   '</urlset>',
 ].join("\n");
 await writeFile(path.join(distDirectory, "sitemap.xml"), `${sitemapXml}\n`, "utf8");

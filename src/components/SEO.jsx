@@ -23,10 +23,11 @@ const SEO = ({ path }) => {
       "/oem-private-label": "oem", "/certifications": "certifications", "/contact": "contact", "/cart": "cart",
     };
     const normalizedPath = path.replace(/\/$/, "") || "/";
+    const isGuidePath = normalizedPath === "/guides" || normalizedPath.startsWith("/guides/");
     const suffix = suffixByPath[normalizedPath]
       || (normalizedPath.startsWith("/dental-instruments/") ? "dental" : "home");
-    const title = t(`seo.${suffix}.title`);
-    const description = t(`seo.${suffix}.description`);
+    const title = isGuidePath ? seo.title : t(`seo.${suffix}.title`);
+    const description = isGuidePath ? seo.description : t(`seo.${suffix}.description`);
     document.title = title === `seo.${suffix}.title` ? seo.title : title;
 
     const localizedDescription = description === `seo.${suffix}.description` ? seo.description : description;

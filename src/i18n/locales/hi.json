@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.tagline":  "गुणवत्तापूर्ण डेंटल और सर्जिकल उपकरणों का विश्वसनीय निर्माता और निर्यातक।",
     "nav.certifications":  "प्रमाणपत्र",
     "nav.cart":  "पूछताछ सूची",
@@ -9,5 +9,18 @@
     "language.label":  "भाषा",
     "nav.surgical":  "शल्य चिकित्सा",
     "footer.usefulLinks":  "उपयोगी लिंक",
-    "nav.home":  "होम"
+    "nav.home":  "होम",
+    "guides.eyebrow": "खरीदार मार्गदर्शिकाएँ",
+    "guides.indexTitle": "दंत और शल्य उपकरण मार्गदर्शिकाएँ",
+    "guides.indexDescription": "उपकरणों की सोर्सिंग, सामग्री की तुलना और आपूर्तिकर्ता के गुणवत्ता व नियामक दस्तावेज़ों की समीक्षा के लिए व्यावहारिक मार्गदर्शन।",
+    "guides.breadcrumbLabel": "ब्रेडक्रम्ब नेविगेशन",
+    "guides.nav": "मार्गदर्शिकाएँ",
+    "guides.byline": "Seamoon Industries द्वारा",
+    "guides.lastUpdated": "अंतिम अपडेट:",
+    "guides.listHeading": "खरीदार मार्गदर्शिकाएँ",
+    "guides.quoteHeading": "क्या आप उपकरणों का ऑर्डर देने की योजना बना रहे हैं?",
+    "guides.quoteDescription": "अपनी उत्पाद सूची या आवश्यकताएँ हमारी टीम के साथ साझा करें।",
+    "guides.requestQuote": "कोटेशन माँगें",
+    "guides.back": "सभी मार्गदर्शिकाओं पर वापस जाएँ",
+    "guides.faqTitle": "अक्सर पूछे जाने वाले प्रश्न"
 }

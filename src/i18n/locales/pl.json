@@ -1,4 +1,4 @@
-﻿{
+{
     "footer.rights":  "Wszelkie prawa zastrzeżone.",
     "nav.certifications":  "Certyfikaty",
     "nav.cart":  "Zapytanie",
@@ -8,5 +8,18 @@
     "footer.tagline":  "Zaufany producent i eksporter wysokiej jakości instrumentów stomatologicznych i chirurgicznych.",
     "nav.surgical":  "Chirurgia",
     "footer.usefulLinks":  "Przydatne linki",
-    "nav.home":  "Strona główna"
+    "nav.home":  "Strona główna",
+    "guides.eyebrow": "Poradniki dla kupujących",
+    "guides.indexTitle": "Poradniki dotyczące instrumentów stomatologicznych i chirurgicznych",
+    "guides.indexDescription": "Praktyczne wskazówki dotyczące zaopatrzenia, porównywania materiałów oraz weryfikacji dokumentów jakościowych i regulacyjnych dostawcy.",
+    "guides.breadcrumbLabel": "Okruszki nawigacyjne",
+    "guides.nav": "Poradniki",
+    "guides.byline": "Autor: Seamoon Industries",
+    "guides.lastUpdated": "Ostatnia aktualizacja:",
+    "guides.listHeading": "Poradniki dla kupujących",
+    "guides.quoteHeading": "Planujesz zamówienie instrumentów?",
+    "guides.quoteDescription": "Przekaż naszemu zespołowi listę produktów lub wymagania.",
+    "guides.requestQuote": "Poproś o wycenę",
+    "guides.back": "Wróć do wszystkich poradników",
+    "guides.faqTitle": "Często zadawane pytania"
 }

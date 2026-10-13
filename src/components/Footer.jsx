@@ -7,7 +7,7 @@ import { useI18n } from "../i18n/I18nContext";
 
 const Footer = () => {
   const { t } = useI18n();
-  const footerLinkKeys = { "/": "nav.home", "/dental-instruments": "footer.dentalInstruments", "/surgical-instruments": "footer.surgicalInstruments", "/oem-private-label": "footer.oemPrivateLabel", "/certifications": "nav.certifications", "/contact": "nav.contact" };
+  const footerLinkKeys = { "/": "nav.home", "/dental-instruments": "footer.dentalInstruments", "/surgical-instruments": "footer.surgicalInstruments", "/oem-private-label": "footer.oemPrivateLabel", "/certifications": "nav.certifications", "/contact": "nav.contact", "/guides": "guides.nav" };
   return (
   <footer className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>

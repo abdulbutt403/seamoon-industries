@@ -6,6 +6,8 @@ import OEMPrivateLabel from "./pages/OEMPrivateLabel";
 import CertificationsPage from "./pages/CertificationsPage";
 import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
+import GuidesPage from "./pages/GuidesPage";
+import GuidePage from "./pages/GuidePage";
 
 let routes = [
   {
@@ -46,6 +48,16 @@ let routes = [
   {
     path: "/cart",
     component: CartPage,
+    exact: true,
+  },
+  {
+    path: "/guides",
+    component: GuidesPage,
+    exact: true,
+  },
+  {
+    path: "/guides/:slug",
+    component: GuidePage,
     exact: true,
   },
   {
