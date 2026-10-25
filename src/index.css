@@ -4226,6 +4226,44 @@ html[data-language="ru"] body { font-family: "Noto Sans", sans-serif; }
   transform: scaleX(1);
 }
 
+.navbar__link--certifications:hover > a,
+.navbar__link--certifications:focus-within > a,
+.navbar__link--certifications.navbar__link--active > a {
+  color: transparent;
+  background: linear-gradient(90deg, #0077cc, #12b8d4, #168b72, #0077cc);
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: certifications-nav-color 2.8s linear infinite;
+}
+
+.navbar__link--certifications::after {
+  background: linear-gradient(90deg, #0077cc, #12b8d4, #168b72, #0077cc);
+  background-size: 220% 100%;
+}
+
+.navbar__link--certifications:hover::after,
+.navbar__link--certifications:focus-within::after,
+.navbar__link--certifications.navbar__link--active::after {
+  animation: certifications-nav-color 2.8s linear infinite;
+}
+
+@keyframes certifications-nav-color {
+  from { background-position: 0% 50%; }
+  to { background-position: 220% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar__link--certifications:hover > a,
+  .navbar__link--certifications:focus-within > a,
+  .navbar__link--certifications.navbar__link--active > a,
+  .navbar__link--certifications:hover::after,
+  .navbar__link--certifications:focus-within::after,
+  .navbar__link--certifications.navbar__link--active::after {
+    animation: none;
+  }
+}
+
 .stats-item--revealed {
   animation: hero-title-fade-up 1400ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }

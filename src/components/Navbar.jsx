@@ -28,7 +28,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.path}
-            className={`navbar__link font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`navbar__link ${nav.path === "/certifications" ? "navbar__link--certifications" : ""} font-poppins font-normal cursor-pointer text-[16px] ${
               currentPath === nav.path ? "navbar__link--active" : ""
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
           >
@@ -68,7 +68,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.path}
-                className={`navbar__link font-poppins font-medium cursor-pointer text-[16px] ${
+                className={`navbar__link ${nav.path === "/certifications" ? "navbar__link--certifications" : ""} font-poppins font-medium cursor-pointer text-[16px] ${
                   currentPath === nav.path ? "navbar__link--active" : ""
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setToggle(false)}
