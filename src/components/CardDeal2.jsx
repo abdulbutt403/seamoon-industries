@@ -4,9 +4,9 @@ import cover from "../assets/surgical-cover.jpg";
 import styles, { layout } from "../style";
 
 const SURGICAL_CATALOGUE_URL =
-  "https://drive.google.com/file/d/1mzvIzo2baEaWragexg72_iPXw8a3BBWA/view?usp=sharing";
+  "https://drive.google.com/file/d/1vibNcQRRZigmHlI6aLfk5l2kYMCETqOd/view?usp=sharing";
 const SURGICAL_CATALOGUE_DOWNLOAD_URL =
-  "https://drive.google.com/uc?export=download&id=1mzvIzo2baEaWragexg72_iPXw8a3BBWA";
+  "https://drive.google.com/uc?export=download&id=1vibNcQRRZigmHlI6aLfk5l2kYMCETqOd";
 
 export default function CardDeal2() {
   return (
